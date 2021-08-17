@@ -101,8 +101,7 @@ MiserereTenoreLyrics = \lyricmode {
   tem me --
   am. %40 finis
 
-  % Ti -- bi so -- li pec -- ca -- vi, et ma -- lum co -- ram te fe -- ci;
-  % ut iu -- sti -- fi -- ce -- ris in ser -- mo -- ni -- bus tu -- is, et vin -- cas cum iu -- di -- ca -- ris.
+
   % Ec -- ce e -- nim in in -- i -- qui -- ta -- ti -- bus con -- cep -- tus sum,
   % et in pec -- ca -- tis con -- ce -- pit me ma -- ter me -- a.
   % Ec -- ce e -- nim ve -- ri -- ta -- tem di -- le -- xi -- sti;
@@ -279,4 +278,61 @@ AmpliusTenoreLyrics = \lyricmode {
   me est
   sem -- %75
   per. %76 finis
+}
+
+TibiSoliTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \dorian \time 4/4 \autoBeamOff \tempoTibiSoli
+    R1
+    r4 es\fE e2~
+    e2. d4
+    a a8([ g)] f[ d] d'4
+    g, as8[ b] c2 %5
+    c r\fermata
+    r r4 c
+    des2.( c8[ b)]
+    c4 c d2
+    g,4 c es es %10
+    es( d8[ c)] d2~ \noBreak
+    d r\fermata
+    \tempoUtIustificeris es8 c h d es c4 b?8~ \noBreak
+    b as4 g16[ f] g8 es' f, d'
+    es es4 d8 es[ d] c4 %15
+    d8 d es es d b4 a8~
+    a g4 fis8 g g c a
+    b b d d c4 c8 c
+    c h r h c4. c8
+    c c r c b4. b8 %20
+    b b r g as4. b8
+    c c r4 r \tempoCumIudicaris f
+    f es d2
+    c r\fermata \bar "||" %24 finis
+  }
+}
+
+TibiSoliTenoreLyrics = \lyricmode {
+  Pec -- ca -- %2
+  _
+  vi, pec -- ca -- _
+  _ _ _ %5
+  vi
+  et
+  ma --
+  lum, et ma --
+  lum co -- ram te %10
+  fe -- ci; __
+
+  ut iu -- sti -- fi -- ce -- _ _
+  _ _ ris, iu -- sti -- fi --
+  ce -- _ _ _ _ %15
+  ris, iu -- sti -- fi -- ce -- _ _
+  _ _ ris, iu -- sti -- fi --
+  ce -- ris in ser -- mo -- ni -- bus
+  tu -- is, et vin -- cas,
+  vin -- cas, et vin -- cas, %20
+  vin -- cas, et vin -- cas,
+  vin -- cas cum
+  iu -- di -- ca --
+  ris. %24 finis
 }

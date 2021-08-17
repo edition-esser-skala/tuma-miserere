@@ -89,8 +89,7 @@ MiserereBassoLyrics = \lyricmode {
   tem me --
   am. %40 finis
 
-  % Ti -- bi so -- li pec -- ca -- vi, et ma -- lum co -- ram te fe -- ci;
-  % ut iu -- sti -- fi -- ce -- ris in ser -- mo -- ni -- bus tu -- is, et vin -- cas cum iu -- di -- ca -- ris.
+
   % Ec -- ce e -- nim in in -- i -- qui -- ta -- ti -- bus con -- cep -- tus sum,
   % et in pec -- ca -- tis con -- ce -- pit me ma -- ter me -- a.
   % Ec -- ce e -- nim ve -- ri -- ta -- tem di -- le -- xi -- sti;
@@ -266,4 +265,61 @@ AmpliusBassoLyrics = \lyricmode {
   me __ est
   sem -- %75
   per. %76 finis
+}
+
+TibiSoliBasso = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \autoBeamOff \tempoTibiSoli
+    R1
+    r4 c\f \once \tieDashed b2~
+    b a~
+    a b
+    c1 %5
+    f,2 r\fermata
+    r4 f' as2~
+    as4 g8[ f] e2
+    f4 f2( es8[ d])
+    es4 es c b! %10
+    as2 g~ \noBreak
+    g r\fermata
+    \tempoUtIustificeris c'8 es, d h' c c, r4 \noBreak
+    r2 es8 es' f, d'
+    es es, r4 r2 %15
+    b'8 d, c a' b b, r4
+    r2 g'8 b, a fis'
+    g g, g' f es4 d8 c
+    g' g, r g' es16([ c es g] c8) c,
+    as' as, r f' d16([ b d f] b8) b, %20
+    g' g, r es' c16([ as c es] as8) es
+    c as r4 r \tempoCumIudicaris as
+    g g g2
+    c r\fermata \bar "||" %24 finis
+  }
+}
+
+TibiSoliBassoLyrics = \lyricmode {
+  Pec -- ca -- %2
+  _
+  _
+  _ %5
+  vi,
+  et ma --
+  _ _
+  lum, ma --
+  lum co -- ram te %10
+  fe -- ci; __
+
+  ut iu -- sti -- fi -- ce -- ris,
+  ut iu -- sti -- fi --
+  ce -- ris, %15
+  ut iu -- sti -- fi -- ce -- ris,
+  ut iu -- sti -- fi --
+  ce -- ris in ser -- mo -- ni -- bus
+  tu -- is, et vin -- cas,
+  vin -- cas, et vin -- cas, %20
+  vin -- cas, et vin -- cas,
+  vin -- cas cum
+  iu -- di -- ca --
+  ris. %24 finis
 }

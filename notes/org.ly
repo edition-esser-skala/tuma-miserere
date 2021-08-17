@@ -251,3 +251,61 @@ AmpliusBassFigures = \figuremode {
   <4>4 <_+>2 %75
   r2. %76 finis
 }
+
+TibiSoliOrgano = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \tempoTibiSoli
+    R1
+    r4 c\fE b2~
+    b a~
+    a b
+    c1 %5
+    f,2 r\fermata
+    r4 f' as2~
+    as4 g8 f e2
+    f4 f2 es8 d
+    es4 es c b! %10
+    as2 \once \tieDashed g~ \noBreak
+    g r\fermata
+    \tempoUtIustificeris c'8 es, d h' c c, r4 \noBreak
+    r2 es8 es' f, d'
+    es es, r4 r2 %15
+    b'8 d, c a' b b, r4
+    r2 g'8 b, a fis'
+    g g, g' f es4 d8 c
+    g' g, r g' es16 c es g c8 c,
+    as' as, r f' d16 b d f b8 b, %20
+    g' g, r es' c16 as c es as8 es
+    c as r4 r \tempoCumIudicaris as
+    g1
+    c2 r\fermata \bar "||" %24 finis
+  }
+}
+
+TibiSoliBassFigures = \figuremode {
+  r1
+  r2 <4! 2>
+  <\t _+> <7 5! _+>4 <6 4>
+  <5- 4> <\t _!> <10 9> <\t 8>
+  <7 _!> <6- 4> <5 \t> <\t _!> %5
+  <[_-]>1
+  r2 <3>
+  <4->4. \bassFigureExtendersOn q8 \bassFigureExtendersOff <7->4 <6>8 <5>
+  <_->2 <4! _->4 <\tllur>8 <6!>
+  <6>2. <4 2>4 %10
+  <6\\ 5>4 \bassFigureExtendersOn <6\\ 4>8 <6\\ 3> <5 4>4 <5 _!>8 <5 2>
+  <5 [_!]>1 \bassFigureExtendersOff
+  r8 \bo <[6 \l]> <6!> <6> r2
+  r2. <6 _->8 <6 5->
+  r1 %15
+  r8 <6>4 <6 5>8 r2
+  r r8 <6> <5> \bc <[6 \l]>
+  r4 <_!>8 <[\t]> <6>4 <[\t]>
+  <6 4>8 <5 _!>4 <[\t \t]>8 <6>4 <_->8 <_!>
+  <6>4. <[_-]>8 <6>2 %20
+  <[6]> <6->4 <5>
+  <[6-]>2. <6>4
+  <7 _!> <6 4> <5 \t> <\t _!>
+  r1 %24 finis
+}

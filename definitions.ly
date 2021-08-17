@@ -685,6 +685,9 @@ tocLabelLong = #(define-music-function
 
 tempoMiserere = \tempoMarkup "Adagio"
 tempoAmplius = \tempoMarkup "Andante"
+tempoTibiSoli = \tempoMarkup "Grave"
+  tempoUtIustificeris = \tempoMarkup "Vivace"
+  tempoCumIudicaris = \tempoMarkup "Adagio"
 
 
 \include "notes/S.ly"

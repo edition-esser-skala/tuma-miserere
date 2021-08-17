@@ -115,50 +115,96 @@
   %     \midi { \tempo 4 = 60 }
   %   }
   % }
+  % \bookpart {
+  %   \header {
+  %     number = "2"
+  %     title = "A M P L I U S   L A V A   M E"
+  %   }
+  %   \tocSection "2" "Amplius lava me"
+  %   \score {
+  %     <<
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \AmpliusSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \AmpliusSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \AmpliusAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \AmpliusAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \AmpliusTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \AmpliusTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \AmpliusBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \AmpliusBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \AmpliusOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \AmpliusBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 100 }
+  %   }
+  % }
   \bookpart {
     \header {
-      number = "2"
-      title = "A M P L I U S"
+      number = "3"
+      title = "T I B I   S O L I   P E C C A V I"
     }
-    \tocSection "2" "Amplius"
+    \tocSection "3" "Tibi soli peccavi"
     \score {
       <<
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \AmpliusSoprano }
+            \new Voice = "Soprano" { \dynamicUp \TibiSoliSoprano }
           }
-          \new Lyrics \lyricsto Soprano \AmpliusSopranoLyrics
+          \new Lyrics \lyricsto Soprano \TibiSoliSopranoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \AmpliusAlto }
+            \new Voice = "Alto" { \dynamicUp \TibiSoliAlto }
           }
-          \new Lyrics \lyricsto Alto \AmpliusAltoLyrics
+          \new Lyrics \lyricsto Alto \TibiSoliAltoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \AmpliusTenore }
+            \new Voice = "Tenore" { \dynamicUp \TibiSoliTenore }
           }
-          \new Lyrics \lyricsto Tenore \AmpliusTenoreLyrics
+          \new Lyrics \lyricsto Tenore \TibiSoliTenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \AmpliusBasso }
+            \new Voice = "Basso" { \dynamicUp \TibiSoliBasso }
           }
-          \new Lyrics \lyricsto Basso \AmpliusBassoLyrics
+          \new Lyrics \lyricsto Basso \TibiSoliBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \AmpliusOrgano
+            \TibiSoliOrgano
           }
         >>
-        \new FiguredBass { \AmpliusBassFigures }
+        \new FiguredBass { \TibiSoliBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 100 }
+      \midi { \tempo 4 = 60 }
     }
   }
 }

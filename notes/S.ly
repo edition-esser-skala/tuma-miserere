@@ -100,8 +100,7 @@ MiserereSopranoLyrics = \lyricmode {
   ta -- tem me --
   am. %40 finis
 
-  % Ti -- bi so -- li pec -- ca -- vi, et ma -- lum co -- ram te fe -- ci;
-  % ut iu -- sti -- fi -- ce -- ris in ser -- mo -- ni -- bus tu -- is, et vin -- cas cum iu -- di -- ca -- ris.
+
   % Ec -- ce e -- nim in in -- i -- qui -- ta -- ti -- bus con -- cep -- tus sum,
   % et in pec -- ca -- tis con -- ce -- pit me ma -- ter me -- a.
   % Ec -- ce e -- nim ve -- ri -- ta -- tem di -- le -- xi -- sti;
@@ -266,4 +265,60 @@ AmpliusSopranoLyrics = \lyricmode {
   me __ est
   sem -- %75
   per. %76 finis
+}
+
+TibiSoliSoprano = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoTibiSoli
+    r4 g'8\p g c([ es)] c([ g)]
+    c,4 c8 c'\f c2
+    cis2. d4~
+    d c2 b4~
+    b as g2 %5
+    f r\fermata
+    R1*2
+    r4 c' h2
+    c4 c c c %10
+    c2._( h8[ a]) \noBreak
+    h2 r\fermata
+    \tempoUtIustificeris c4 d c8 es d4 \noBreak
+    c b!~ b8 es d f
+    b,[ c16 b] as[ f b as] g[ b c d] es[ c f es] %15
+    d8 f es c d16[ f g f] es[ c f es]
+    d[ b es d] c[ a d c] b8 d c d
+    d d h h c4 d8 es
+    es d r d es4. e8
+    f c16([ b)] as([ g)] f8 b4. d8 %20
+    es b16([ as)] g([ f)] es8 es' es, r es'
+    es c r4 r \tempoCumIudicaris c
+    h c c( h)
+    c2 r\fermata \bar "||" %24 finis
+  }
+}
+
+TibiSoliSopranoLyrics = \lyricmode {
+  Ti -- bi so -- li, __
+  so -- li pec -- ca --
+  _ _
+  _ _
+  _ _ %5
+  vi,
+
+  et ma -- %9
+  lum co -- ram te %10
+  fe --
+  ci;
+  ut iu -- sti -- fi -- ce --
+  ris, ut __ iu -- sti -- fi --
+  ce -- _ _ _ %15
+  ris, iu -- sti -- fi -- ce -- _
+  _ _ ris, iu -- sti -- fi --
+  ce -- ris in ser -- mo -- ni -- bus
+  tu -- is, et vin -- cas,
+  vin -- cas, vin -- cas, vin -- cas, %20
+  vin -- cas, vin -- cas, vin -- cas, et
+  vin -- cas cum
+  iu -- di -- ca --
+  ris. %24 finis
 }

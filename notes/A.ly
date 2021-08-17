@@ -100,8 +100,7 @@ MiserereAltoLyrics = \lyricmode {
   tem me --
   am. %40 finis
 
-  % Ti -- bi so -- li pec -- ca -- vi, et ma -- lum co -- ram te fe -- ci;
-  % ut iu -- sti -- fi -- ce -- ris in ser -- mo -- ni -- bus tu -- is, et vin -- cas cum iu -- di -- ca -- ris.
+
   % Ec -- ce e -- nim in in -- i -- qui -- ta -- ti -- bus con -- cep -- tus sum,
   % et in pec -- ca -- tis con -- ce -- pit me ma -- ter me -- a.
   % Ec -- ce e -- nim ve -- ri -- ta -- tem di -- le -- xi -- sti;
@@ -278,4 +277,61 @@ AmpliusAltoLyrics = \lyricmode {
   me est
   sem -- %75
   per. %76 finis
+}
+
+TibiSoliAlto = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoTibiSoli
+    R1
+    r4 g'\f g2~
+    g2. f4
+    es!2 d4 g8([ f)]
+    e4( f2 e4) %5
+    f2 r\fermata
+    R1
+    r2 r4 g
+    as2.( g8[ f)]
+    g4 g g g %10
+    fis2 g~ \noBreak
+    g r\fermata
+    \tempoUtIustificeris g8 g f g g[ as16 g] f[ d g f] \noBreak
+    es[ c f es] d[ b! c d] es8 g as as
+    g4( f) g es %15
+    f8 f g([ f)] f b c c
+    b4 a d,8 g a a
+    g g g g g4 g8 g
+    g g r g g4. g8
+    as as f as f4. f8 %20
+    g g es g es4. g8
+    es es r4 r \tempoCumIudicaris c
+    d es8([ f)] g2
+    g r\fermata \bar "||" %24 finis
+  }
+}
+
+TibiSoliAltoLyrics = \lyricmode {
+  Pec -- ca -- %2
+  _
+  _ vi, pec --
+  ca -- %5
+  vi
+
+  et
+  ma --
+  lum co -- ram te %10
+  fe -- ci; __
+
+  ut iu -- sti -- fi -- ce -- _
+  _ _ ris, iu -- sti -- fi --
+  ce -- ris, iu -- %15
+  sti -- fi -- ce -- ris, iu -- sti -- fi --
+  ce -- ris, ut iu -- sti -- fi --
+  ce -- ris in ser -- mo -- ni -- bus
+  tu -- is, et vin -- cas,
+  vin -- cas, vin -- cas, vin -- cas, %20
+  vin -- cas, vin -- cas, vin -- cas,
+  vin -- cas cum
+  iu -- di -- ca --
+  ris. %24 finis
 }
