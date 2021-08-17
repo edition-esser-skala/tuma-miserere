@@ -89,3 +89,165 @@ MiserereBassFigures = \figuremode {
   <5>2 \bo <[6 4]>4 <5 _!>8 <4 2>
   \bc <[5 _!]>1 %40 finis
 }
+
+AmpliusOrgano = {
+  \relative c {
+    \clef bass
+    \key g \minor \time 3/4 \tempoAmplius
+    g4\pE r g
+    c2 d4
+    b2 es4
+    c2 d4
+    g,2 r4 %5
+    d'2.
+    a'2 d,4
+    g2 cis,4
+    d2.
+    d4 r d %10
+    g,2 a4
+    f2 b4
+    g2 a4
+    d2 d'4~
+    d cis c %15
+    h2 cis4
+    d2 d,4
+    a'2 fis4
+    g2 e4
+    f!2 g4 %20
+    a a, r
+    d r fis,
+    g2 r4
+    g r b
+    c r e, %25
+    f2 r4
+    f2.
+    g
+    b
+    a4 g f %30
+    r g a
+    d,2 r4
+    g'2 a4
+    d,2 c4
+    b2. %35
+    h
+    h?
+    c2 r4
+    R2.
+    r4 \parOn g'-\parenthesize-! \parOff g-\parenthesize-! %40
+    g,2-! \once \tieDashed g'4~
+    g f2
+    es8( d) c4 r
+    c' as r
+    b g r %45
+    as f r
+    g4. f8 es d
+    c4 g2
+    c4 c-! c-!
+    c'2.~ %50
+    c4 b! a
+    b g cis,
+    d r r
+    R2.
+    r4 r g %55
+    es r f
+    d r es
+    c r d
+    es2.
+    d4 r g %60
+    fis r g
+    d r b'
+    a r g
+    d d g
+    es d c %65
+    g2.~-\tasto
+    g~
+    g~
+    g~
+    g4 g' f %70
+    es d c
+    d2.
+    es4 g f
+    es( d) c
+    d2. %75
+    g,2 r4\fermata \bar "||" %76 finis
+  }
+}
+
+AmpliusBassFigures = \figuremode {
+  r2.
+  <6>2 <_+>4
+  <6>2.
+  <6->2 <[5!] _+>4
+  r2. %5
+  <6 4>4 <5 _+> <\t _!>
+  <6 4> <5! _+> <7! _+>
+  <5 4> <\t _!> <7- 5 [_!]>
+  <6 4> <5 _+>2
+  <_!>2. %10
+  <6!>2 <[5!] _+>4
+  <6>2.
+  <6->2 <[5!] _+>4
+  r2.
+  <2!>4 <6 [_!]> <[\t \t]> %15
+  <7> <6\\> <5! [_!]>
+  <5 4> <\t _+> <_!>
+  <6 4> <5! _+> <5!>
+  <9 4> <8 _!> <6\\>
+  <6>2 <7 [_-]>4 %20
+  <6 4> <5! _+>2
+  <_+> <[6]>4
+  r2.
+  r2 <[5!]>4
+  <_!>2 <[6]>4 %25
+  r2.
+  <5>4 <6>2
+  r2.
+  <6\\ 5>
+  <[5!] _+>4 <[\t \t]> <6> %30
+  r <6! 5> <[5! _+]>
+  r2.
+  r2 <[5!] _+>4
+  r2 <4+>4
+  <6>2. %35
+  <5>
+  <6>
+  <5>
+  r
+  r %40
+  r2 <_!>4
+  <2-> <6 _-> <\t 4!>
+  <6>8 <6!> r2
+  r2.
+  r %45
+  r4 <_!>2
+  q \bassFigureExtendersOn q8 q \bassFigureExtendersOff
+  r4 <4> <_!>
+  r2.
+  <5 3> %50
+  <4+ 2>2 \bassFigureExtendersOn q4 \bassFigureExtendersOff
+  <6>2 <7 [_!]>4
+  <[_+]>2.
+  r
+  r %55
+  r
+  r
+  r2 <_+>4
+  <5>2 <6>4
+  <_+>2. %60
+  <6>
+  <_+>2 <6>4
+  <6\\>2.
+  <_+>4 <_!> <_!>
+  \bo <[6]> \bc <[7]>2 %65
+  <_!>2.
+  r
+  r
+  r
+  r4 <_!> <[\t]> %70
+  <6> <[6!]>2
+  <4>4 <_+>2
+  r4 <5> <4!>
+  <6> <[6!]>2
+  <4>4 <_+>2 %75
+  r2. %76 finis
+}

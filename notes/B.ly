@@ -88,10 +88,7 @@ MiserereBassoLyrics = \lyricmode {
   i -- qui -- ta --
   tem me --
   am. %40 finis
-  % Am -- pli -- us la -- va me ab i -- ni -- qui -- ta -- te me -- a,
-  % et a pec -- ca -- to me -- o mun -- da me.
-  % Quo -- ni -- am in -- i -- qui -- ta -- tem me -- am e -- go co -- gno -- sco,
-  % et pec -- ca -- tum me -- um con -- tra me est sem -- per.
+
   % Ti -- bi so -- li pec -- ca -- vi, et ma -- lum co -- ram te fe -- ci;
   % ut iu -- sti -- fi -- ce -- ris in ser -- mo -- ni -- bus tu -- is, et vin -- cas cum iu -- di -- ca -- ris.
   % Ec -- ce e -- nim in in -- i -- qui -- ta -- ti -- bus con -- cep -- tus sum,
@@ -125,4 +122,148 @@ MiserereBassoLyrics = \lyricmode {
   % Glo -- ri -- a Pa -- tri et Fi -- li -- o et Spi -- ri -- tu -- i San -- cto,
   % si -- cut e -- rat in prin -- ci -- pi -- o et nunc et sem -- per
   % et in sae -- cu -- la sae -- cu -- lo -- rum, a -- men.
+}
+
+AmpliusBasso = {
+  \relative c {
+    \clef bass
+    \key g \minor \time 3/4 \autoBeamOff \tempoAmplius
+    g'4.\pE a8 b4
+    r8 a([ c a g fis)]
+    r b([ d b a g)]
+    r as([ c as)] g([ fis)]
+    g4 r r %5
+    R2.*4
+    d4. e8 f!4 %10
+    r8 e([ g e d cis)]
+    r f([ a f e d)]
+    r es([ g es)] d([ cis)]
+    d4 r r
+    R2.*6 %20
+    a'4 a g
+    fis8([ c' a fis)] d([ c)]
+    b([ a)]  g4 r
+    g' g f!
+    e8([ b' g e)] c([ b)] %25
+    a([ g)] f4 r
+    r8 f'([ e d)] cis([ d)]
+    r b'([ a g)] fis([ g)]
+    r b([ a gis)] a([ gis)]
+    a4. cis8 d4 %30
+    r g,, a
+    d, r r
+    R2.
+    d'4. e8 fis4
+    r8 g as([ g)] fis([ g)] %35
+    r \once \slurDashed f[( g as g f])
+    r d'[( h as)] g([ f)]
+    es([ d)] c4 r
+    R2.
+    r4 g' g %40
+    g,2 g'4~
+    g f2
+    es8([ d)] c4 r
+    c' as r
+    b g r %45
+    as f r
+    g4. f8 es([ d)]
+    c4 g2
+    c4 c c
+    c'2.~ %50
+    c4 b! a
+    b g cis,
+    d8([ cis)] d4 r
+    R2.
+    r4 r g %55
+    es r f
+    d r es
+    c r d
+    es es2
+    d4 r g %60
+    fis r g
+    d r b'
+    a r g
+    d d g
+    es( d) c %65
+    \tieDashed g'2.~
+    g~
+    g~
+    g \tieSolid
+    g4 g f %70
+    es( d) c
+    d2.
+    es4 g f
+    es( d) c
+    d2. %75
+    g,2 r4\fermata \bar "||" %76 finis
+  }
+}
+
+AmpliusBassoLyrics = \lyricmode {
+  Am -- pli -- us
+  la --
+  _
+  _ va
+  me, %5
+
+  am -- pli -- us %10
+  la --
+  _
+  _ va
+  me,
+
+  et a pec -- %21
+  ca -- to
+  me -- o,
+  et a pec --
+  ca -- to %25
+  me -- o
+  mun -- da,
+  mun -- da,
+  mun -- da,
+  mun -- da me, %30
+  mun -- da
+  me.
+
+  Quo -- ni -- am
+  in -- i -- qui -- %35
+  ta --
+  _ tem
+  me -- am,
+
+  et pec -- %40
+  ca -- _
+  tum
+  me -- um
+  con -- tra,
+  con -- tra, %45
+  con -- tra,
+  con -- tra me
+  est sem --
+  per, et pec --
+  ca -- %50
+  _ _
+  _ _ tum
+  me -- um
+
+  con -- %55
+  tra me
+  est, con --
+  tra me
+  est sem --
+  per, con -- %60
+  tra me
+  est, con --
+  tra me
+  est, con -- tra
+  me __ est %65
+  sem --
+
+  per, con -- tra %70
+  me __ est
+  sem --
+  per, con -- tra
+  me __ est
+  sem -- %75
+  per. %76 finis
 }

@@ -99,10 +99,7 @@ MiserereSopranoLyrics = \lyricmode {
   am, in -- i -- qui --
   ta -- tem me --
   am. %40 finis
-  % Am -- pli -- us la -- va me ab i -- ni -- qui -- ta -- te me -- a,
-  % et a pec -- ca -- to me -- o mun -- da me.
-  % Quo -- ni -- am in -- i -- qui -- ta -- tem me -- am e -- go co -- gno -- sco,
-  % et pec -- ca -- tum me -- um con -- tra me est sem -- per.
+
   % Ti -- bi so -- li pec -- ca -- vi, et ma -- lum co -- ram te fe -- ci;
   % ut iu -- sti -- fi -- ce -- ris in ser -- mo -- ni -- bus tu -- is, et vin -- cas cum iu -- di -- ca -- ris.
   % Ec -- ce e -- nim in in -- i -- qui -- ta -- ti -- bus con -- cep -- tus sum,
@@ -136,4 +133,137 @@ MiserereSopranoLyrics = \lyricmode {
   % Glo -- ri -- a Pa -- tri et Fi -- li -- o et Spi -- ri -- tu -- i San -- cto,
   % si -- cut e -- rat in prin -- ci -- pi -- o et nunc et sem -- per
   % et in sae -- cu -- la sae -- cu -- lo -- rum, a -- men.
+}
+
+AmpliusSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 3/4 \autoBeamOff \tempoAmplius
+    R2.*5 %5
+    r4 d'\pE d
+    d( cis) c
+    c( h) b
+    \once \stemUp b( a8[ g)] a4
+    R2.*7 %16
+    r4 a d
+    d( cis) c
+    c h cis
+    d a d %20
+    d cis r
+    R2.
+    r4 d es!8([ d)]
+    d4 r r
+    R2. %25
+    r4 c d8([ c)]
+    c4 a a
+    b2 r4
+    d2 d4
+    cis a a %30
+    r d cis
+    d8 f([ e d)] cis([ d)]
+    r b([ a g)] f([ e)]
+    d4 r r
+    R2.*3 %37
+    r4 es' es
+    es d c
+    c h r %40
+    r r g
+    as2 h4
+    c8([ h)] c4 g'
+    es r f
+    d r es %45
+    c r d
+    h h2
+    c4 c( h?)
+    c r r
+    r r c %50
+    a!( b!) c
+    b2.
+    a2 r4
+    R2.*2 %55
+    r4 c a
+    r b g
+    r a fis
+    g b( c)
+    \tieDashed d2.~ %60
+    d~
+    d~
+    d \tieSolid
+    d
+    R %65
+    r4 r es
+    d r c
+    h r es
+    d r c
+    h h h %70
+    c( d) es
+    a,2.
+    g4 g h
+    c( d) es
+    a,2. %75
+    g2 r4\fermata \bar "||" %76 finis
+  }
+}
+
+AmpliusSopranoLyrics = \lyricmode {
+  Ab in -- %6
+  i -- qui --
+  ta -- te
+  me -- a,
+
+  ab in -- %17
+  i -- qui --
+  ta -- _ _
+  _ _ te %20
+  me -- a,
+
+  mun -- da
+  me,
+  %25
+  mun -- da
+  me, mun -- da
+  me,
+  mun -- da
+  me, mun -- da, %30
+  mun -- da
+  me, mun -- da,
+  mun -- da
+  me.
+
+  E -- go, %38
+  e -- go co --
+  gno -- sco, %40
+  pec --
+  ca -- tum
+  me -- um con --
+  tra, con --
+  tra, con -- %45
+  tra, con --
+  tra me
+  est sem --
+  per,
+  pec -- %50
+  ca -- tum
+  me --
+  um
+
+  con -- tra, %56
+  con -- tra,
+  con -- tra
+  me est __
+  sem -- %60
+
+  per, %64
+  %65
+  con --
+  tra me
+  est, con --
+  tra me
+  est, con -- tra %70
+  me __ est
+  sem --
+  per, con -- tra
+  me __ est
+  sem -- %75
+  per. %76 finis
 }

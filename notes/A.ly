@@ -99,10 +99,7 @@ MiserereAltoLyrics = \lyricmode {
   in -- i -- qui -- ta --
   tem me --
   am. %40 finis
-  % Am -- pli -- us la -- va me ab i -- ni -- qui -- ta -- te me -- a,
-  % et a pec -- ca -- to me -- o mun -- da me.
-  % Quo -- ni -- am in -- i -- qui -- ta -- tem me -- am e -- go co -- gno -- sco,
-  % et pec -- ca -- tum me -- um con -- tra me est sem -- per.
+
   % Ti -- bi so -- li pec -- ca -- vi, et ma -- lum co -- ram te fe -- ci;
   % ut iu -- sti -- fi -- ce -- ris in ser -- mo -- ni -- bus tu -- is, et vin -- cas cum iu -- di -- ca -- ris.
   % Ec -- ce e -- nim in in -- i -- qui -- ta -- ti -- bus con -- cep -- tus sum,
@@ -136,4 +133,149 @@ MiserereAltoLyrics = \lyricmode {
   % Glo -- ri -- a Pa -- tri et Fi -- li -- o et Spi -- ri -- tu -- i San -- cto,
   % si -- cut e -- rat in prin -- ci -- pi -- o et nunc et sem -- per
   % et in sae -- cu -- la sae -- cu -- lo -- rum, a -- men.
+}
+
+AmpliusAlto = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 3/4 \autoBeamOff \tempoAmplius
+    R2.*4
+    r4 d\pE g %5
+    g( fis) f
+    f( e) fis
+    g( d) g
+    g( fis8[ e]) fis4
+    R2.*4 %13
+    r4 f f
+    e e a %15
+    a( gis) g
+    g( fis) f
+    f( e) a
+    a( g) g
+    a( g) f %20
+    f e r
+    R2.
+    r4 g2
+    g4 r r
+    R2. %25
+    r4 f2
+    f4 f a
+    g2 r4
+    f2 d4
+    e e f %30
+    r e e
+    f8 a([ g f)] e([ f)]
+    r g([ f e)] d([ cis)]
+    d4 r r
+    R2.*3 %37
+    r4 g g
+    as f es
+    es d r %40
+    r r d
+    es f2
+    g8([ f)] g4 r
+    g as as
+    f g g %45
+    es f f
+    d g2
+    g4 g2
+    g4 r r
+    r r g %50
+    fis2 fis4
+    g2.
+    fis2 r4
+    r g es
+    r f! d %55
+    g r a
+    f r g
+    es r d
+    b g' g
+    fis r b %60
+    a r g
+    fis r g
+    fis r g
+    fis f d
+    g( f) es %65
+    d2 r4
+    r g g
+    r g g
+    r g g
+    g g g %70
+    g2 g4
+    g( fis2)
+    g4 d g
+    g2 g4
+    g( fis2) %75
+    g2 r4\fermata \bar "||" %76 finis
+  }
+}
+
+AmpliusAltoLyrics = \lyricmode {
+  Ab in -- %5
+  i -- qui --
+  ta -- te
+  me -- a,
+  me -- a,
+
+  la -- va %14
+  me ab in -- %15
+  i -- qui --
+  ta -- te,
+  ab __ in --
+  i -- qui --
+  ta -- te %20
+  me -- a,
+
+  mun --
+  da,
+  %25
+  mun --
+  da, mun -- da
+  me,
+  mun -- da
+  me, mun -- da, %30
+  mun -- da
+  me, mun -- da,
+  mun -- da
+  me.
+
+  E -- go, %38
+  e -- go co --
+  gno -- sco, %40
+  pec --
+  ca -- tum
+  me -- um
+  con -- tra, con --
+  tra me, con -- %45
+  tra me, con --
+  tra me
+  est sem --
+  per,
+  pec -- %50
+  ca -- tum
+  me --
+  um
+  con -- tra,
+  con -- tra %55
+  me, con --
+  tra, con --
+  tra, con --
+  tra, con -- tra
+  me, con -- %60
+  tra me
+  est, con --
+  tra, con --
+  tra, con -- tra,
+  con -- tra %65
+  me,
+  con -- tra,
+  con -- tra,
+  con -- tra
+  me, con -- tra %70
+  me est
+  sem --
+  per, con -- tra
+  me est
+  sem -- %75
+  per. %76 finis
 }
