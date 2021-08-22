@@ -90,12 +90,8 @@ MiserereBassoLyrics = \lyricmode {
   am. %40 finis
 
 
-  % Ec -- ce e -- nim in in -- i -- qui -- ta -- ti -- bus con -- cep -- tus sum,
-  % et in pec -- ca -- tis con -- ce -- pit me ma -- ter me -- a.
-  % Ec -- ce e -- nim ve -- ri -- ta -- tem di -- le -- xi -- sti;
-  % in -- cer -- ta et oc -- cul -- ta sa -- pi -- en -- ti -- ae tu -- ae ma -- ni -- fe -- sta -- sti mi -- hi.
-  % A -- sper -- ges me hys -- so -- po, et mun -- da -- bor;
-  % la -- va -- bis me, et su -- per ni -- vem de -- al -- ba -- bor.
+
+
   % Au -- di -- tu -- i me -- o da -- bis gau -- di -- um et lae -- ti -- ti -- am,
   % et ex -- sul -- ta -- bunt os -- sa hu -- mi -- li -- a -- ta.
   % A -- ver -- te fa -- ci -- em tu -- am a pec -- ca -- tis me -- is,
@@ -322,4 +318,187 @@ TibiSoliBassoLyrics = \lyricmode {
   vin -- cas cum
   iu -- di -- ca --
   ris. %24 finis
+}
+
+EcceEnimBasso = {
+  \relative c {
+    \clef bass
+    \key g \minor \time 3/4 \autoBeamOff \tempoEcceEnim
+    g'4\fE fis r
+    r g d
+    b g b
+    c es f
+    b, d es %5
+    c\pE es f
+    d r r
+    es\fE c f
+    b, r r
+    b b as %10
+    g2.
+    c4 r r
+    r c b!
+    a!2.
+    d4 r f\p %15
+    g g f\fE
+    g2( f4)
+    g a2
+    d,4 d f
+    a a, r %20
+    r r d(
+    e2) fis4
+    g2 f4
+    es!2 es4
+    f f, r %25
+    r r b'
+    as g f
+    es d c
+    b'!( a) g
+    f( e) d %30
+    es( d) c
+    b a g
+    d'8([ cis?)] d4 d
+    d2 d4
+    \tieDashed d2.~ %35
+    d~ \tieSolid
+    d2 g,4
+    c d2
+    g, g'4
+    f!( d) es %40
+    d h g'
+    f d es
+    d g, c
+    b! a g
+    c d2 %45
+    g, r4\fermata \bar "|." %46 finis
+  }
+}
+
+EcceEnimBassoLyrics = \lyricmode {
+  Ec -- ce,
+  ec -- ce
+  e -- nim in
+  in -- i -- qui --
+  ta -- ti -- bus %5
+  con -- cep -- tus
+  sum,
+  con -- cep -- tus
+  sum,
+  et in pec -- %10
+  ca --
+  tis,
+  in pec --
+  ca --
+  tis con -- %15
+  ce -- pit me
+  ma --
+  ter me --
+  a. Ec -- ce
+  e -- nim %20
+  ve --
+  ri --
+  ta -- tem
+  di -- le --
+  xi -- sti; %25
+  in --
+  cer -- _ _
+  _ _ ta
+  et __ oc --
+  cul -- ta %30
+  sa -- pi --
+  en -- ti -- ae
+  tu -- ae ma --
+  ni -- fe --
+  sta -- %35
+
+  _
+  sti mi --
+  hi, ma --
+  ni -- fe -- %40
+  sta -- _ _
+  _ _ _
+  _ _ _
+  _ _ _
+  sti mi -- %45
+  hi. %46 finis
+}
+
+AspergesBasso = {
+  \relative c {
+    \clef bass
+    \key g \minor \time 2/1 \autoBeamOff \tempoAsperges
+      \set Staff.timeSignatureFraction = 2/2
+    r1 g'2\fE b~
+    b a4 g fis2 g
+    a g fis g
+    e a~ a4 d, g2~
+    g fis g g~ %5
+    g f1 e2
+    f4( e) d2 d cis
+    d4 e f g a2 e4 fis
+    g d g1 fis2
+    g c, g'2.( f4 %10
+    es2 f) b, r
+    R\breve
+    r1 a'~
+    a b(
+    a) g %15
+    a2. g4 fis2 g4 f
+    es! f g a b f b2~
+    b a1 g2~
+    g f1 e2
+    f4 g a b c2. b4 %20
+    a f g a b f b2~
+    b a b g
+    es( f d) es
+    f f d e
+    f f b,4( c) d( es) %25
+    f g a1 g2~
+    g fis g b
+    g a b b,
+    es4( f) g( a) b2 b,
+    c4( d) es( f) g2( g, %30
+    c1) d
+    d d
+    \tieDashed d~ d~ \tieSolid
+    d\breve~
+    d1 g,\breve*1/2\fermata \bar "||" %35 finis
+  }
+}
+
+AspergesBassoLyrics = \lyricmode {
+  A -- sper --
+  _ _ _ _
+  _ _ _ _
+  _ _ _ _
+  ges me hys -- %5
+  so -- po,
+  et __ mun -- da -- _
+  _ _ _ _ _ _ _
+  _ _ _ _
+  bor, mun -- da -- %10
+  bor,
+
+  la --
+  va --
+  bis %15
+  me, la -- va -- _ _
+  _ _ _ _ _ _ _
+  _ _
+  _ _
+  _ _ _ _ _ _ %20
+  _ _ _ _ _ _ _
+  bis me, la --
+  va -- bis
+  me, et su -- per
+  ni -- vem de -- al -- %25
+  ba -- _ _ _
+  _ bor, et
+  su -- per ni -- vem
+  de -- al -- ba -- bor,
+  de -- al -- ba -- %30
+  bor,
+  de -- al --
+  ba --
+
+  bor. %35 finis
 }

@@ -161,50 +161,142 @@
   %     \midi { \tempo 4 = 100 }
   %   }
   % }
+  % \bookpart {
+  %   \header {
+  %     number = "3"
+  %     title = "T I B I   S O L I   P E C C A V I"
+  %   }
+  %   \tocSection "3" "Tibi soli peccavi"
+  %   \score {
+  %     <<
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \TibiSoliSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \TibiSoliSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \TibiSoliAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \TibiSoliAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \TibiSoliTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \TibiSoliTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \TibiSoliBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \TibiSoliBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \TibiSoliOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \TibiSoliBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 60 }
+  %   }
+  % }
+  % \bookpart {
+  %   \header {
+  %     number = "4"
+  %     title = "E C C E   E N I M"
+  %   }
+  %   \tocSection "4" "Ecce enim"
+  %   \score {
+  %     <<
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \EcceEnimSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \EcceEnimSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \EcceEnimAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \EcceEnimAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \EcceEnimTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \EcceEnimTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \EcceEnimBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \EcceEnimBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \EcceEnimOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \EcceEnimBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 120 }
+  %   }
+  % }
   \bookpart {
     \header {
-      number = "3"
-      title = "T I B I   S O L I   P E C C A V I"
+      number = "5"
+      title = "A S P E R G E S   M E"
     }
-    \tocSection "3" "Tibi soli peccavi"
+    \tocSection "5" "Asperges me"
     \score {
       <<
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \TibiSoliSoprano }
+            \new Voice = "Soprano" { \dynamicUp \AspergesSoprano }
           }
-          \new Lyrics \lyricsto Soprano \TibiSoliSopranoLyrics
+          \new Lyrics \lyricsto Soprano \AspergesSopranoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \TibiSoliAlto }
+            \new Voice = "Alto" { \dynamicUp \AspergesAlto }
           }
-          \new Lyrics \lyricsto Alto \TibiSoliAltoLyrics
+          \new Lyrics \lyricsto Alto \AspergesAltoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \TibiSoliTenore }
+            \new Voice = "Tenore" { \dynamicUp \AspergesTenore }
           }
-          \new Lyrics \lyricsto Tenore \TibiSoliTenoreLyrics
+          \new Lyrics \lyricsto Tenore \AspergesTenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \TibiSoliBasso }
+            \new Voice = "Basso" { \dynamicUp \AspergesBasso }
           }
-          \new Lyrics \lyricsto Basso \TibiSoliBassoLyrics
+          \new Lyrics \lyricsto Basso \AspergesBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \TibiSoliOrgano
+            \AspergesOrgano
           }
         >>
-        \new FiguredBass { \TibiSoliBassFigures }
+        \new FiguredBass { \AspergesBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 60 }
+      \midi { \tempo 2 = 120 }
     }
   }
 }

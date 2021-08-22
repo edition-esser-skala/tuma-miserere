@@ -688,6 +688,8 @@ tempoAmplius = \tempoMarkup "Andante"
 tempoTibiSoli = \tempoMarkup "Grave"
   tempoUtIustificeris = \tempoMarkup "Vivace"
   tempoCumIudicaris = \tempoMarkup "Adagio"
+tempoEcceEnim = \tempoMarkup "Andante"
+tempoAsperges = \tempoMarkup "[Tempo deest]"
 
 
 \include "notes/S.ly"

@@ -101,12 +101,8 @@ MiserereSopranoLyrics = \lyricmode {
   am. %40 finis
 
 
-  % Ec -- ce e -- nim in in -- i -- qui -- ta -- ti -- bus con -- cep -- tus sum,
-  % et in pec -- ca -- tis con -- ce -- pit me ma -- ter me -- a.
-  % Ec -- ce e -- nim ve -- ri -- ta -- tem di -- le -- xi -- sti;
-  % in -- cer -- ta et oc -- cul -- ta sa -- pi -- en -- ti -- ae tu -- ae ma -- ni -- fe -- sta -- sti mi -- hi.
-  % A -- sper -- ges me hys -- so -- po, et mun -- da -- bor;
-  % la -- va -- bis me, et su -- per ni -- vem de -- al -- ba -- bor.
+
+
   % Au -- di -- tu -- i me -- o da -- bis gau -- di -- um et lae -- ti -- ti -- am,
   % et ex -- sul -- ta -- bunt os -- sa hu -- mi -- li -- a -- ta.
   % A -- ver -- te fa -- ci -- em tu -- am a pec -- ca -- tis me -- is,
@@ -321,4 +317,172 @@ TibiSoliSopranoLyrics = \lyricmode {
   vin -- cas cum
   iu -- di -- ca --
   ris. %24 finis
+}
+
+EcceEnimSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 3/4 \autoBeamOff \tempoEcceEnim
+    d'4\fE d r
+    r b a
+    g8([ fis)] g4 d'
+    es c a
+    d b g %5
+    c\p c8([ b)] b([ a)]
+    b4 r r
+    c\f c8([ b)] b([ a)]
+    b4 r r
+    d d c %10
+    h4. d8[ g, h]
+    c4 c, r
+    r es' d
+    cis4. e8[ a, cis]
+    d4 d, d'\p %15
+    e?( cis) d\f
+    es!( cis) d
+    b8([ g)] e2
+    d4 r r
+    r a' cis %20
+    d d, d'~
+    d c! b
+    b( c) d~
+    d c b
+    b a r %25
+    r r b
+    h2.
+    c4 c c
+    cis2.
+    d %30
+    c!4( d) es
+    d c b
+    b a r
+    r r d
+    c( a) b %35
+    a fis d'
+    c a b
+    a a2
+    g h4
+    d2 c4 %40
+    h2 c4
+    d2 c4
+    h2 c4
+    d c b
+    a a2 %45
+    g r4\fermata \bar "||" %46 finis
+  }
+}
+
+EcceEnimSopranoLyrics = \lyricmode {
+  Ec -- ce,
+  ec -- ce
+  e -- nim in
+  in -- i -- qui --
+  ta -- ti -- bus %5
+  con -- cep -- tus
+  sum,
+  con -- cep -- tus
+  sum,
+  et in pec -- %10
+  ca -- _
+  _ tis,
+  in pec --
+  ca -- _
+  _ tis con -- %15
+  ce -- pit
+  me __ ma --
+  ter me --
+  a.
+  Ec -- ce %20
+  e -- nim ve --
+  _ ri --
+  ta -- tem __
+  di -- le --
+  xi -- sti; %25
+  in --
+  cer --
+  ta et oc --
+  cul --
+  ta %30
+  sa -- pi --
+  en -- ti -- ae
+  tu -- ae
+  ma --
+  ni -- fe -- %35
+  sta -- _ _
+  _ _ _
+  sti mi --
+  hi, ma --
+  ni -- fe -- %40
+  sta -- _
+  _ _
+  _ _
+  _ _ _
+  sti mi -- %45
+  hi. %46 finis
+}
+
+AspergesSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 2/1 \autoBeamOff \tempoAsperges
+      \set Staff.timeSignatureFraction = 2/2
+    R\breve*8 %8
+    d'\breve\fE
+    es1( d) %10
+    c d2 d
+    c4( b) c2 b4( c) d( e)
+    f2 e4 d cis2 d~
+    d cis d1~
+    d2 c1 b2 %15
+    c1~ c2 b4 a
+    g a b c d es f2
+    es f4 es d c b2
+    c d4 c b2 c
+    c\breve %20
+    r1 d(
+    es) d(
+    c) d
+    c r
+    c d %25
+    c( b)
+    c b
+    r d
+    es d
+    c b2 b~ %30
+    b a4( g) fis2 a~
+    a g1 fis2
+    b1 a~
+    a2 g1 fis4 e
+    fis1 g\breve*1/2\fermata \bar "||" %35 finis
+  }
+}
+
+AspergesSopranoLyrics = \lyricmode {
+  A -- %9
+  sper -- %10
+  ges me hys --
+  so -- po, et __ mun --
+  da -- _ _ _ _
+  _ bor, __
+  et mun -- %15
+  da -- _ _
+  _ _ _ _ _ _ _
+  _ _ _ _ _ _
+  _ _ _ _ _
+  bor, %20
+  la --
+  va --
+  bis
+  me,
+  et su -- %25
+  per __
+  ni -- vem,
+  et
+  su -- per
+  ni -- vem de -- %30
+  al -- ba -- _
+  _ _
+  _ _
+  _ _ _
+  _ bor. %35 finis
 }

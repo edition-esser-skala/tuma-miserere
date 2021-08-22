@@ -102,12 +102,8 @@ MiserereTenoreLyrics = \lyricmode {
   am. %40 finis
 
 
-  % Ec -- ce e -- nim in in -- i -- qui -- ta -- ti -- bus con -- cep -- tus sum,
-  % et in pec -- ca -- tis con -- ce -- pit me ma -- ter me -- a.
-  % Ec -- ce e -- nim ve -- ri -- ta -- tem di -- le -- xi -- sti;
-  % in -- cer -- ta et oc -- cul -- ta sa -- pi -- en -- ti -- ae tu -- ae ma -- ni -- fe -- sta -- sti mi -- hi.
-  % A -- sper -- ges me hys -- so -- po, et mun -- da -- bor;
-  % la -- va -- bis me, et su -- per ni -- vem de -- al -- ba -- bor.
+
+
   % Au -- di -- tu -- i me -- o da -- bis gau -- di -- um et lae -- ti -- ti -- am,
   % et ex -- sul -- ta -- bunt os -- sa hu -- mi -- li -- a -- ta.
   % A -- ver -- te fa -- ci -- em tu -- am a pec -- ca -- tis me -- is,
@@ -335,4 +331,181 @@ TibiSoliTenoreLyrics = \lyricmode {
   vin -- cas cum
   iu -- di -- ca --
   ris. %24 finis
+}
+
+EcceEnimTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \minor \time 3/4 \autoBeamOff \tempoEcceEnim
+    b4\fE a r
+    r d d
+    d d d
+    c c c
+    b b b %5
+    es\p es8([ d)] d([ c)]
+    b4 r r
+    es\f es8([ d)] d([ c)]
+    d4 r r
+    b b c %10
+    d2.
+    es4 r r
+    r c d
+    e2.
+    d4 r a\pE %15
+    b b a\fE
+    b2( a4)
+    b a2
+    a4 d d
+    d cis r %20
+    r r a(
+    g) c2
+    b a4
+    b es( d)
+    d c r %25
+    r r d
+    d2.
+    es4 es es
+    e2.
+    f %30
+    a,2 a4
+    b c d
+    d d, d'
+    c( a) b
+    a fis d' %35
+    c a b
+    a fis g~
+    g g( fis)
+    g2 g4
+    h2 c4 %40
+    d2 c4
+    h2 c4
+    d2 c4
+    g2 d'4
+    es d2 %45
+    d r4\fermata \bar "|." %46 finis
+  }
+}
+
+EcceEnimTenoreLyrics = \lyricmode {
+  Ec -- ce,
+  ec -- ce
+  e -- nim in
+  in -- i -- qui --
+  ta -- ti -- bus %5
+  con -- cep -- tus
+  sum,
+  con -- cep -- tus
+  sum,
+  et in pec -- %10
+  ca --
+  tis,
+  in pec --
+  ca --
+  tis con -- %15
+  ce -- pit me
+  ma --
+  ter me --
+  a. Ec -- ce
+  e -- nim %20
+  ve --
+  ri --
+  ta -- tem
+  di -- le --
+  xi -- sti; %25
+  in --
+  cer --
+  ta et oc --
+  cul --
+  ta %30
+  sa -- pi --
+  en -- ti -- ae
+  tu -- ae ma --
+  ni -- fe --
+  sta -- _ _ %35
+  _ _ _
+  _ _ sti __
+  mi --
+  hi, ma --
+  ni -- fe -- %40
+  sta -- _
+  _ _
+  _ _
+  _ _
+  sti mi -- %45
+  hi. %46 finis
+}
+
+AspergesTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \minor \time 2/1 \autoBeamOff \tempoAsperges
+      \set Staff.timeSignatureFraction = 2/2
+    d\breve\fE
+    es1( d)
+    c d~
+    d2 c b4( a) b2
+    c4( a) d( c) b c d es %5
+    c a d c b g c b
+    a2 f' e1~
+    e4 a, d1 c!2~
+    c b a4 b c d
+    b2 c1 b2~ %10
+    b a b r
+    R\breve*4 %15
+    r1 d(
+    es) d
+    c d2 es~
+    es d1 c2~
+    c f1 e2 %20
+    f es( d1)
+    c1~ c2 b~
+    b a b b
+    a c d( c4 b)
+    a2 c1 b2~ %25
+    b a d es~
+    es d d d
+    b c d1~
+    d2 c1 b2~
+    b a1 g2~ %30
+    g c4 b a1
+    b a~
+    a2 g1 fis2
+    b1 a~
+    a g\breve*1/2\fermata \bar "||" %35 finis
+  }
+}
+
+AspergesTenoreLyrics = \lyricmode {
+  A --
+  sper --
+  ges me __
+  hys -- so -- po,
+  et __ mun -- da -- _ _ _ %5
+  _ _ _ _ _ _ _ _
+  bor, mun -- da --
+  _ _ _
+  _ _ _ _ _
+  _ _ _ %10
+  _ bor,
+
+  la -- %16
+  va --
+  bis me, la --
+  va -- _
+  _ bis %20
+  me, la --
+  va -- _
+  bis me, et
+  su -- per ni --
+  vem de -- al -- %25
+  _ ba -- _
+  _ bor, et
+  su -- per ni --
+  vem de --
+  al -- ba -- %30
+  _ _ bor,
+  de -- al --
+  ba -- _
+  _ _
+  bor. %35 finis
 }

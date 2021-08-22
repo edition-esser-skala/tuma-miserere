@@ -101,12 +101,8 @@ MiserereAltoLyrics = \lyricmode {
   am. %40 finis
 
 
-  % Ec -- ce e -- nim in in -- i -- qui -- ta -- ti -- bus con -- cep -- tus sum,
-  % et in pec -- ca -- tis con -- ce -- pit me ma -- ter me -- a.
-  % Ec -- ce e -- nim ve -- ri -- ta -- tem di -- le -- xi -- sti;
-  % in -- cer -- ta et oc -- cul -- ta sa -- pi -- en -- ti -- ae tu -- ae ma -- ni -- fe -- sta -- sti mi -- hi.
-  % A -- sper -- ges me hys -- so -- po, et mun -- da -- bor;
-  % la -- va -- bis me, et su -- per ni -- vem de -- al -- ba -- bor.
+
+  %
   % Au -- di -- tu -- i me -- o da -- bis gau -- di -- um et lae -- ti -- ti -- am,
   % et ex -- sul -- ta -- bunt os -- sa hu -- mi -- li -- a -- ta.
   % A -- ver -- te fa -- ci -- em tu -- am a pec -- ca -- tis me -- is,
@@ -334,4 +330,178 @@ TibiSoliAltoLyrics = \lyricmode {
   vin -- cas cum
   iu -- di -- ca --
   ris. %24 finis
+}
+
+EcceEnimAlto = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 3/4 \autoBeamOff \tempoEcceEnim
+    g'4\fE a r
+    r g fis
+    g g g
+    g g f
+    f f es %5
+    g\p g f
+    f r r
+    R2.
+    f4\fE f f
+    f2.~ %10
+    f
+    es4 g g
+    \once \tieDashed g2.~
+    g
+    f4 r a\p %15
+    g e a\fE
+    g( e) f
+    d2( cis4)
+    d f f
+    f e r %20
+    r r fis(
+    g2) fis8([ e)]
+    d4( es) f
+    g2 g4
+    f f c %25
+    f2.~
+    f4 g as
+    g g g
+    g( a \once \stemUp b!)
+    a2. %30
+    fis2 fis4
+    g g g
+    g fis fis
+    fis2 g4
+    a2 g4 %35
+    fis2 g4
+    a2 g4
+    es! d2
+    d2.
+    r4 r g %40
+    f( d) es
+    d h g'
+    f d es
+    d e8[ fis] g4
+    g g( fis) %45
+    g2 r4\fermata \bar "|." %46 finis
+  }
+}
+
+EcceEnimAltoLyrics = \lyricmode {
+  Ec -- ce,
+  ec -- ce
+  e -- nim in
+  in -- i -- qui --
+  ta -- ti -- bus %5
+  con -- cep -- tus
+  sum,
+
+  et in pec --
+  ca -- %10
+
+  tis, in pec --
+  ca --
+
+  tis con -- %15
+  ce -- pit me
+  ma -- ter
+  me --
+  a. Ec -- ce
+  e -- nim %20
+  ve --
+  ri --
+  ta -- tem
+  di -- le --
+  xi -- sti; in -- %25
+  cer --
+  _ _
+  ta et oc --
+  cul --
+  ta %30
+  sa -- pi --
+  en -- ti -- ae
+  tu -- ae ma --
+  ni -- fe --
+  sta -- _ %35
+  _ _
+  _ _
+  sti mi --
+  hi,
+  ma -- %40
+  ni -- fe --
+  sta -- _ _
+  _ _ _
+  _ _ _
+  sti mi -- %45
+  hi. %46 finis
+}
+
+AspergesAlto = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 2/1 \autoBeamOff \tempoAsperges
+      \set Staff.timeSignatureFraction = 2/2
+    R\breve*4
+    a'1\fE b( %5
+    a) g
+    a g
+    f( e)
+    d a'
+    g g~ %10
+    g2 f f b~
+    b a1( g2)
+    f g1 f2
+    e a4 g f d f g
+    a2 e4 fis g d g2~ %15
+    g fis4 g a2 g
+    g1 f
+    R\breve
+    a1 b(
+    a) g %20
+    a f
+    g2 f f g~
+    g f1 g2
+    a a f g
+    a f f1~ %25
+    f2 f f( g
+    a1) g2 g
+    g f! f1
+    g f(
+    es) d %30
+    es d~
+    \once \tieDashed d~ d~
+    \tieDashed d~ d~
+    d~ d~ \tieSolid
+    d d\breve*1/2\fermata \bar "||" %35 finis
+  }
+}
+
+AspergesAltoLyrics = \lyricmode {
+  A -- sper -- %5
+  ges
+  me hys --
+  so --
+  po, et
+  mun -- da -- %10
+  _ bor, mun --
+  da --
+  bor, et mun --
+  da -- _ _ _ _ _ _
+  _ _ _ _ _ _ %15
+  _ _ bor, mun --
+  da -- bor,
+
+  la -- va --
+  bis %20
+  me, la --
+  va -- bis me, la --
+  va -- bis
+  me, et su -- per
+  ni -- vem de -- %25
+  al -- ba --
+  bor, et
+  su -- per ni --
+  vem de --
+  al -- %30
+  ba -- _
+
+  bor. %35 finis
 }

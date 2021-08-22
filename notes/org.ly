@@ -309,3 +309,198 @@ TibiSoliBassFigures = \figuremode {
   <7 _!> <6 4> <5 \t> <\t _!>
   r1 %24 finis
 }
+
+EcceEnimOrgano = {
+  \relative c {
+    \clef bass
+    \key g \minor \time 3/4 \tempoEcceEnim
+    g'4\fE fis r
+    r g d
+    b g b
+    c es f
+    b, d es %5
+    R2.*2
+    es4 c f
+    b, r r
+    b b as %10
+    g2.
+    c4 r r
+    r c b!
+    a!2.
+    d4 r r %15
+    r r f
+    g2 f4
+    g a a,
+    d2 f4
+    a a, g' %20
+    f2 d4
+    e2 fis4
+    g2 f4
+    es!2.
+    f2 r4 %25
+    r r b
+    as g f
+    es d c
+    b'! a g
+    f e d %30
+    es d c
+    b a g
+    \tieDashed d'2.~-\tasto
+    d~
+    d~ %35
+    d~
+    d2 g,4 \tieSolid
+    c d2
+    \tieDashed g,2.~
+    g~ %40
+    g~
+    g~
+    g2 \tieSolid c4
+    b! a g
+    c d2 %45
+    g, r4\fermata \bar "||" %46 finis
+  }
+}
+
+EcceEnimBassFigures = \figuremode {
+  r4 <6>2
+  r <_+>4
+  <6>2 q4
+  r q2
+  r4 q2 %5
+  r2.*2
+  <6>2.
+  r
+  r2 <[6]>4 %10
+  <7 _!>2.
+  r
+  r2 <[6]>4
+  <[7 5!] _+>2.
+  r %15
+  r2 <6>4
+  <6- 3> <6! 4+> <6>
+  r \bo <[5!] 4> \bc <[\t] _+>
+  r2 <[6]>4
+  <6 4> \bo <[5 _+]> \bc <[\t \t]> %20
+  <6>2 <[_+]>4
+  <7> <6> \bo <[6 4]>
+  <\t \t> \bc <[6- 4]> <6>
+  <7> \bo <[8] 6> \bc <[7] 5>
+  <6 4> <5 3>2 %25
+  r2.
+  <6 4 2!>4 \bo <[5 _!]> \bc <[4! _-]>
+  <6>2 \bassFigureExtendersOn q4 \bassFigureExtendersOff
+  <4! 2+> \bo <[5! _+]> \bc <[4+ _-]>
+  <6>2 \bassFigureExtendersOn q4 \bassFigureExtendersOff %30
+  <4! 2+>4 \bo <[5 _+]> \bc <[4+ _-]>
+  <6> <[7]>2
+  r2.
+  r
+  r %35
+  r
+  r
+  <6 5>4 <4> <_+>
+  r2.
+  r %40
+  r
+  r
+  r
+  <6>4 <[5!]>8 <6\\>4.
+  <6 5>4 <4> <_+> %45
+  r2. %46 finis
+}
+
+AspergesOrgano = {
+  \relative c {
+    \clef bass
+    \key g \minor \time 2/1 \tempoAsperges
+      \set Staff.timeSignatureFraction = 2/2
+    << {
+      d'\breve\fE
+      es1 d
+      c d~
+      d2 c b1
+      s2
+    } \\ {
+      r1 g2 \once \tieDashed b~
+      b a4 g fis2 g
+      a g fis g
+      e a~ a4 d, \once \tieDashed g2~
+      g
+    } >> fis g g~ %5
+    g f1 e2
+    f4 e d1 cis2
+    d4 e f g a2 e4 fis
+    g d g1 fis2
+    g c, g'2. f4 %10
+    es2 f b, \clef treble << {
+      d''
+      c1 b4 c d e
+      f2 e4 d
+    } \\ {
+      b2~
+      b a1 g2
+      f g
+    } >> \clef bass a,1~
+    a b
+    a g %15
+    a2. g4 fis2 g4 f
+    es! f g a b f b2~
+    b a1 g2~
+    g f1 e2
+    f4 g a b c2. b4 %20
+    a f g a b f b2~
+    b a b g
+    es f d es
+    f f d e
+    f1 b,4 c d es %25
+    f g \once \tieDashed a2~ a g~
+    g fis g b
+    g a b b,
+    es4 f g a b2 b,
+    c4 d es f g2 g, %30
+    c1 d
+    \tieDashed d\breve~-\tasto
+    d~ \tieSolid
+    d~
+    d1 g,\breve*1/2\fermata \bar "||" %35 finis
+  }
+}
+
+AspergesBassFigures = \figuremode {
+  r\breve
+  r
+  r
+  r
+  <4 2>2 <6>4 <5> r2 <5>4 <6> %5
+  <2>2 <6>4 <5> <2>2 <6>4 <5>
+  r1 <4 2!>2 <[6 _!]>
+  <9> <6> <5! 4> <6!>
+  <5 4>4 <\t \t> <\t 3>2 <5 2> <6>
+  <6->1 <4>2 <3> %10
+  <6 5>\breve
+  r
+  r1 <7 [5!] _+>2 <6 4>
+  <5! 4> <\t _+> r1
+  <5! 4>2 <\t _!> <4> <3> %15
+  <7> <6\\> <6 5>1
+  r2 <[6]>1.
+  <4 2>2 <6> <4 2> <6>
+  <4 2> <6> <4 2> <6 [5]>
+  r <6> <5 4> <\t _!> %20
+  <6> <6-> r1
+  <4 2>2 <6> <9> <[5]>
+  <6 5>1 <8 6>2 <7 5>
+  r1. <6>4 <[5]>
+  r1 <9>2 <6> %25
+  <4>4 <\t> <6>2 <4 2> <6>
+  <4 2> <6 5>1 <6>2
+  r <6!>1.
+  <7>2 <[6 4]> <9>2 <8>
+  <7> <[6 4]> <9> <8> %30
+  <7> <6>4 <5> <_+>1
+  r\breve
+  r
+  r
+  <_+> %35 finis
+}
