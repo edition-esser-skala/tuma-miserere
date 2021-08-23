@@ -100,9 +100,7 @@ MiserereSopranoLyrics = \lyricmode {
   ta -- tem me --
   am. %40 finis
 
-  % A -- ver -- te fa -- ci -- em tu -- am a pec -- ca -- tis me -- is,
-  % et o -- mnes in -- i -- qui -- ta -- tes me -- as de -- le.
-  % Cor mun -- dum cre -- a in me, De -- us, et spi -- ri -- tum re -- ctum in -- no -- va in vi -- sce -- ri -- bus me -- is.
+
   % Ne pro -- i -- ci -- as me a fa -- ci -- e tu -- a, et spi -- ri -- tum san -- ctum tu -- um ne au -- fe -- ras a me.
   % Red -- de mi -- hi lae -- ti -- ti -- am sa -- lu -- ta -- ris tu -- i,
   % et spi -- ri -- tu prin -- ci -- pa -- li con -- fir -- ma me.
@@ -596,4 +594,72 @@ AudituiSopranoLyrics = \lyricmode {
   a -- _
   _
   ta. %53 finis
+}
+
+AverteSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 4/4 \autoBeamOff \tempoAverte
+    r4 r8 g''\fE es c r h
+    c es es d16 c c8 h r4
+    r b8 b b2~
+    b4 as8 c c2~
+    c4 b c8([ b16 a] d8[ c)] %5
+    b4 d d2
+    d8 es d([ c] h[ as g f])
+    es r r4 r8 c' c b
+    as4 as r8 f' d d
+    es4 es es8 d es4~ %10
+    es d2 c4
+    c h c8 c r4
+    r c8([\p h)] c4 c\f
+    es b r c
+    f c r2 %15
+    d8([ es)] d([ c)] b2~
+    b4 c8[( d]) es4 d8([ c)]
+    b2 a4 a
+    b a8 g a d, d'4~
+    d8 c c4 c b8 b %20
+    a4~ a8[ d16 c] b8[ g] \once \tieDashed c4~
+    c b r2
+    r d8. c16 b4
+    b8. a16 g4 c8. b16 a4
+    a8. g16 f4 b8. as16 g4 %25
+    es'8. d16 c4 d8. c16 b4~
+    b a8 a a4 b8 b
+    a1
+    g2 r\fermata \bar "||" %29 finis
+  }
+}
+
+AverteSopranoLyrics = \lyricmode {
+  A -- ver -- te, a --
+  ver -- te fa -- ci -- em tu -- am
+  a pec -- ca --
+  tis, pec -- ca --
+  tis me -- %5
+  is, et o --
+  mnes, et o --
+  mnes in -- i -- qui --
+  ta -- tes, in -- i -- qui --
+  ta -- tes me -- as, in -- %10
+  i -- qui --
+  ta -- tes me -- as
+  de -- le. Cor
+  mun -- dum, cor
+  mun -- dum %15
+  cre -- a, cre --
+  a in me,
+  De -- us, et
+  spi -- ri -- tum re -- ctum, spi --
+  ri -- tum, spi -- ri -- tum %20
+  re -- _ _
+  ctum
+  in -- no -- va,
+  in -- no -- va, in -- no -- va,
+  in -- no -- va, in -- no -- va, %25
+  in -- no -- va, in -- no -- va __
+  in vi -- sce -- ri -- bus
+  me --
+  is. %29 finis
 }

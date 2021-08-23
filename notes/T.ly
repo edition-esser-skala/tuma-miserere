@@ -101,9 +101,6 @@ MiserereTenoreLyrics = \lyricmode {
   tem me --
   am. %40 finis
 
-  % A -- ver -- te fa -- ci -- em tu -- am a pec -- ca -- tis me -- is,
-  % et o -- mnes in -- i -- qui -- ta -- tes me -- as de -- le.
-  % Cor mun -- dum cre -- a in me, De -- us, et spi -- ri -- tum re -- ctum in -- no -- va in vi -- sce -- ri -- bus me -- is.
   % Ne pro -- i -- ci -- as me a fa -- ci -- e tu -- a, et spi -- ri -- tum san -- ctum tu -- um ne au -- fe -- ras a me.
   % Red -- de mi -- hi lae -- ti -- ti -- am sa -- lu -- ta -- ris tu -- i,
   % et spi -- ri -- tu prin -- ci -- pa -- li con -- fir -- ma me.
@@ -619,4 +616,70 @@ AudituiTenoreLyrics = \lyricmode {
   hu -- mi -- li --
   a --
   ta. %53 finis
+}
+
+AverteTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \minor \time 4/4 \autoBeamOff \tempoAverte
+    r8 es\fE d h r es d16([ c)] h d
+    es8 es c c16 c d8 d r4
+    r2 r4 e8 e
+    e4 c r fis8 fis
+    fis4 d es( d) %5
+    d4. g,8 a4( b8[ c]
+    d) c r c d2
+    es8 es g h, c4 c
+    r8 d f d h4 h
+    c2~ c8 h r4 %10
+    f'2 es4. es8
+    d4. d8 es es r4
+    r d\pE c r
+    r b!\fE c c
+    r c d d %15
+    r2 es4. es8
+    es4 b c d
+    d( e) a, r
+    R1*2 %20
+    r4 d es d8 c
+    d g, d'4 d c8 b
+    c d r4 r d8. d16
+    es4 es8. es16 c4 c8. c16
+    d4 d8. c16 b4 c8. h16 %25
+    c4 c8. b16 a4 d8 es
+    es4 e8 e d4 b8[ c]
+    d1
+    d2 r\fermata \bar "||" %29 finis
+  }
+}
+
+AverteTenoreLyrics = \lyricmode {
+  A -- ver -- te, a -- ver -- te, a --
+  ver -- te fa -- ci -- em tu -- am
+  a pec --
+  ca -- tis, a pec --
+  ca -- tis me -- %5
+  is, et o --
+  mnes, et o --
+  mnes in -- i -- qui -- ta -- tes,
+  in -- i -- qui -- ta -- tes
+  me -- as, %10
+  in -- i -- qui --
+  ta -- tes me -- as
+  de -- le.
+  Cor mun -- dum,
+  cor mun -- dum %15
+  cre -- a,
+  cre -- a in me,
+  De -- us,
+
+  et spi -- ri -- tum %21
+  re -- ctum, et spi -- ri -- tum
+  re -- ctum in -- no --
+  va, in -- no -- va, in -- no --
+  va, in -- no -- va, in -- no -- %25
+  va, in -- no -- va in vi --
+  sce -- ri -- bus me -- _
+  _
+  is. %29 finis
 }

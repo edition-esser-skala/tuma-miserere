@@ -615,3 +615,77 @@ AudituiBassFigures = \figuremode {
   <5 4>4 <\t 3>2
   r2.*4 %53 finis
 }
+
+AverteOrgano = {
+  \relative c {
+    \clef bass
+    \key g \minor \time 4/4 \tempoAverte
+    r8 c'\fE h g r c h16 as g f
+    es d c8 as'4 g8 g, r4
+    r2 r4 des'
+    c f r es!
+    d g2 fis4 %5
+    g8 g fis? es! d c b a
+    g c' h? as g f es d
+    c r r4 r8 as' c e,
+    f4 f, r8 d' g f
+    es4 d8 c g' g, r c' %10
+    as( f) r b g( es) r as
+    f d r g es c r4
+    R1
+    r4 es as f
+    r f b b, %15
+    r2 g'8 as g f
+    es f es d c4 b!8 a!
+    g4 cis d \clef treble a''
+    << {
+      b a8 g a d, d'4~
+      d8 c c2 b4 %20
+      a
+    } \\ {
+      r2 r4 d,
+      es d8 c d g, g'4~ %20
+      g8[ fis]
+    } >> \clef "treble_8" d4 es d8 c
+    d g, \clef bass g4 b a8 g
+    a d, d'8. c16 b4 g8. f16
+    es4 c'8. b16 a4 f8. es16
+    d4 b'8. as16 g4 es8. d16 %25
+    c4 a'8. g16 fis4 g8 es
+    c4 cis \once \tieDashed d2~
+    d1
+    g,2 r\fermata \bar "||" %29 finis
+  }
+}
+
+AverteBassFigures = \figuremode {
+  r4 \bo <[6]>8 <_!>4. \bc <[6]>8 <_!>
+  <6>4 <7>8 <6> <6 4> <[5] _!>4.
+  r2. <4 2!>4
+  <7 _!> <_->2 <4! 2+>4
+  <7 _+>2 <4 2>4 <[6]> %5
+  r <6 3>8 <\t 3> <_+> <\t> <6> <6\\ 4 3>
+  r4 <6 3>8 <\t 3> <3!> <3-> <3> q
+  r2.. <[6 5-]>8
+  <9 _->4 <8 \t> r8 <6! 5-> <_!>4
+  <[6]>2 <6 4>8 <5 _!>4. %10
+  <6 5>2 q
+  <6 5 [_-]>4. <_!>8 <6>2
+  r1
+  r2. <_!>4
+  r1 %15
+  r2 <6>8 <3> q <3->
+  <3> <3-> <6> q r4 <6 3>8 <\t 3>
+  r4 <7 [_!]> <_+>2
+  r1
+  r %20
+  r4 <_+> <[5]> <7 5>
+  <7 _+>2 <6>
+  <7>4 <_+> <6>2
+  r1
+  r4.. <[6]>2 <6!>16 %25
+  r4 <6\\> <6>8. <5>16 r4
+  <7> <6 5 [_!]> <5 _+> <6 4>
+  <5 4>2 <\t _+>
+  r1 %29 finis
+}

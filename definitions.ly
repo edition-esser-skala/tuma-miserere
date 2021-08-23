@@ -695,6 +695,7 @@ tempoTibiSoli = \tempoMarkup "Grave"
 tempoEcceEnim = \tempoMarkup "Andante"
 tempoAsperges = \tempoMarkup "[Tempo deest]"
 tempoAuditui = \tempoMarkup "Larghetto"
+tempoAverte = \tempoMarkup "Vivace"
 
 
 \include "notes/S.ly"
