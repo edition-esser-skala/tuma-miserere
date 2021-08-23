@@ -253,50 +253,96 @@
   %     \midi { \tempo 4 = 120 }
   %   }
   % }
+  % \bookpart {
+  %   \header {
+  %     number = "5"
+  %     title = "A S P E R G E S   M E"
+  %   }
+  %   \tocSection "5" "Asperges me"
+  %   \score {
+  %     <<
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \AspergesSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \AspergesSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \AspergesAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \AspergesAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \AspergesTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \AspergesTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \AspergesBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \AspergesBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \AspergesOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \AspergesBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 2 = 120 }
+  %   }
+  % }
   \bookpart {
     \header {
-      number = "5"
-      title = "A S P E R G E S   M E"
+      number = "6"
+      title = "A U D I T U I   M E O"
     }
-    \tocSection "5" "Asperges me"
+    \tocSection "6" "Auditui meo"
     \score {
       <<
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \AspergesSoprano }
+            \new Voice = "Soprano" { \dynamicUp \AudituiSoprano }
           }
-          \new Lyrics \lyricsto Soprano \AspergesSopranoLyrics
+          \new Lyrics \lyricsto Soprano \AudituiSopranoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \AspergesAlto }
+            \new Voice = "Alto" { \dynamicUp \AudituiAlto }
           }
-          \new Lyrics \lyricsto Alto \AspergesAltoLyrics
+          \new Lyrics \lyricsto Alto \AudituiAltoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \AspergesTenore }
+            \new Voice = "Tenore" { \dynamicUp \AudituiTenore }
           }
-          \new Lyrics \lyricsto Tenore \AspergesTenoreLyrics
+          \new Lyrics \lyricsto Tenore \AudituiTenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \AspergesBasso }
+            \new Voice = "Basso" { \dynamicUp \AudituiBasso }
           }
-          \new Lyrics \lyricsto Basso \AspergesBassoLyrics
+          \new Lyrics \lyricsto Basso \AudituiBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \AspergesOrgano
+            \AudituiOrgano
           }
         >>
-        \new FiguredBass { \AspergesBassFigures }
+        \new FiguredBass { \AudituiBassFigures }
       >>
       \layout { }
-      \midi { \tempo 2 = 120 }
+      \midi { \tempo 4 = 80 }
     }
   }
 }

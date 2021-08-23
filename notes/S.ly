@@ -100,11 +100,6 @@ MiserereSopranoLyrics = \lyricmode {
   ta -- tem me --
   am. %40 finis
 
-
-
-
-  % Au -- di -- tu -- i me -- o da -- bis gau -- di -- um et lae -- ti -- ti -- am,
-  % et ex -- sul -- ta -- bunt os -- sa hu -- mi -- li -- a -- ta.
   % A -- ver -- te fa -- ci -- em tu -- am a pec -- ca -- tis me -- is,
   % et o -- mnes in -- i -- qui -- ta -- tes me -- as de -- le.
   % Cor mun -- dum cre -- a in me, De -- us, et spi -- ri -- tum re -- ctum in -- no -- va in vi -- sce -- ri -- bus me -- is.
@@ -485,4 +480,120 @@ AspergesSopranoLyrics = \lyricmode {
   _ _
   _ _ _
   _ bor. %35 finis
+}
+
+AudituiSoprano = {
+  \relative c' {
+    \clef treble
+    \key es \major \time 3/4 \autoBeamOff \tempoAuditui
+    r4 r b'4\fE
+    \appoggiatura as8 g4. b8 es4
+    \appoggiatura es16 d8.([ c16)] b4 r
+    c4. d8 \appoggiatura f16 es8[ d16 c]
+    b4~ b8[ es16 d] es8[ c16 b] %5
+    \appoggiatura b8 as4~ as8[ f'16 es] d([ c) b( as)]
+    \appoggiatura as g8. as16 b4 r
+    r c8([ d)] d([ es)]
+    \appoggiatura es16 d8. c16 b4 r
+    r r8 d es c %10
+    d[ \tuplet 3/2 8 { f16 es f] } b,8[ \tuplet 3/2 8 { d16 c d] } g,8[ a]
+    b[ \tuplet 3/2 8 { d16 c d] } b8[ \tuplet 3/2 8 { d16 c d] } b8[ d]
+    es4 es, r
+    r r8 b' c c
+    b[ \tuplet 3/2 8 { d16 c d] } c8[ b a g] %15
+    f[ \tuplet 3/2 8 { b16 a b] } a8[ g f es]
+    d[ es16 f] g([ f g a)] b([ a b c)]
+    d8([ c)] d4 r
+    des\p des c
+    b2 b4 %20
+    c c b
+    a2 a4
+    b b as
+    \appoggiatura as8 ges2\piuP f4
+    es2.~ %25
+    es2 des8[ es]
+    f2.
+    f2 r4
+    r r8 d'!\fE es es
+    d[ \tuplet 3/2 8 { f16 es f] } d8[ \tuplet 3/2 8 { f16 es f] } b,8[ as!] %30
+    g4 r8 es' c b
+    b4 b b8 b
+    c4 r8 \tuplet 3/2 8 { c16[ b c] } d8[ es]
+    d4 r8 \tuplet 3/2 8 { d16[ c d] } es8[ f]
+    es4 r8 \tuplet 3/2 8 { es16[ d es] } f8[ g] %35
+    f4 es8([ d)] es4
+    es d r\fermata
+    b\p b as
+    ges2 ges4
+    as as ges %40
+    f2 f4
+    ges ges ges
+    f2\piuP f4
+    f2.~
+    f %45
+    es4 r8 b'\f es des
+    c[ \tuplet 3/2 8 { es16 des? es] } c8[ \tuplet 3/2 8 { es16 des? es] } as,8[ g]
+    f[ \tuplet 3/2 8 { f'16 es f] } d8[ \tuplet 3/2 8 { f16 es f] } b,8 as
+    as([ f)] g4 r
+    ges\pp ges ges %50
+    ges2 f4
+    f2.
+    es2 r4\fermata \bar "||" %53 finis
+  }
+}
+
+AudituiSopranoLyrics = \lyricmode {
+  Au --
+  di -- tu -- i
+  me -- o
+  da -- bis gau --
+  _ _ %5
+  _ _
+  _ di -- um
+  et lae --
+  ti -- ti -- am,
+  et ex -- sul -- %10
+  ta -- _ _
+  _ _ _
+  _ bunt,
+  et ex -- sul --
+  ta -- _ %15
+  _ _
+  _ _ _
+  _ bunt
+  os -- sa hu --
+  mi -- li -- %20
+  a -- ta, hu --
+  mi -- li --
+  a -- ta, hu --
+  mi -- li --
+  a -- %25
+  _
+  _
+  ta,
+  et ex -- sul --
+  ta -- _ _ %30
+  bunt, et ex -- sul --
+  ta -- bunt, ex -- sul --
+  ta -- _ _
+  _ _ _
+  _ _ _ %35
+  bunt, ex -- sul --
+  ta -- bunt
+  os -- sa hu --
+  mi -- li --
+  a -- ta, hu -- %40
+  mi -- li --
+  a -- ta, hu --
+  mi -- li --
+  a --
+  %45
+  ta, et ex -- sul --
+  ta -- _ _
+  _ _ _ bunt
+  os -- sa
+  hu -- mi -- li -- %50
+  a -- _
+  _
+  ta. %53 finis
 }

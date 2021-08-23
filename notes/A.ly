@@ -100,11 +100,6 @@ MiserereAltoLyrics = \lyricmode {
   tem me --
   am. %40 finis
 
-
-
-  %
-  % Au -- di -- tu -- i me -- o da -- bis gau -- di -- um et lae -- ti -- ti -- am,
-  % et ex -- sul -- ta -- bunt os -- sa hu -- mi -- li -- a -- ta.
   % A -- ver -- te fa -- ci -- em tu -- am a pec -- ca -- tis me -- is,
   % et o -- mnes in -- i -- qui -- ta -- tes me -- as de -- le.
   % Cor mun -- dum cre -- a in me, De -- us, et spi -- ri -- tum re -- ctum in -- no -- va in vi -- sce -- ri -- bus me -- is.
@@ -504,4 +499,120 @@ AspergesAltoLyrics = \lyricmode {
   ba -- _
 
   bor. %35 finis
+}
+
+AudituiAlto = {
+  \relative c' {
+    \clef treble
+    \key es \major \time 3/4 \autoBeamOff \tempoAuditui
+    r4 r es\fE
+    es4. es8 g([ a)]
+    b4 f b~
+    b8[ as16 g] as2~
+    as8[ g16 f] g2~ %5
+    g8[ f16 es] f4 f
+    es8. f16 g4 r
+    f2 f4
+    f8. f16 f8 f f f
+    f4~ f8[ \tuplet 3/2 8 { b16 a b] } c8[ a] %10
+    f4 r8 b b a16([ g)]
+    f4 f f8 f
+    g[ \tuplet 3/2 8 { b16 as! b] } g8[ \tuplet 3/2 8 { b16 as b] } as8[ f]
+    g[ \tuplet 3/2 8 { b16 as b] } g8[ \tuplet 3/2 8 { b16 as b] } as8[ g]
+    f b, c4 c %15
+    d8 b c4 d8([ es)]
+    f4 b, es8 c
+    b4 b r
+    f'\pE f es
+    des2 des4 %20
+    es es des
+    c2 c4
+    des2 es4
+    des\piuPE des c
+    b b c %25
+    c2 des4
+    c2.
+    b4 r8 b'\f b a
+    b4 b, r
+    r r8 f' f f %30
+    g[ \tuplet 3/2 8 { b16 as! b] } g8[ \tuplet 3/2 8 { b16 as b] } as8[ f]
+    g[ \tuplet 3/2 8 { b16 as b] } g8[ \tuplet 3/2 8 { b16 as b] } g8[ f]
+    es4 f f
+    f \once \tieDashed g2~
+    g4 as4. g16[ as] %35
+    b8[ as] g4 g8 g
+    g4 f r\fermata
+    ges\pE ges f
+    es2 es4
+    f f es %40
+    d2 d4
+    es es es
+    es2\piuP es4
+    es2.~
+    es4 d2 %45
+    es4 r8 g!\f g g
+    as2 f8[ es]
+    d!2 f4
+    es es r
+    es\pp es es %50
+    es2.~
+    es4 d2
+    es r4\fermata \bar "||" %53 finis
+  }
+}
+
+AudituiAltoLyrics = \lyricmode {
+  Au --
+  di -- tu -- i
+  me -- o da --
+  _
+  _ %5
+  _ bis
+  gau -- di -- um
+  et lae --
+  ti -- ti -- am, et ex -- sul --
+  ta -- _ %10
+  bunt, et ex -- sul --
+  ta -- bunt, ex -- sul --
+  ta -- _ _
+  _ _ _
+  _ bunt, ex -- sul -- %15
+  ta -- bunt, ex -- sul --
+  ta -- bunt, ex -- sul --
+  ta -- bunt
+  os -- sa hu --
+  mi -- li -- %20
+  a -- ta, hu --
+  mi -- li --
+  a -- ta,
+  hu -- mi -- li --
+  a -- ta, hu -- %25
+  mi -- li --
+  a --
+  ta, et ex -- sul --
+  ta -- bunt,
+  et ex -- sul -- %30
+  ta -- _ _
+  _ _ _
+  bunt, ex -- sul --
+  ta -- _
+  _ _ %35
+  _ bunt, ex -- sul --
+  ta -- bunt
+  os -- sa hu --
+  mi -- li --
+  a -- ta, hu -- %40
+  mi -- li --
+  a -- ta, hu --
+  mi -- li --
+  a --
+  _ %45
+  ta, et ex -- sul --
+  ta -- _
+  _ bunt
+  os -- sa
+  hu -- mi -- li -- %50
+  a --
+  _
+  ta. %53 finis
 }

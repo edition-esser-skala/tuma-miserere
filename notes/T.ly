@@ -101,11 +101,6 @@ MiserereTenoreLyrics = \lyricmode {
   tem me --
   am. %40 finis
 
-
-
-
-  % Au -- di -- tu -- i me -- o da -- bis gau -- di -- um et lae -- ti -- ti -- am,
-  % et ex -- sul -- ta -- bunt os -- sa hu -- mi -- li -- a -- ta.
   % A -- ver -- te fa -- ci -- em tu -- am a pec -- ca -- tis me -- is,
   % et o -- mnes in -- i -- qui -- ta -- tes me -- as de -- le.
   % Cor mun -- dum cre -- a in me, De -- us, et spi -- ri -- tum re -- ctum in -- no -- va in vi -- sce -- ri -- bus me -- is.
@@ -508,4 +503,120 @@ AspergesTenoreLyrics = \lyricmode {
   ba -- _
   _ _
   bor. %35 finis
+}
+
+AudituiTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key es \major \time 3/4 \autoBeamOff \tempoAuditui
+    r4 r g\fE
+    b4. b8 c4
+    d2 es4
+    es2.~
+    es %5
+    c4 b4. b8
+    b4 r es~
+    es2 c4
+    b8. b16 b8 d d c
+    d[ \tuplet 3/2 8 { f16 es f] } b,8[ \tuplet 3/2 8 { d16 c d] } g,8[ a] %10
+    b[ \tuplet 3/2 8 { d16 c d] } b8[ \tuplet 3/2 8 { f'16 es f] } es8[ c]
+    d[ \tuplet 3/2 8 { f16 es f] } d8[ \tuplet 3/2 8 { f16 es f] } b,8[ as!]
+    g4 r8 g' f d
+    es[ \tuplet 3/2 8 { g16 f g] } es8[ \tuplet 3/2 8 { g16 f g] } f8[ es]
+    d4 f f %15
+    f2.~
+    \once \tieDashed f~
+    f4 f, r
+    R2.
+    b4\p b as! %20
+    ges2 ges4^\critnote
+    a a c
+    f,2 es4
+    ges2\piuPE as!4
+    b b b %25
+    a2 b4~
+    b a2
+    b4 r8 f'\f es c
+    d[ \tuplet 3/2 8 { f16 es f] } d8[ \tuplet 3/2 8 { f16 es f] } es8[ c]
+    b[ \tuplet 3/2 8 { d16 c d] } b8[ \tuplet 3/2 8 { d16 c d] } f8[ d] %30
+    b4 b c8([ d)]
+    es4 r8 \tuplet 3/2 8 { g16[ f g] } es8[ des]
+    c4 as b8([ c)]
+    r \tuplet 3/2 8 { d!16[ c d] } b4 c8[ d]
+    r \tuplet 3/2 8 { es16[ d es] } c4 d8[ es] %35
+    f4 b, b8 b
+    b4 b r\fermata
+    R2.
+    ges4\p ges b
+    ces as r %40
+    f f as
+    b b r
+    r ces\piuPE b
+    as b c
+    b2. %45
+    b4 r8 es\f es es
+    es[ \tuplet 3/2 8 { c16 b c] } as8[ b] c4
+    r8 \tuplet 3/2 8 { d!16[ c d] } f8[ es d] c
+    b4 b r
+    R2. %50
+    c4\pp c c
+    b2.
+    b2 r4\fermata \bar "||" %53 finis
+  }
+}
+
+AudituiTenoreLyrics = \lyricmode {
+  Au --
+  di -- tu -- i
+  me -- o
+  da --
+  %5
+  bis gau -- di --
+  um et __
+  lae --
+  ti -- ti -- am, et ex -- sul --
+  ta -- _ _ %10
+  _ _ _
+  _ _ _
+  bunt, et ex -- sul --
+  ta -- _ _
+  bunt, ex -- sul -- %15
+  ta --
+
+  bunt
+
+  os -- sa hu -- %20
+  mi -- li --
+  a -- ta, hu --
+  mi -- li --
+  a -- ta,
+  hu -- mi -- li -- %25
+  a -- _
+  _
+  ta, et ex -- sul --
+  ta -- _ _
+  _ _ _ %30
+  bunt, ex -- sul --
+  ta -- _ _
+  bunt, ex -- sul --
+  ta -- _ _
+  _ _ _ %35
+  _ bunt, ex -- sul --
+  ta -- bunt
+
+  hu -- mi -- li --
+  a -- ta, %40
+  hu -- mi -- li --
+  a -- ta,
+  os -- sa
+  hu -- mi -- li --
+  a -- %45
+  ta, et ex -- sul --
+  ta -- _ _
+  _ _ bunt
+  os -- sa
+  %50
+  hu -- mi -- li --
+  a --
+  ta. %53 finis
 }

@@ -504,3 +504,114 @@ AspergesBassFigures = \figuremode {
   r
   <_+> %35 finis
 }
+
+AudituiOrgano = {
+  \relative c {
+    \clef bass
+    \key es \major \time 3/4 \tempoAuditui
+    es4\fE r es
+    es2 c4
+    b2 g'4
+    as2 as,4
+    es' g es %5
+    f d b
+    es2 r4
+    as,2 a4
+    b4. b8 d f
+    b,4 r8 b es f %10
+    b,4 r es8 f
+    b,2 b4
+    es r8 es as! b
+    es,2 as,8 a
+    b \tuplet 3/2 8 { b'16 a b } a8 g f es %15
+    d \tuplet 3/2 8 { g16 f g } f8 es d c
+    b c16 d es d es f g f g a
+    b4 b, r
+    R2.
+    \mvTr ges'2\pE-\senzaOrg f4 %20
+    es2.
+    f2 es4
+    des2 c4
+    b2\piuP as!4
+    ges2. %25
+    \once \tieDashed f~
+    f
+    b4 r8 \mvTr b\fE-\colOrg es f
+    b,4 r8 b es f
+    b,4 b d %30
+    es r8 es as! b
+    es,4 g,2
+    as8 \tuplet 3/2 8 { as'16 g as } f8 \tuplet 3/2 8 { as16 g as } d,8 c
+    b \tuplet 3/2 8 { b'16 as b } g8 \tuplet 3/2 8 { b16 as b } es,8 d
+    c \tuplet 3/2 8 { c'16 b c } as8 \tuplet 3/2 8 { c16 b c } f,8 es %35
+    d16 b c d es d es f g f g as
+    b4 b, r\fermata
+    R2.
+    \mvTr es4\p-\senzaOrg ces b
+    as2. %40
+    b2 as4
+    ges2 r4
+    r as\piuP b
+    ces b a
+    b2. %45
+    es,4 r8 \mvTr es'\fE-\colOrg g! es
+    as2 as,4
+    b2 d4
+    es2 r4
+    R2.*3 %52
+    R2.\fermata \bar "||" %53 finis
+  }
+}
+
+AudituiBassFigures = \figuremode {
+  r2.
+  r2 <5>8 <6!>
+  r2 <6>4
+  <9> <8>2
+  <5 4>4 <[6]>2 %5
+  <9>4 <[6 5]>2
+  r2.
+  <6 5>2 <\t \t>4
+  r2 \bo <[6]>8 <_!>
+  r2 <6>8 <_!> %10
+  r2 r8 \bc <[_!]>
+  r2.
+  r2 <6>4
+  r2 \bo <[8 6]>8 <7 5>
+  r4 <6> <_!> %15
+  <6> \bc <[_! \l]>2
+  r2.
+  r
+  r
+  r %20
+  r
+  r
+  r
+  r
+  r %25
+  r
+  r
+  r4. \bo <[_!]>4 <_!>8
+  r2 r8 <_!>
+  r2 <6>8 <5-> %30
+  r2 \bc <[6]>4
+  r4 <6>2
+  r2.
+  r
+  r %35
+  <6>2 q4
+  <6 4> <5 3>2
+  r2.
+  r
+  r %40
+  r
+  r
+  r
+  r
+  r %45
+  r4. \bo <[_! \l]>8 <6> <7->
+  r2 <8 6>8 <7 5>
+  r2 <8 6>8 \bc <[7 5]>
+  <5 4>4 <\t 3>2
+  r2.*4 %53 finis
+}

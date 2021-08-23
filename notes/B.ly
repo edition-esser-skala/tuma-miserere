@@ -89,11 +89,6 @@ MiserereBassoLyrics = \lyricmode {
   tem me --
   am. %40 finis
 
-
-
-
-  % Au -- di -- tu -- i me -- o da -- bis gau -- di -- um et lae -- ti -- ti -- am,
-  % et ex -- sul -- ta -- bunt os -- sa hu -- mi -- li -- a -- ta.
   % A -- ver -- te fa -- ci -- em tu -- am a pec -- ca -- tis me -- is,
   % et o -- mnes in -- i -- qui -- ta -- tes me -- as de -- le.
   % Cor mun -- dum cre -- a in me, De -- us, et spi -- ri -- tum re -- ctum in -- no -- va in vi -- sce -- ri -- bus me -- is.
@@ -501,4 +496,120 @@ AspergesBassoLyrics = \lyricmode {
   ba --
 
   bor. %35 finis
+}
+
+AudituiBasso = {
+  \relative c {
+    \clef bass
+    \key es \major \time 3/4 \autoBeamOff \tempoAuditui
+    r4 r es\fE
+    es4. es8 c4
+    b2 g'4
+    as2 as,4
+    es' g es %5
+    f d b
+    es2 r4
+    as,2 a4
+    b8. b16 b8 b d f
+    b[ \tuplet 3/2 8 { d16 c d] } b8[ b,] es[ f] %10
+    b,4 b8 b es([ f)]
+    b,4 b b
+    es8[ \tuplet 3/2 8 { g16 f g] } es4 as!8[ b]
+    es,2 as,8 a
+    b[ \tuplet 3/2 8 { b'16 a b] } a8[ g f es] %15
+    d[ \tuplet 3/2 8 { g16 f g] } f8[ es d c]
+    b[ c16 d] es[ d es f] g[ f g a]
+    b4 b, r
+    R2.
+    ges'4\p ges f %20
+    es2 es4
+    f f es
+    des2 c4
+    b2\piuP as!4
+    ges2. %25
+    \once \tieDashed f~
+    f
+    b4 r8 b\f es f
+    b[ \tuplet 3/2 8 { d16 c d] } b8[ \tuplet 3/2 8 { d16 c d] } c8[ a]
+    b4 b, d %30
+    es8[ \tuplet 3/2 8 { g16 f g] } es8[ \tuplet 3/2 8 { g16 f g] } as8[ b]
+    es,4 r g,8 g
+    as[ \tuplet 3/2 8 { as'16 g as] } f8[ \tuplet 3/2 8 { as16 g as] } d,8[ c]
+    b[ \tuplet 3/2 8 { b'16 as b] } g8[ \tuplet 3/2 8 { b16 as b] } es,8[ d]
+    c[ \tuplet 3/2 8 { c'16 b c] } as8[ \tuplet 3/2 8 { c16 b c] } f,8[ es] %35
+    d16[ b c d] es[ d es f] g[ f g as]
+    b4 b, r\fermata
+    R2.
+    es4\pE ces b
+    as2 as4 %40
+    b b as
+    ges ges r
+    r as\piuPE b
+    ces b a
+    b2. %45
+    es,4 r8 es'\f g! es
+    as2 as,4
+    b2 d4
+    es es r
+    R2. %50
+    a,4\ppE a a
+    b2.
+    es,2 r4\fermata \bar "||" %53 finis
+  }
+}
+
+AudituiBassoLyrics = \lyricmode {
+  Au --
+  di -- tu -- i
+  me -- o
+  da -- bis
+  gau -- _ _ %5
+  _ _ di --
+  um
+  et lae --
+  ti -- ti -- am, et ex -- sul --
+  ta -- _ _ %10
+  bunt, ex -- sul -- ta --
+  bunt, ex -- sul --
+  ta -- _ _
+  bunt, ex -- sul --
+  ta -- _ %15
+  _ _
+  _ _ _
+  _ bunt
+
+  os -- sa hu -- %20
+  mi -- li --
+  a -- ta, hu --
+  mi -- li --
+  a -- _
+  _ %25
+  _
+
+  ta, et ex -- sul --
+  ta -- _ _
+  bunt, ex -- sul -- %30
+  ta -- _ _
+  bunt, ex -- sul --
+  ta -- _ _
+  _ _ _
+  _ _ _ %35
+  _ _ _
+  _ bunt
+
+  hu -- mi -- li --
+  a -- ta, %40
+  hu -- mi -- li --
+  a -- ta,
+  os -- sa
+  hu -- mi -- li --
+  a -- %45
+  ta, et ex -- sul --
+  ta -- _
+  _ bunt
+  os -- sa
+  %50
+  hu -- mi -- li --
+  a --
+  ta. %53 finis
 }

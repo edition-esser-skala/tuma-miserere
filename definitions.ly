@@ -683,6 +683,10 @@ tocLabelLong = #(define-music-function
 )
 
 
+piuP   = \dynScriptPrefix "più"  "p" ##f
+piuPE  = \dynScriptPrefix "più"  "p" ##t
+
+
 tempoMiserere = \tempoMarkup "Adagio"
 tempoAmplius = \tempoMarkup "Andante"
 tempoTibiSoli = \tempoMarkup "Grave"
@@ -690,6 +694,7 @@ tempoTibiSoli = \tempoMarkup "Grave"
   tempoCumIudicaris = \tempoMarkup "Adagio"
 tempoEcceEnim = \tempoMarkup "Andante"
 tempoAsperges = \tempoMarkup "[Tempo deest]"
+tempoAuditui = \tempoMarkup "Larghetto"
 
 
 \include "notes/S.ly"
