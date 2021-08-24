@@ -101,12 +101,7 @@ MiserereSopranoLyrics = \lyricmode {
   am. %40 finis
 
 
-  % Ne pro -- i -- ci -- as me a fa -- ci -- e tu -- a, et spi -- ri -- tum san -- ctum tu -- um ne au -- fe -- ras a me.
-  % Red -- de mi -- hi lae -- ti -- ti -- am sa -- lu -- ta -- ris tu -- i,
-  % et spi -- ri -- tu prin -- ci -- pa -- li con -- fir -- ma me.
-  % Do -- ce -- bo in -- i -- quos vi -- as tu -- as, et im -- pi -- i ad te con -- ver -- ten -- tur.
-  % Li -- be -- ra me de san -- gui -- ni -- bus, De -- us, De -- us sa -- lu -- tis me -- ae,
-  % et ex -- sul -- ta -- bit lin -- gu -- a me -- a iu -- sti -- ti -- am tu -- am.
+
   % Do -- mi -- ne, la -- bi -- a me -- a a -- pe -- ri -- es,
   % et os me -- um an -- nun -- ti -- a -- bit lau -- dem tu -- am.
   % Quo -- ni -- am si vo -- lu -- is -- ses sa -- cri -- fi -- ci -- um, de -- dis -- sem u -- ti -- que;
@@ -662,4 +657,141 @@ AverteSopranoLyrics = \lyricmode {
   in vi -- sce -- ri -- bus
   me --
   is. %29 finis
+}
+
+NeProiciasSoprano = {
+  \relative c' {
+    \clef treble
+    \key b \major \time 3/4 \autoBeamOff \tempoNeProicias
+    R2.*29 %29
+    r4 c'\fE b %30
+    a16([ g)] f8 r4 r
+    r f' es
+    d16([ c)] b8 d4 d
+    c8([ f)] f4 r
+    r es! es %35
+    d es8([ d)] c([ b)]
+    b8. a16 a4 a8 d
+    \appoggiatura c4 h2.
+    c8([ d)] es([ d)] c([ h)]
+    c([ d)] es([ d)] c([ b)] %40
+    b4 a a
+    b a8 g b c
+    d4 d, d'
+    d2 d4
+    d2.~ %45
+    d2 es4
+    d c8 h c d
+    es([ d)] es4 r
+    r r8 es d([ c16 d)]
+    es4 r8 es d([ c16 d)] %50
+    es8 g es([ d)] c([ h)]
+    c es d([ c)] b([ a)]
+    g es' d([ c)] b([ a)]
+    g4 r r
+    R2.*2 %56
+    r4 d'2
+    d8([ c)] c4 c
+    c8([ b)] b4 r
+    r f' es8([ d)] %60
+    d([ c)] c4 c
+    f4. f8 es d
+    es4 es es
+    f d2
+    es4 c2 %65
+    d4 b b
+    c b2
+    b4 r r
+    R2.
+    r4 es d8 c %70
+    h4 r r
+    r c b
+    b8. as16 as4 r
+    r b as
+    as8. g16 g4 r %75
+    h8.([ c16)] h4 r
+    r c8([ d)] es4
+    es es d
+    \appoggiatura es8 d4 c4 r8 c
+    d b16([ c)] d2 %80
+    es8[ c16 d] es2
+    f8[ d16 es] f2
+    g16[ f es d] es[ d c b] c[ b a g]
+    \appoggiatura b a!8.[ g16] f4 f'8 es
+    es4 d r %85
+    r b2
+    b b4
+    b b( a)
+    b r es
+    es4.( f8) d4 %90
+    c c2
+    b4 r r
+    R2.
+    R\fermata \bar "||" %94 finis
+  }
+}
+
+NeProiciasSopranoLyrics = \lyricmode {
+  Red -- de %30
+  mi -- hi,
+  red -- de
+  mi -- hi, red -- de
+  mi -- hi,
+  red -- de %35
+  mi -- hi lae --
+  ti -- ti -- am sa -- lu --
+  ta --
+  _ _ _
+  _ _ ris %40
+  tu -- i, et
+  spi -- ri -- tu prin -- ci --
+  pa -- li con --
+  fir -- ma
+  me, __ %45
+  et
+  spi -- ri -- tu prin -- ci --
+  pa -- li
+  con -- fir --
+  ma, con -- fir -- %50
+  ma, con -- fir -- ma
+  me, con -- fir -- ma
+  me, con -- fir -- ma
+  me.
+
+  Do -- %57
+  ce -- bo in --
+  i -- quos
+  vi -- as %60
+  tu -- as, et
+  im -- pi -- i ad
+  te, ad te
+  con -- ver --
+  ten -- tur, %65
+  ad te con --
+  ver -- ten --
+  tur.
+
+  Li -- be -- ra %70
+  me
+  de san --
+  gui -- ni -- bus,
+  de san --
+  gui -- ni -- bus, %75
+  De -- us,
+  De -- us
+  sa -- lu -- tis
+  me -- ae, et
+  ex -- al -- ta -- %80
+  _ _
+  _ _
+  _ _ _
+  _ bit lin -- gua
+  me -- a %85
+  iu --
+  sti -- ti --
+  am tu --
+  am, iu --
+  sti -- ti -- %90
+  am tu --
+  am. %92 finis
 }

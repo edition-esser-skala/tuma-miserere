@@ -345,47 +345,93 @@
   %     \midi { \tempo 4 = 80 }
   %   }
   % }
+  % \bookpart {
+  %   \header {
+  %     number = "7"
+  %     title = "A V E R T E   F A C I E M   T U A M"
+  %   }
+  %   \tocSection "7" "Averte faciem tuam"
+  %   \score {
+  %     <<
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \AverteSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \AverteSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \AverteAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \AverteAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \AverteTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \AverteTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \AverteBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \AverteBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \AverteOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \AverteBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 90 }
+  %   }
+  % }
   \bookpart {
     \header {
-      number = "7"
-      title = "A V E R T E   F A C I E M   T U A M"
+      number = "8"
+      title = "N E   P R O I C I A S   M E"
     }
-    \tocSection "7" "Averte faciem tuam"
+    \tocSection "8" "Ne proicias me"
     \score {
       <<
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \AverteSoprano }
+            \new Voice = "Soprano" { \dynamicUp \NeProiciasSoprano }
           }
-          \new Lyrics \lyricsto Soprano \AverteSopranoLyrics
+          \new Lyrics \lyricsto Soprano \NeProiciasSopranoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \AverteAlto }
+            \new Voice = "Alto" { \dynamicUp \NeProiciasAlto }
           }
-          \new Lyrics \lyricsto Alto \AverteAltoLyrics
+          \new Lyrics \lyricsto Alto \NeProiciasAltoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \AverteTenore }
+            \new Voice = "Tenore" { \dynamicUp \NeProiciasTenore }
           }
-          \new Lyrics \lyricsto Tenore \AverteTenoreLyrics
+          \new Lyrics \lyricsto Tenore \NeProiciasTenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \AverteBasso }
+            \new Voice = "Basso" { \dynamicUp \NeProiciasBasso }
           }
-          \new Lyrics \lyricsto Basso \AverteBassoLyrics
+          \new Lyrics \lyricsto Basso \NeProiciasBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \AverteOrgano
+            \NeProiciasOrgano
           }
         >>
-        \new FiguredBass { \AverteBassFigures }
+        \new FiguredBass { \NeProiciasBassFigures }
       >>
       \layout { }
       \midi { \tempo 4 = 90 }

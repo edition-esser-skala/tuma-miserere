@@ -101,12 +101,6 @@ MiserereTenoreLyrics = \lyricmode {
   tem me --
   am. %40 finis
 
-  % Ne pro -- i -- ci -- as me a fa -- ci -- e tu -- a, et spi -- ri -- tum san -- ctum tu -- um ne au -- fe -- ras a me.
-  % Red -- de mi -- hi lae -- ti -- ti -- am sa -- lu -- ta -- ris tu -- i,
-  % et spi -- ri -- tu prin -- ci -- pa -- li con -- fir -- ma me.
-  % Do -- ce -- bo in -- i -- quos vi -- as tu -- as, et im -- pi -- i ad te con -- ver -- ten -- tur.
-  % Li -- be -- ra me de san -- gui -- ni -- bus, De -- us, De -- us sa -- lu -- tis me -- ae,
-  % et ex -- sul -- ta -- bit lin -- gu -- a me -- a iu -- sti -- ti -- am tu -- am.
   % Do -- mi -- ne, la -- bi -- a me -- a a -- pe -- ri -- es,
   % et os me -- um an -- nun -- ti -- a -- bit lau -- dem tu -- am.
   % Quo -- ni -- am si vo -- lu -- is -- ses sa -- cri -- fi -- ci -- um, de -- dis -- sem u -- ti -- que;
@@ -682,4 +676,131 @@ AverteTenoreLyrics = \lyricmode {
   sce -- ri -- bus me -- _
   _
   is. %29 finis
+}
+
+NeProiciasTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key b \major \time 3/4 \autoBeamOff \tempoNeProicias
+    R2.*8 %8
+    r4 d\fE c
+    d8. d,16 d4 r %10
+    r b' a
+    b8. c16 d4 r
+    r c f
+    d8. c16 d2
+    d4 c c %15
+    f d8 c h d
+    es([ d)] es4. es8
+    es4 c8 b a d
+    b([ c)] d4 r8 d
+    es8. d16 es4 r8 c %20
+    d8. c16 d4. es8
+    \appoggiatura d c4 r r
+    r8 c f,[ b g c]
+    a2.~
+    a8 g g4. g8 %25
+    f4 r r
+    R2.*27 %53
+    r4 d'2
+    d8([ c)] c4 c %55
+    c8([ b)] b4 es
+    es8([ d)] d4 r
+    R2.
+    r4 f es8([ d)]
+    d c d4 c8([ b)] %60
+    b([ a)] a4 a
+    a4. a8 h h
+    c4 es c
+    d2 b4
+    c2 as4 %65
+    b f' es
+    es2( d4)
+    es r r
+    R2.*2 %70
+    r4 d c8 d
+    es4 r r
+    r c c
+    b8. b16 b2
+    b4 b r %75
+    as? as r
+    r es' c
+    c c b
+    \appoggiatura c8 b4 a r8 a
+    b2 b4 %80
+    c2 c4
+    d2 d4
+    es8.[ f16] g[ f es d] es[ d c b]
+    a!8 c c4 c
+    c b r %85
+    r des2
+    des des4
+    des c2
+    b4 r b
+    c4. c8 b4~ %90
+    b b( a)
+    b r r
+    R2.
+    R\fermata \bar "||" %94 finis
+  }
+}
+
+NeProiciasTenoreLyrics = \lyricmode {
+  Ne pro -- %9
+  i -- ci -- as, %10
+  ne pro --
+  i -- ci -- as
+  me a
+  fa -- ci -- e
+  tu -- a, et %15
+  spi -- ri -- tum san -- ctum
+  tu -- um, et
+  spi -- ri -- tum san -- ctum
+  tu -- um ne
+  au -- fe -- ras, ne %20
+  au -- fe -- ras a
+  me,
+  ne au --
+  _
+  fe -- ras a %25
+  me.
+
+  Do -- %54
+  ce -- bo in -- %55
+  i -- quos, in --
+  i -- quos
+
+  vi -- as
+  tu -- as, vi -- as %60
+  tu -- as, et
+  im -- pi -- i ad
+  te con -- ver --
+  ten -- _
+  _ _ %65
+  tur, con -- ver --
+  ten --
+  tur.
+
+  Li -- be -- ra %71
+  me
+  de san --
+  gui -- ni -- bus,
+  De -- us, %75
+  De -- us,
+  De -- us
+  sa -- lu -- tis
+  me -- ae, et
+  ex -- al -- %80
+  ta -- bis,
+  ex -- al --
+  ta -- _ _
+  _ bit lin -- gua
+  me -- a %85
+  iu --
+  sti -- ti --
+  am tu --
+  am, iu --
+  sti -- ti -- am __ %90
+  tu --
+  am. %92 finis
 }

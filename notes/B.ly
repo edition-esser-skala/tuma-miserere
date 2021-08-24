@@ -89,12 +89,6 @@ MiserereBassoLyrics = \lyricmode {
   tem me --
   am. %40 finis
 
-  % Ne pro -- i -- ci -- as me a fa -- ci -- e tu -- a, et spi -- ri -- tum san -- ctum tu -- um ne au -- fe -- ras a me.
-  % Red -- de mi -- hi lae -- ti -- ti -- am sa -- lu -- ta -- ris tu -- i,
-  % et spi -- ri -- tu prin -- ci -- pa -- li con -- fir -- ma me.
-  % Do -- ce -- bo in -- i -- quos vi -- as tu -- as, et im -- pi -- i ad te con -- ver -- ten -- tur.
-  % Li -- be -- ra me de san -- gui -- ni -- bus, De -- us, De -- us sa -- lu -- tis me -- ae,
-  % et ex -- sul -- ta -- bit lin -- gu -- a me -- a iu -- sti -- ti -- am tu -- am.
   % Do -- mi -- ne, la -- bi -- a me -- a a -- pe -- ri -- es,
   % et os me -- um an -- nun -- ti -- a -- bit lau -- dem tu -- am.
   % Quo -- ni -- am si vo -- lu -- is -- ses sa -- cri -- fi -- ci -- um, de -- dis -- sem u -- ti -- que;
@@ -673,4 +667,133 @@ AverteBassoLyrics = \lyricmode {
   sce -- ri -- bus me --
 
   is. %29 finis
+}
+
+NeProiciasBasso = {
+  \relative c {
+    \clef bass
+    \key b \major \time 3/4 \autoBeamOff \tempoNeProicias
+    R2.*7 %7
+    r4 b'\fE a
+    b8. b,16 b4 r
+    r g' fis %10
+    g8. g,16 g4 r
+    r g' c
+    a8. g16 a4 c
+    b8. a16 b2
+    b4 a r %15
+    R2.
+    r4 r g
+    c a8 g fis fis
+    g([ a)] b d h g
+    c4 r8 c a f %20
+    b4 b2
+    a8 c f,[ b g c]
+    a[ a] d,[ g e a]
+    f2.~
+    f8 f e4. e8 %25
+    f4 r r
+    R2.*27 %53
+    r4 b2
+    b8([ a)] a4 a %55
+    a8([ g)] g4 c
+    c8([ b)] b4 r
+    R2.
+    r4 d c8([ b)]
+    b a b4 es, %60
+    f f es
+    d4. d8 g g
+    c,4 r8 c' as16[ g f es]
+    d8[ b'] r b g16[ f es d]
+    c8[ as'] r as f16[ es d c] %65
+    b4 d es
+    as, b2
+    es,4 r r
+    R2.*2 %70
+    r4 h'' a!8 h
+    c4 r r
+    r as g
+    f8. f16 d2
+    es4 es r %75
+    d d r
+    r c b!
+    a! a b
+    f' f, r8 f'
+    b,4 b' g16[ f es d] %80
+    c8[ c'] r c a16[ g f es]
+    d8[ d'] r d b16[ as g f]
+    es4 es c8 es
+    f4 f a8 a
+    b4 b, r %85
+    r r b'
+    e,4. b'8 des([ b]
+    e,4) f2
+    g4 r g
+    f4.( a8) b4 %90
+    es, f2
+    b,4 r r
+    R2.
+    R\fermata \bar "||" %94 finis
+  }
+}
+
+NeProiciasBassoLyrics = \lyricmode {
+  Ne pro -- %8
+  i -- ci -- as,
+  ne pro -- %10
+  i -- ci -- as
+  me a
+  fa -- ci -- e, a
+  fa -- ci -- e
+  tu -- a, %15
+
+  et
+  spi -- ri -- tum san -- ctum
+  tu -- um ne au -- fe --
+  ras, ne au -- fe -- %20
+  ras a
+  me, ne au --
+  _ _
+  _
+  fe -- ras a %25
+  me.
+
+  Do -- %54
+  ce -- bo in -- %55
+  i -- quos, in --
+  i -- quos
+
+  vi -- as
+  tu -- as, vi -- as %60
+  tu -- as, et
+  im -- pi -- i ad
+  te con -- ver --
+  _ _ _
+  _ _ _ %65
+  ten -- tur, con --
+  ver -- ten --
+  tur.
+
+  Li -- be -- ra %71
+  me
+  de san --
+  gui -- ni -- bus,
+  De -- us, %75
+  De -- us,
+  De -- us
+  sa -- lu -- tis
+  me -- ae, et
+  ex -- al -- ta -- %80
+  _ _ _
+  _ _ _
+  _ bit lin -- gua
+  me -- a, lin -- gua
+  me -- a %85
+  iu --
+  sti -- ti -- am __
+  tu --
+  am, iu --
+  sti -- ti -- %90
+  am tu --
+  am. %92 finis
 }

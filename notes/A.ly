@@ -100,12 +100,6 @@ MiserereAltoLyrics = \lyricmode {
   tem me --
   am. %40 finis
 
-  % Ne pro -- i -- ci -- as me a fa -- ci -- e tu -- a, et spi -- ri -- tum san -- ctum tu -- um ne au -- fe -- ras a me.
-  % Red -- de mi -- hi lae -- ti -- ti -- am sa -- lu -- ta -- ris tu -- i,
-  % et spi -- ri -- tu prin -- ci -- pa -- li con -- fir -- ma me.
-  % Do -- ce -- bo in -- i -- quos vi -- as tu -- as, et im -- pi -- i ad te con -- ver -- ten -- tur.
-  % Li -- be -- ra me de san -- gui -- ni -- bus, De -- us, De -- us sa -- lu -- tis me -- ae,
-  % et ex -- sul -- ta -- bit lin -- gu -- a me -- a iu -- sti -- ti -- am tu -- am.
   % Do -- mi -- ne, la -- bi -- a me -- a a -- pe -- ri -- es,
   % et os me -- um an -- nun -- ti -- a -- bit lau -- dem tu -- am.
   % Quo -- ni -- am si vo -- lu -- is -- ses sa -- cri -- fi -- ci -- um, de -- dis -- sem u -- ti -- que;
@@ -680,4 +674,143 @@ AverteAltoLyrics = \lyricmode {
   sce -- ri -- bus me -- _
   _ _
   is. %29 finis
+}
+
+NeProiciasAlto = {
+  \relative c' {
+    \clef treble
+    \key b \major \time 3/4 \autoBeamOff \tempoNeProicias
+    R2.*28 %28
+    r4 c'\fE b
+    a16([ g)] f8 r4 r %30
+    r f es!
+    d16([ c)] b8 r4 f'
+    f8. f16 f4 r
+    r a a
+    g8([ c)] c4 r %35
+    b c8([ b)] a([ g)]
+    g8. fis16 fis4 r
+    r d4. g8
+    es8([ f)] g([ f)] es([ d)]
+    es([ f)] g([ b!)] a([ g)] %40
+    g4 fis fis
+    g g8 g g g
+    g4 fis r
+    r r8 b a([ g16 a)]
+    b4 r8 b a([ g16 a)] %45
+    b4 r8 h c g
+    h4 r r
+    r r g
+    g2 g4
+    g2.~ %50
+    g8 es g([ f)] es([ d)]
+    es c' b!([ a)] g([ fis)]
+    g c b([ a)] g([ fis)]
+    g4 r r
+    R2.*2 %56
+    r4 f2
+    f8([ es)] es4 es
+    es8([ d)] d4 r
+    r f b %60
+    f f f
+    f4. f8 g g
+    g4 r c~
+    c8 b16([ a)] b2~
+    b8[ as16 g] as2 %65
+    as4. b8 g4
+    f f2
+    es4 r r
+    R2.
+    r4 g f8 es %70
+    d4 r r
+    r es g
+    g8. f16 f4 r
+    r f f
+    f8. es16 es4 r %75
+    f f r
+    r g g
+    f f4. f8
+    f4 f r8 f
+    f2 g4 %80
+    g a2
+    a4 b2
+    b16([ as g f)] es4 g8 g
+    f4 f f8 f
+    f4 f r %85
+    r r f
+    g4. f8 f4(
+    g) f2
+    d!4 r g
+    a2 f4
+    g f2
+    f4 r r
+    R2.
+    R\fermata \bar "||"
+  }
+}
+
+NeProiciasAltoLyrics = \lyricmode {
+  Red -- de %29
+  mi -- hi, %30
+  red -- de
+  mi -- hi lae --
+  ti -- ti -- am,
+  red -- de
+  mi -- hi, %35
+  red -- de lae --
+  ti -- ti -- am
+  sa -- lu --
+  ta -- _ _
+  _ _ ris %40
+  tu -- i, et
+  spi -- ri -- tu prin -- ci --
+  pa -- li
+  con -- fir --
+  ma, con -- fir -- %45
+  ma, con -- fir -- ma
+  me,
+  con --
+  fir -- ma
+  me, __ %50
+  con -- fir -- ma
+  me, con -- fir -- ma
+  me, con -- fir -- ma
+  me.
+
+  Do -- %57
+  ce -- bo in --
+  i -- quos
+  vi -- as %60
+  tu -- as, et
+  im -- pi -- i ad
+  te con --
+  ver -- ten --
+  tur, %65
+  ad te con --
+  ver -- ten --
+  tur.
+
+  Li -- be -- ra %70
+  me
+  de san --
+  gui -- ni -- bus,
+  de san --
+  gui -- ni -- bus, %75
+  De -- us,
+  De -- us
+  sa -- lu -- tis
+  me -- ae, et
+  ex -- al -- %80
+  ta -- bit,
+  ex -- al --
+  ta -- bit, ex -- al --
+  ta -- bit lin -- gua
+  me -- a %85
+  iu --
+  sti -- ti -- am __
+  tu --
+  am, iu --
+  sti -- ti -- %90
+  am tu --
+  am. %92 finis
 }

@@ -696,6 +696,7 @@ tempoEcceEnim = \tempoMarkup "Andante"
 tempoAsperges = \tempoMarkup "[Tempo deest]"
 tempoAuditui = \tempoMarkup "Larghetto"
 tempoAverte = \tempoMarkup "Vivace"
+tempoNeProicias = \tempoMarkup "Vivace"
 
 
 \include "notes/S.ly"

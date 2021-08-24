@@ -689,3 +689,201 @@ AverteBassFigures = \figuremode {
   <5 4>2 <\t _+>
   r1 %29 finis
 }
+
+NeProiciasOrgano = {
+  \relative c {
+    \clef bass
+    \key b \major \time 3/4 \tempoNeProicias
+    b'8\fE b, r b' f16( es) d-! c-!
+    b8 b' r b g16( f) es-! d-!
+    c8 c' r c a16( g) f-! es-!
+    d8 d' r d b16( as) g-! f-!
+    es8 es' r es a,([ b)] %5
+    e,( f) e([ f)] des'-! b-!
+    e,( f) \once \slurDashed e[( f]) g f16 es?
+    d8 b' es, c f f,
+    b b' r b f16 es d c
+    b8 b' r b, d16 c b a %10
+    g8 g' r g d16 c b a
+    g8 g' r g es16 c d es
+    f8 f, r f' a16 f g a
+    b8 b, r b' b,16 c d es
+    f8 f, r f f' es %15
+    d d' r d, g16 f es d
+    c8 c' r c, es16 d c b
+    a8 a' r c, d16 c b a
+    g8 g' r g, g'16 f es d
+    c8 c' r c, f16 es d c %20
+    b8 b' r b, d b
+    f'4 d e
+    f8 a, b4 c
+    d8 d' r d, c16 b a g
+    f8 b c b c c %25
+    f, f' r f d16 c b a
+    g8 g' r g e16 d c b
+    a8 f' d b c c
+    f, f' r a e16( c d e)
+    f8 f, r c' d e %30
+    f f, r f' g a
+    b b, r d' a16 f g a
+    b8 b, r b' b,16 c d es
+    f8 f, r f' f,16 g a h
+    c8 c' r c c,16 d es f %35
+    g8 g, r g c cis
+    d d' r d d,16( c b a)
+    g8 g' r g, g'16 f es d
+    c8 c' r4 r8 g
+    c, c' r4 r8 cis, %40
+    d d' r d d,16 c b a
+    g8 g' r g es4
+    d2 r4
+    r r8 g fis16 d e fis
+    g8 g, r g' fis16( d e fis) %45
+    g8 g, r g' c,16 d es f
+    g8 g, r g' es d
+    c4 c' r
+    r r8 c h16( g a h)
+    c8 c, r c' h16 g a h %50
+    c8 c, r4 r8 g'
+    c,4 d2
+    es8 c d2
+    g,4 r g
+    a8 a' r a fis16 d e fis %55
+    g8 g, r g' es f
+    b,4 r b
+    c8 c' r c a16 f g a
+    b8 b, r b es4
+    f8 f, r b es4 %60
+    f f, r
+    d'2 g4
+    c,8 c' r c^\critnote as16 g f es
+    d8 b' r b g16( f es d)
+    c8 as' r as f16( es d c) %65
+    b4 d es
+    as, b2
+    es8 es' r c as16( g f es)
+    d8 b' es, c as b
+    es4 es f %70
+    g r g,
+    c r c
+    f2 es!4
+    d2.
+    es2 r4 %75
+    d2 r4
+    r c b!
+    a!2 b4
+    f' f, r
+    b8 b' r b g16 f es d %80
+    c8 c' r c a16 g f es
+    d8 d' r d b16 as g f
+    es8 es' r es, c es
+    f4 r8 f a f
+    b4 b, r %85
+    r r b'
+    e,4. b'8 des b
+    e,4 f2
+    g4 r g
+    f4. a8 b4 %90
+    es, f f,
+    b8 b' r b a16( g) f-! es-!
+    d8 b' es, c f f,
+    b4 r r\fermata \bar "||" %94 finis
+  }
+}
+
+NeProiciasBassFigures = \figuremode {
+  r2.
+  r
+  r
+  r
+  r %5
+  <6 5>4 q2
+  <6 5>8 <3> <6 5> <3> <[5!]> <\t>
+  <6>2.
+  r
+  r4. <6>8 <_+>4 %10
+  r2 <_+>4
+  r2 <6>4
+  r2 <6>4
+  r2.
+  \bo <[6 4]>4 \bc <[5 3]>2 %15
+  r <[_!]>4
+  r2.
+  r4. \bo <[7]>8 \bc <[_+]>4
+  r2 <[_!]>4
+  r2. %20
+  r
+  \bo <[6 3]>8 \bc <[5 \t]> <6>4 q
+  r8 \bo <[6]> r4 \bc <[_!]>
+  \bo <[5 3]>2 \bassFigureExtendersOn <5 3>8 q
+  \bc <[5 3]> <6 5\!> <_!>4. q8 \bassFigureExtendersOff %25
+  r2.
+  r2 \bo <[6]>4
+  <6>2 \bc <[_!]>4
+  r2 <6 5>4
+  r2 <6>8 <6 5> %30
+  r2 <6->8 <6 5>
+  r4. <6>8 <6 5>4
+  r2.
+  r
+  <_-> %35
+  r4 <6 4>8 <5 3> <8 6> <7 5>
+  <6 4>4 <5 _+> <\t \t>
+  <5 4> <\t _!>2
+  r2 r8 <_!>
+  r2 r8 <7- 5 [_!]> %40
+  <6 4>4 <5 _+> <\t \t>
+  r2 <5>8 <6>
+  <4>4 <_+>2
+  r2 <6>4
+  r2 <6>4 %45
+  r4. <_!>
+  <_!> q8 <6> <6!>
+  r2.
+  r2 <6>4
+  r2 <6>4 %50
+  r2 r8 <_!>
+  r4 <8 6->8 <7 5> <6 4> <5 _+>
+  <3>4 \bo <[8 6]>8 <7 5> <6 4> \bc <[5 _+]>
+  r2.
+  <9 4>8 <8 3>4. <6 5>4 %55
+  <9 4>8 <8 3>4. <6>8 <[7]>
+  <9 4> <8 3> r2
+  <9 4>8 <8 3> r4 <[6 5]>
+  <9 4>8 <8 3> r4 <8 6>8 <7 5>
+  <6 4> <5 3>4. \bo <[8 6]>8 \bc <[7 5]> %60
+  <6 4>8 <5 3> r2
+  r \bo <[6] _!>8 \bc <[5] \t>
+  r2.
+  <7>8 <[8]> r2
+  <7>8 \bo <[8]>4. \bc <[_-]>4 %65
+  <7-> <6 5->2
+  <6 5>4 <4> <3>
+  r2.
+  <6 5->2 <6 5>4
+  r2 \bo <[8] 6 [_-]>8 \bc <[7] 5 [\t]> %70
+  <_!>2 <\t>4
+  r2 <7- [_!]>4
+  <9 4> <8 _-> <6>
+  <6>2 <5->4
+  <9 4-> <8 3>2 %75
+  <6! [5-]>2.
+  r2 <4 2>4
+  <6 5>2.
+  <6 4>4 <5 3>2
+  r2. %80
+  \bo <[5]>4 <6>2
+  \bc <[5]>4 <6>2
+  r2.
+  <_!>2 <6>8 <7>
+  <9 4>4 <8 3>2 %85
+  r <_->4
+  <7->4. <_->
+  <7->4 <4> <3>
+  <5!>2 <6>4
+  <7>4. <[6]> %90
+  <6 5>4 <4> <3>
+  r2 <6>4
+  q <6 5>2
+  r2. %94 finis
+}
