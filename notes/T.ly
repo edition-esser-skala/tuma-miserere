@@ -102,11 +102,7 @@ MiserereTenoreLyrics = \lyricmode {
   am. %40 finis
 
 
-  % Be -- ni -- gne fac, Do -- mi -- ne, in bo -- na vo -- lun -- ta -- te tu -- a Si -- on,
-  % ut ae -- di -- fi -- cen -- tur mu -- ri Ie -- ru -- sa -- lem.
-  % Tunc ac -- cep -- ta -- bis sa -- cri -- fi -- ci -- um iu -- sti -- ti -- ae,
-  % ob -- la -- ti -- o -- nes et ho -- lo -- cau -- sta;
-  % tunc im -- po -- nent su -- per al -- ta -- re tu -- um vi -- tu -- los.
+
   % Glo -- ri -- a Pa -- tri et Fi -- li -- o et Spi -- ri -- tu -- i San -- cto,
   % si -- cut e -- rat in prin -- ci -- pi -- o et nunc et sem -- per
   % et in sae -- cu -- la sae -- cu -- lo -- rum, a -- men.
@@ -990,4 +986,110 @@ SacrificiumTenoreLyrics = \lyricmode {
   non, non,
   non de -- spi -- ci --
   es. %30 finis
+}
+
+BenigneTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key b \major \time 4/4 \autoBeamOff \tempoBenigne
+    r4 b\fE es d8 d
+    b4 b8 a d8. d16 d8 b
+    b a a h c4 b?8([ a)]
+    b d d4 d r
+    d8 d d d es4 es %5
+    a, d4~ d8 es es d
+    d b b a b b d d
+    es8. c16 c8 c c8. h16 h4
+    r8 d d d d4 c8 d
+    c4 d es( d8[ c)] \noBreak %10
+    d2 r\fermata
+    R1*4 %15
+    r2 g,4. g8
+    a2 b4. h8
+    c4. cis8 d c? b g
+    a4. a8 g g c4~
+    c h r8 g c([ b?)] %20
+    as a d([ c)] b d c b
+    c4. c8 b4 r8 g
+    c([ d)] es4 d4. d8
+    g,4 r r8 c a g
+    fis4 g8 b c4 d8([ c)] %25
+    b4 c c b
+    c4. c8 d2
+    R1
+    c4. c8 d2
+    es4. e8 f4. fis8 %30
+    g f es4. es8 d8. d16
+    es8 b g([ f)] es as as([ g)]
+    f b b([ as)] g4 b8 c
+    b4 r r r8 b
+    c([ b)] as c d([ c)] b b %35
+    es d c b16([ c)] d8 b b8. b16
+    b4 r r2
+    r4 r8 b c([ b)] as a
+    d([ c)] b h c4 c8 g
+    as4 c2 h8. h16 %40
+    c4 r r2
+    R1*2
+    r2 g4. g8
+    as4. a8 b4 b8 h %45
+    c([ es)] d([ c)] d h c d
+    es es d([ es)] f f es[ d]
+    c[ h] c4~ c8 c h8. h16
+    c4 as b4. h8
+    c2~ c4 d8([ es)] %50
+    f4 es d2~
+    d4. d8 c2\fermata \bar "||" %52 finis
+  }
+}
+
+BenigneTenoreLyrics = \lyricmode {
+  Be -- ni -- gne, be --
+  ni -- gne fac, Do -- mi -- ne, in
+  bo -- na vo -- lun -- ta -- te
+  tu -- a Si -- on,
+  ut ae -- di -- fi -- cen -- tur %5
+  mu -- ri __ Ie -- ru -- sa --
+  lem. Tunc ac -- cep -- ta -- bis sa -- cri --
+  fi -- ci -- um iu -- sti -- ti -- ae,
+  ob -- la -- ti -- o -- nes et
+  ho -- lo -- cau -- %10
+  sta.
+
+  Tunc im -- %16
+  po -- nent su --
+  per al -- ta -- re tu -- um
+  vi -- tu -- los, im -- po --
+  nent, im -- po -- %20
+  nent, im -- po -- nent, im -- po -- nent
+  vi -- tu -- los, im --
+  po -- nent vi -- tu --
+  los, su -- per al --
+  ta -- re, su -- per al -- %25
+  ta -- re tu -- um
+  vi -- tu -- los,
+
+  tunc im -- po --
+  nent su -- per al -- %30
+  ta -- re tu -- um vi -- tu --
+  los, im -- po -- nent, im -- po --
+  nent, im -- po -- nent vi -- tu --
+  los, im --
+  po -- nent, im -- po -- nent su -- %35
+  per al -- ta -- re tu -- um vi --
+  tu -- los,
+  im -- po -- nent, im --
+  po -- nent, im -- po -- nent, im --
+  po -- nent vi -- tu -- %40
+  los,
+
+  tunc im -- %44
+  po -- nent su -- per al -- %45
+  ta -- re tu -- um vi -- tu --
+  los, im -- po -- nent, im -- po --
+  _ _ nent vi -- tu --
+  los, su -- per al --
+  ta -- re %50
+  tu -- um vi --
+  tu -- los. %52 finis
 }

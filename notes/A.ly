@@ -101,11 +101,7 @@ MiserereAltoLyrics = \lyricmode {
   am. %40 finis
 
 
-  % Be -- ni -- gne fac, Do -- mi -- ne, in bo -- na vo -- lun -- ta -- te tu -- a Si -- on,
-  % ut ae -- di -- fi -- cen -- tur mu -- ri Ie -- ru -- sa -- lem.
-  % Tunc ac -- cep -- ta -- bis sa -- cri -- fi -- ci -- um iu -- sti -- ti -- ae,
-  % ob -- la -- ti -- o -- nes et ho -- lo -- cau -- sta;
-  % tunc im -- po -- nent su -- per al -- ta -- re tu -- um vi -- tu -- los.
+
   % Glo -- ri -- a Pa -- tri et Fi -- li -- o et Spi -- ri -- tu -- i San -- cto,
   % si -- cut e -- rat in prin -- ci -- pi -- o et nunc et sem -- per
   % et in sae -- cu -- la sae -- cu -- lo -- rum, a -- men.
@@ -1000,4 +996,114 @@ SacrificiumAltoLyrics = \lyricmode {
   non, non,
   non de -- spi -- ci --
   es. %30 finis
+}
+
+BenigneAlto = {
+  \relative c' {
+    \clef treble
+    \key b \major \time 4/4 \autoBeamOff \tempoBenigne
+    r2 r4 r8 f\fE
+    g([ a)] b f f8. f16 f8 f
+    f f f f es4 f
+    g8 a g4 fis r
+    f8 f g g g4 g %5
+    fis2 g8 g g fis
+    g g g fis g g g g
+    g8. g16 g8 g g8. g16 g4
+    r8 g g g g4 g8 g
+    g4 g g( f) \noBreak %10
+    g2 r\fermata
+    R1*3
+    r4 r8 c, f([ es)] d d %15
+    g([ f)] es c c([ b!)] g'4~
+    g fis8. fis16 g8 d g([ f?)]
+    es e a([ g] fis) d r4
+    r2 c4. c8
+    d2 es4. e8 %20
+    f4. fis8 g d g4~
+    g8 g fis8. fis16 g8 d g([ f]
+    es[ f]) g2 fis8. fis16
+    g8 d g([ f)] e g fis[( g]
+    a4) g2 fis8. fis16 %25
+    g8 f es4 d8 d g4~
+    g8 g fis8. fis16 g8 d g([ f?)]
+    es! e a g fis fis g4~
+    g8 g fis8. fis16 g4 r
+    R1 %30
+    r2 f4. f8
+    g2 as4. as8
+    b2 b4 r
+    r8 f b([ as)] g g g([ f)]
+    es es as([ g)] f f b as %35
+    g4 as f g
+    f8. f16 g4 r8 f b([ as)]
+    g g g([ f)] es es as g
+    f f b as g f es4
+    r8 c4 c8 d4. d8 %40
+    es4 es8 e^\critnote f c f([ es?)]
+    d d g f es4. e8
+    f c f4~ f8 es16([ d)] es8. es16
+    f4 f8. f16 es8 es es([ d)]
+    c c f es d d g f %45
+    es8. es16 f4 g4. g8
+    as4. a8 b h4 h8
+    c g g g g4. g8
+    g es as([ g)] f f b([ as)]
+    g g c b as g f g %50
+    g2 g4 g
+    g4. g8 g2\fermata \bar "||" %52 finis
+  }
+}
+
+BenigneAltoLyrics = \lyricmode {
+  Be --
+  ni -- gne fac, Do -- mi -- ne, in
+  bo -- na vo -- lun -- ta -- te
+  tu -- a Si -- on,
+  ut ae -- di -- fi -- cen -- tur %5
+  mu -- ri Ie -- ru -- sa --
+  lem. Tunc ac -- cep -- ta -- bis sa -- cri --
+  fi -- ci -- um iu -- sti -- ti -- ae,
+  ob -- la -- ti -- o -- nes et
+  ho -- lo -- cau -- %10
+  sta.
+
+  Im -- po -- nent, im -- %15
+  po -- nent, im -- po -- nent __
+  vi -- tu -- los, im -- po --
+  nent, im -- po -- nent,
+  tunc im --
+  po -- nent su -- %20
+  per al -- ta -- re tu --
+  um vi -- tu -- los, im -- po --
+  nent vi -- tu --
+  los, im -- po -- nent, im -- po --
+  nent vi -- tu -- %25
+  los, im -- po -- nent, im -- po --
+  nent vi -- tu -- los, im -- po --
+  nent su -- per al -- ta -- re tu --
+  um vi -- tu -- los,
+  %30
+  tunc im --
+  po -- nent, im --
+  po -- nent,
+  im -- po -- nent, im -- po --
+  nent, im -- po -- nent su -- per al -- %35
+  ta -- re tu -- um
+  vi -- tu -- los, im -- po --
+  nent, im -- po -- nent su -- per al --
+  ta -- re tu -- um vi -- tu -- los,
+  tunc im -- po -- nent %40
+  su -- per al -- ta -- re tu --
+  um, im -- po -- nent vi -- tu --
+  los, im -- po -- nent vi -- tu --
+  los, vi -- tu -- los, im -- po --
+  nent su -- per al -- ta -- re tu -- um %45
+  vi -- tu -- los, tunc im --
+  po -- nent su -- per al --
+  ta -- re tu -- um vi -- tu --
+  los, im -- po -- nent, im -- po --
+  nent su -- per al -- ta -- re tu -- um, %50
+  im -- po -- nent
+  vi -- tu -- los. %52 finis
 }

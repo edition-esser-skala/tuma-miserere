@@ -91,11 +91,7 @@ MiserereBassoLyrics = \lyricmode {
 
 
 
-  % Be -- ni -- gne fac, Do -- mi -- ne, in bo -- na vo -- lun -- ta -- te tu -- a Si -- on,
-  % ut ae -- di -- fi -- cen -- tur mu -- ri Ie -- ru -- sa -- lem.
-  % Tunc ac -- cep -- ta -- bis sa -- cri -- fi -- ci -- um iu -- sti -- ti -- ae,
-  % ob -- la -- ti -- o -- nes et ho -- lo -- cau -- sta;
-  % tunc im -- po -- nent su -- per al -- ta -- re tu -- um vi -- tu -- los.
+
   % Glo -- ri -- a Pa -- tri et Fi -- li -- o et Spi -- ri -- tu -- i San -- cto,
   % si -- cut e -- rat in prin -- ci -- pi -- o et nunc et sem -- per
   % et in sae -- cu -- la sae -- cu -- lo -- rum, a -- men.
@@ -982,4 +978,112 @@ SacrificiumBassoLyrics = \lyricmode {
   non, non,
   non de -- spi -- ci --
   es. %30 finis
+}
+
+BenigneBasso = {
+  \relative c {
+    \clef bass
+    \key b \major \time 4/4 \autoBeamOff \tempoBenigne
+    r2 r4 r8 b'\fE
+    g4 g8 a b8. b,16 b8 b
+    f' f es d c4 d
+    g8 fis g4 d r
+    d8 d g f es([ d)] c4 %5
+    d2 g8 es c d
+    g, g' d d g, g g' f
+    es8. es16 d8 c g'8. g,16 g4
+    r8 h h h c4 c8 h
+    c4 b as2 \noBreak %10
+    g r\fermata
+    c4. c8 d2 \noBreak
+    es4. e8 f4. fis8
+    g f es c d4. d8
+    c4 r r2 %15
+    R1
+    r8 a d([ c)] b4 r
+    r2 r4 g'~
+    g f!2 es4
+    r8 d g([ f)] es4 r %20
+    r2 r8 b' a g
+    a4. a8 g4 r
+    R1*3 %25
+    r2 g,4. g8
+    a2 b4. h8
+    c4. cis8 d c? b g
+    a4. a8 g g g' f!
+    es[ es as g] f[ f b] as %30
+    g4 c as b
+    es,8 es es([ d)] c f f([ es)]
+    d g g f es4 g8[( as])
+    b b, r4 r r8 es
+    as([ g)] f f b([ as)] g g %35
+    c([ b] as[ g16 as] b8) b es,8. es16
+    b4 r r2
+    r8 es es([ d)] c c f([ es)]
+    d d g f es d c b
+    as4. as8 g4 r %40
+    R1*2
+    r2 c4. c8
+    d4. d8 es4 es8 e
+    f4. fis8 g4 g %45
+    as4. as8 g4 g
+    \once \tieDashed g,2~ g~
+    g4 g g4. g8
+    c c f([ es)] d d g([ f)]
+    es es as g f([ es)] d([ c)] %50
+    h4 c \once \tieDashed g2~
+    g4. g8 c2\fermata \bar "||" %52 finis
+  }
+}
+
+BenigneBassoLyrics = \lyricmode {
+  Be --
+  ni -- gne fac, Do -- mi -- ne, in
+  bo -- na vo -- lun -- ta -- te
+  tu -- a Si -- on,
+  ut ae -- di -- fi -- cen -- tur %5
+  mu -- ri Ie -- ru -- sa --
+  lem. Tunc ac -- cep -- ta -- bis sa -- cri --
+  fi -- ci -- um iu -- sti -- ti -- ae,
+  ob -- la -- ti -- o -- nes et
+  ho -- lo -- cau -- %10
+  sta.
+  Tunc im -- po --
+  nent su -- per al --
+  ta -- re tu -- um vi -- tu --
+  los, %15
+
+  im -- po -- nent,
+  im --
+  po -- nent,
+  im -- po -- nent, %20
+  im -- po -- nent
+  vi -- tu -- los,
+
+  tunc im -- %26
+  po -- nent su --
+  per al -- ta -- re tu -- um
+  vi -- tu -- los, su -- per al --
+  ta -- _ re %30
+  tu -- um vi -- tu --
+  los, im -- po -- nent, im -- po --
+  nent su -- per al -- ta -- re
+  tu -- um, im --
+  po -- nent, im -- po -- nent, im -- %35
+  po -- nent vi -- tu --
+  los,
+  im -- po -- nent, im -- po --
+  nent su -- per al -- ta -- re tu -- um
+  vi -- tu -- los, %40
+
+  tunc im -- %43
+  po -- nent su -- per al --
+  ta -- re tu -- um %45
+  vi -- tu -- los, im --
+  po --
+  nent vi -- tu --
+  los, im -- po -- nent, im -- po --
+  nent su -- per al -- ta -- re %50
+  tu -- um vi --
+  tu -- los. %52 finis
 }

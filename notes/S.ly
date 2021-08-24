@@ -101,11 +101,7 @@ MiserereSopranoLyrics = \lyricmode {
   am. %40 finis
 
 
-  % Be -- ni -- gne fac, Do -- mi -- ne, in bo -- na vo -- lun -- ta -- te tu -- a Si -- on,
-  % ut ae -- di -- fi -- cen -- tur mu -- ri Ie -- ru -- sa -- lem.
-  % Tunc ac -- cep -- ta -- bis sa -- cri -- fi -- ci -- um iu -- sti -- ti -- ae,
-  % ob -- la -- ti -- o -- nes et ho -- lo -- cau -- sta;
-  % tunc im -- po -- nent su -- per al -- ta -- re tu -- um vi -- tu -- los.
+
   % Glo -- ri -- a Pa -- tri et Fi -- li -- o et Spi -- ri -- tu -- i San -- cto,
   % si -- cut e -- rat in prin -- ci -- pi -- o et nunc et sem -- per
   % et in sae -- cu -- la sae -- cu -- lo -- rum, a -- men.
@@ -974,4 +970,110 @@ SacrificiumSopranoLyrics = \lyricmode {
   non, non,
   non de -- spi -- ci --
   es. %30 finis
+}
+
+BenigneSoprano = {
+  \relative c' {
+    \clef treble
+    \key b \major \time 4/4 \autoBeamOff \tempoBenigne
+    r2 r4 r8 b'\fE
+    es4 d8 c d c b d
+    d^\critnote c c d es4 d8([ c)]
+    b a b4 a a8 d
+    h4. h8 c d es4~ %5
+    es d8 c b4( a8.) a16
+    g4 r r h8 h
+    c8. c16 d8 es es8. d16 d4
+    r8 d h g es'4 es8 d
+    es4 d c2 \noBreak %10
+    h r\fermata
+    R1*3
+    r8 g c([ b)] as a d([ c)] %15
+    h g c es, d4. d8
+    c4 r r2
+    r8 g' c([ b] a4) b
+    c4. d8 g,4 r
+    R1*3 %22
+    g4. g8 a2
+    b4. h8 c4. cis8
+    d c b g a4. a8 %25
+    g4 r r2
+    r r8 f! b([ a)]
+    g g c([ b)] a4 b
+    c2~ c8 c h8. h16
+    c8 g c([ b)] as a d([ c] %30
+    h4) g r2
+    b4. b8 c2
+    d4. d8 es[ b] es4~
+    es d r8 b es([ d)]
+    c c f([ es)] d d g f %35
+    es4 f8([ es)] d4 es8 es
+    d([ b)] es2 d8. d16
+    es4 r8 b es([ d)] c c
+    f([ es)] d d g4 g,~
+    g f8. f16 g4 r %40
+    g4. g8 as4. a8
+    b4 h8 h c g c b?
+    as4. as8 g g c4~
+    c8 c h8. h16 c8 g c([ b?)]
+    as c d([ c)] b b es d %45
+    c4. c8 h d es([ d)]
+    c c f([ es)] d d g([ f]
+    es[ d)] es4 d4. d8
+    c8 c4 c8 d4. d8
+    es4 es8 e \once \tieDashed f4~ f8[ es] %50
+    d4 c2 h8 a
+    h4. h8 c2\fermata \bar "||" %52 finis
+  }
+}
+
+BenigneSopranoLyrics = \lyricmode {
+  Be --
+  ni -- gne fac, Do -- mi -- ne, in
+  bo -- na vo -- lun -- ta -- te
+  tu -- a Si -- on, ut ae --
+  di -- fi -- cen -- tur mu -- %5
+  ri Ie -- ru -- sa --
+  lem. Sa -- cri --
+  fi -- ci -- um iu -- sti -- ti -- ae,
+  ob -- la -- ti -- o -- nes et
+  ho -- lo -- cau -- %10
+  sta.
+
+  Im -- po -- nent, im -- po -- %15
+  nent, im -- po -- nent vi -- tu --
+  los,
+  im -- po -- nent
+  vi -- tu -- los,
+
+  tunc im -- po -- %23
+  nent su -- per al --
+  ta -- re tu -- um vi -- tu -- %25
+  los,
+  im -- po --
+  nent, im -- po -- nent, im --
+  po -- nent vi -- tu --
+  los, im -- po -- nent im -- po -- %30
+  nent,
+  tunc im -- po --
+  nent, im -- po -- _
+  nent, im -- po --
+  nent, im -- po -- nent su -- per al -- %35
+  ta -- re tu -- um, im --
+  po -- nent vi -- tu --
+  los, im -- po -- nent, im --
+  po -- nent, im -- po -- nent __
+  vi -- tu -- los, %40
+  tunc im -- po -- nent
+  su -- per al -- ta -- re tu -- um
+  vi -- tu -- los, im -- po --
+  nent vi -- tu -- los, im -- po --
+  nent im -- po -- nent, im -- po -- nent %45
+  vi -- tu -- los, im -- po --
+  nent, im -- po -- nent, im -- po --
+  nent vi -- tu --
+  los, tunc im -- po -- nent
+  su -- per al -- ta -- %50
+  _ re tu -- um
+  vi -- tu -- los. %52 finis
 }

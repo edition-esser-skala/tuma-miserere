@@ -1085,3 +1085,123 @@ SacrificiumBassFigures = \figuremode {
   <7 _!>4 <6 4> <5 \t> <\t _!>
   r1 %30 finis
 }
+
+BenigneOrgano = {
+  \relative c {
+    \clef bass
+    \key b \major \time 4/4 \tempoBenigne
+    b8\fE c d b g a b b'
+    g4 g8 a b b, d b
+    f'4 es8 d c4 d
+    g8 fis g g, d'4 r
+    d8 d g f es d c4 %5
+    d2 g8 es c d
+    g,4 d' g, g'8 f
+    es4 d8 c g'4 g,
+    r8 h h h c4. h8
+    c4 b as2 \noBreak %10
+    g r\fermata
+    c4.-! c8-! \parOn d2-\parenthesize-! \noBreak
+    es4.-! e8-! f4.-! fis8-!
+    g-! f-! es-! c-! d2-!
+    \parOff c8-\parenthesize-! \clef treble << { g'' c b as a d c h g c4 } \\ { r8 r c, f es d d g f es c } >> %15
+    \clef "treble_8" g4. g8
+    a8 \clef bass a,[ d c] b4 \clef "treble_8" b'8 h
+    c4. cis8 d c? \clef bass g4~
+    g \once \tieDashed f!~ f es
+    r8 d g f es \clef "treble_8" g[ c b!] %20
+    as a d c b \clef bass b[ a g]
+    a2 g4 \clef "treble_8" r8 g
+    c d es4 d2
+    g,4 r r8 c a g
+    fis4 g8 b c4 d8 c %25
+    b4 c \clef bass g,4. g8
+    a2 b4. h8
+    c4. cis8 d c? b g
+    a2 g8 g g' f!
+    es es as g f f b as %30
+    g4 c as b
+    es,8 es es d c f f es
+    d g g f es4 g8 as
+    b b, r4 r r8 es
+    as g f f b as g g %35
+    c b as g16 as b4 es,
+    b \clef treble << { es''2 d4 es8 } \\ { g,4 r8 f b as g } >>
+    \clef bass es, es d c c f es
+    d d g f es d c b
+    as2 g4 \clef "treble_8" h'8.^\critnote h16 %40
+    \clef treble << {
+      <es g>4. <e g>8 as4. a8
+      b4 h8 h c g c b
+      as2
+    } \\ {
+      c,4 r f8 c f es
+      d d g f es4. e8
+      f c f4
+    } >> \clef bass c,4. c8
+    d4. d8 es4. e8
+    f4. fis8 g2 %45
+    as g4 g,
+    g1~-\tasto
+    g
+    c8 c f es d d g f
+    es es as g f es d c %50
+    h4 c \once \tieDashed g2~
+    g c\fermata \bar "||" %52 finis
+  }
+}
+
+BenigneBassFigures = \figuremode {
+  r2 <6>
+  <6>4 <5>8 <[6]> r2
+  <6 4>8 <5 3>4 \bo <[6!]>8 r4 <8 6->8 \bc <[7] 5>
+  r <[6]>4. <_+>2
+  <6!>4 <_!>8 <\t> <6>2 %5
+  <9 _+>4 \bassFigureExtendersOn <8 _+>8 <7 _+> \bassFigureExtendersOff r4 <6 5>8 <_+>
+  r4 <6 4>8 <5 _+> r4 <_!>
+  <6>2 <6 4>4 <5 _!>
+  r8 <6>4. \bo <[9]>4 \bc <[8]>8 <6>
+  r4 <6> <7> <6> %10
+  <[_!]>1
+  r
+  r
+  r
+  r %15
+  r2 \bo <[4]>8 \bc <[_-]>4.
+  <[7]>4 <_+> <6> q8 <5!>
+  <5 _-> <\t _!> <[8 6]> <7 5 [_!]> <_+>2
+  <4 2>4 <6> <5 2> <6>
+  r8 <7> <_!>4 <6>4. <4! 2>8 %20
+  <6> <\t> <3> <4+> <6> q <3> q
+  <7>4 <6\\>2 r8 <[7! _!]>
+  r4 <[6]> <5 4> <\t _+>
+  r2 r8 <[_!]> <6\\> <[6!] 4+ 2>
+  <6> <5!> r4 <6 5> <_+> %25
+  <6>2 <5 4>4 <\t 3>
+  <7> <6\\> <6>8 \bo <[5! 3]> <8 6> \bc <[7 5]>
+  <_-> <_!> \bo <[8] 6> \bc <[7] 5> <_+>4 <6>
+  <7> <6\\> <5 4> <\t _!>
+  <6>4. <6!>8 <_->8 <_!> r <6\\> %30
+  <_!>2 <6 5>
+  r4. <6>8 <6-> <_-> <\t> <3>
+  <6>4. <[6 _-]>8 <5>4 <[6]>
+  <4> <3>2.
+  r4 <_->2. %35
+  r4 <6>2.
+  r1
+  r4. <6>8 r4 <_->8 <[4!] 3>
+  <6>4 <_->8 <4! _-> <6>2
+  <7>4 <6> <5 4> <[6]> %40
+  r1
+  r
+  r2 \bo <[4]>8 \bc <[_-]>4.
+  <7>4 <6!> <6>4. <5->8
+  <5 _->4 \bo <[8] 6 _->8 \bc <[7] 5  _!> <5 _->4 \bo <[8] 6 [_-]>8 \bc <[7] 5 [_!]> %45
+  <5>4 <6> <_!>2
+  r1
+  r
+  r4 <_->8 <\t> <6->4. <4! _->8
+  <6>4. <6!>8 <_-> <6> <[6!]>4 %50
+  <6 5>2 <5 4>4 \bassFigureExtendersOn <5 _!>8 <5 2>
+  <5 [_!]>2 \bassFigureExtendersOff r %52 finis
+}
