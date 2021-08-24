@@ -89,8 +89,6 @@ MiserereBassoLyrics = \lyricmode {
   tem me --
   am. %40 finis
 
-  % Do -- mi -- ne, la -- bi -- a me -- a a -- pe -- ri -- es,
-  % et os me -- um an -- nun -- ti -- a -- bit lau -- dem tu -- am.
   % Quo -- ni -- am si vo -- lu -- is -- ses sa -- cri -- fi -- ci -- um, de -- dis -- sem u -- ti -- que;
   % ho -- lo -- cau -- stis non de -- le -- cta -- be -- ris.
   % Sa -- cri -- fi -- ci -- um De -- o spi -- ri -- tus con -- tri -- bu -- la -- tus;
@@ -796,4 +794,79 @@ NeProiciasBassoLyrics = \lyricmode {
   sti -- ti -- %90
   am tu --
   am. %92 finis
+}
+
+DomineBasso = {
+  \relative c {
+    \clef bass
+    \key es \major \time 4/4 \autoBeamOff \tempoDomine
+    R1*2
+    es8[\pE f] g4 as8[ as,] as'4
+    g8[ g,] g'4 f8.[ es16] d8. d16
+    es8 r r4 r2 %5
+    R1
+    r2 b4 d8 d
+    es b r b c4 r8 c
+    d4 r8 d es4 r8 es
+    f4 r8 a b([ g es)] f %10
+    \tempoEtOs b,4 r r2
+    R1
+    r4 b8\fE b f' f r f
+    b b, r a b4. f'8
+    b b, r4 r2 %15
+    R1
+    r4 es8 es b' b, r b
+    es es r d es4. b8
+    es es r4 r a8 f
+    b b, r4 r2 %20
+    es8^\critnote es f([ g)] c,4 r
+    es f8([ g)] es es f([ g)]
+    c,4 r r2
+    r4 g8 as b b16 b d8 d
+    es es r4 r a8 f %25
+    b b, r4 r2
+    as2 b4. b8
+    c4. c8 d2
+    es4 c8 as b2
+    es16 es[ d16.( es32)] c16.([ des32) \slurDashed b16.( c32)] as16[ f' es16.( f32)] d16.([ es32) c16.( d32)] \slurSolid %30
+    b16[ g' f16.([ g32)] es16.([ f32) d16.( es32)] c16[ as' g16.( as32)] f16.([ g32) es16.( f32)]
+    d8 es c b a4 a
+    b4. b8 b2
+    es,4 r r2\fermata \bar "||" %34 finis
+  }
+}
+
+DomineBassoLyrics = \lyricmode {
+  Do -- _ _ _ %3
+  _ _ _ _ mi --
+  ne, %5
+
+  la -- bi -- a
+  me -- a a -- pe -- ri --
+  es, a -- pe -- ri --
+  es, a -- pe -- ri -- %10
+  es.
+
+  Et os me -- um, os
+  me -- um an -- nun -- ti --
+  a -- bit, %15
+
+  et os me -- um, os
+  me -- um an -- nun -- ti --
+  a -- bit lau -- dem
+  tu -- am, %20
+  lau -- dem tu -- am,
+  lau -- dem, lau -- dem tu --
+  am,
+  et os me -- um an -- nun -- ti --
+  a -- bit lau -- dem %25
+  tu -- am,
+  an -- nun -- ti --
+  a -- bit lau --
+  dem, lau -- dem tu --
+  am, lau -- _ _ _ %30
+  _ _ _ _
+  _ dem, lau -- dem tu -- am,
+  lau -- dem tu --
+  am. %34 finis
 }

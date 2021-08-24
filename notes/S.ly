@@ -100,10 +100,6 @@ MiserereSopranoLyrics = \lyricmode {
   ta -- tem me --
   am. %40 finis
 
-
-
-  % Do -- mi -- ne, la -- bi -- a me -- a a -- pe -- ri -- es,
-  % et os me -- um an -- nun -- ti -- a -- bit lau -- dem tu -- am.
   % Quo -- ni -- am si vo -- lu -- is -- ses sa -- cri -- fi -- ci -- um, de -- dis -- sem u -- ti -- que;
   % ho -- lo -- cau -- stis non de -- le -- cta -- be -- ris.
   % Sa -- cri -- fi -- ci -- um De -- o spi -- ri -- tus con -- tri -- bu -- la -- tus;
@@ -794,4 +790,78 @@ NeProiciasSopranoLyrics = \lyricmode {
   sti -- ti -- %90
   am tu --
   am. %92 finis
+}
+
+DomineSoprano = {
+  \relative c' {
+    \clef treble
+    \key es \major \time 4/4 \autoBeamOff \tempoDomine
+    es'4~\pE es16[ d c b] \appoggiatura b8 c4~ c16[ d \appoggiatura f32 es16 d32( c)]
+    b4~ b16[ d es b] as([ g as c)] d([ es f)] as,
+    \appoggiatura as8 g4 r r2
+    R1
+    b4. as16 b \appoggiatura as g8 f r b %5
+    b16([ a) es'( c)] b([ a) es'( c)] c([ b) f'( d)] c([ b) f'( as,)]
+    g([ b c d)] es([ b)] as([ g)] f4 r
+    R1*3 %10
+    \tempoEtOs r4 b8\fE d c f,16 a c8 es
+    d16.([ f32) es16.( f32)] d16.([ es32) c16.( d32)] b16.([ f'32) \slurDashed es16.( f32)] d16.([ es32) c16.( d32)] \slurSolid
+    b8 f r4 r2
+    R1
+    r4 b8 es d16([ c)] b c b8 as! %15
+    g16[ es' \once \slurDashed d16.( es32)] b16.([ c32) as16.( b32)] g16([^\critnote es') \slurDashed d16.( es32)] b16.[( c32) as16.( b32)] \slurSolid
+    g16[ f] es8 r4 r2
+    R1
+    r4 b'16([ d)] es([ des)] des([ h)] c8 r4
+    r d16([ f)] g([ f)] es([ d c es)] d([ c h d)] %20
+    c8 g r4 es'16([ d c es)] d([ c h d)]
+    c8 g r4 r2
+    r4 g8 c h16([ c)] d as! g([ f)] es([ d)]
+    es([ d)] c8 r4 r2
+    r4 b'16([ d)] es([ des)] des([ h)] c8 r4 %25
+    r8 f d c b16.([ c32) as16.( b32)] \slurDashed g16.([ as32) f16.( g32]) \slurSolid
+    es4 c'8.([\trill b32 c)] d16.([ es32) c16.( d32)] b16.([ c32) \once \slurDashed as16.( b32)]
+    g4 es'8.([\trillE d32 es)] f16.([ g32) \slurDashed es16.( f32)] d16.[( es32) c16.( d32]) \slurSolid
+    b8 b es4~ es8 d16([ c)] d4
+    es es16.([ f32) des16.( es32)] c4 f16.([ g32) es16. f32] %30
+    d8 b r4 c2
+    b4 es~ es8[ d16 c] \slurDashed f16.[( g32) es16.( f32)] \slurSolid
+    d8[ b] es4~ es8 d16([ c)] d4
+    es r r2\fermata \bar "||" %34 finis
+  }
+}
+
+DomineSopranoLyrics = \lyricmode {
+  Do -- _
+  _ _ _ mi --
+  ne,
+
+  la -- bi -- a me -- a a -- %5
+  pe -- _ _ _
+  _ _ ri -- es.
+
+  Et os me -- um an -- nun -- ti -- %11
+  a -- _ _ _
+  _ bit,
+
+  et os me -- um an -- nun -- ti -- %15
+  a -- _ _ _
+  _ bit
+
+  lau -- dem tu -- am,
+  lau -- dem, lau -- _ %20
+  _ dem, lau -- _
+  _ dem,
+  et os me -- um an -- nun -- ti --
+  a -- bit
+  lau -- dem tu -- am, %25
+  an -- nun -- ti -- a -- _
+  _ _ _ _
+  _ _ _ _
+  _ bit lau -- dem tu --
+  am, lau -- _ _ %30
+  _ dem, lau --
+  dem, lau -- _
+  _ _ dem tu --
+  am. %34 finis
 }

@@ -101,8 +101,6 @@ MiserereTenoreLyrics = \lyricmode {
   tem me --
   am. %40 finis
 
-  % Do -- mi -- ne, la -- bi -- a me -- a a -- pe -- ri -- es,
-  % et os me -- um an -- nun -- ti -- a -- bit lau -- dem tu -- am.
   % Quo -- ni -- am si vo -- lu -- is -- ses sa -- cri -- fi -- ci -- um, de -- dis -- sem u -- ti -- que;
   % ho -- lo -- cau -- stis non de -- le -- cta -- be -- ris.
   % Sa -- cri -- fi -- ci -- um De -- o spi -- ri -- tus con -- tri -- bu -- la -- tus;
@@ -803,4 +801,79 @@ NeProiciasTenoreLyrics = \lyricmode {
   sti -- ti -- am __ %90
   tu --
   am. %92 finis
+}
+
+DomineTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key es \major \time 4/4 \autoBeamOff \tempoDomine
+    R1*2
+    es4~\pE es16[ d c b] \appoggiatura b8 \once \tieDashed c4~ c16[ d \appoggiatura f32 es16 d32( c)]
+    b4~ b16[ d es b] as([ g as c)] d([ es f)] as,
+    \appoggiatura as8 g4 r r2 %5
+    R1
+    r2 b4. as16 b
+    \appoggiatura as g8 f r b b16([ a) es'( c)] b([ a) es'( c)]
+    c([ b) f'( d)] \slurDashed c([ b) f'( d)] d([ c) g'( f)] \slurSolid es([ d) c( b)]
+    a16.[ f32 c'16 a] es'4 \tuplet 3/2 8 { \sbOn d16[ c d es d c] \sbOff } \appoggiatura b8 c8. c16 %10
+    \tempoEtOs b4 r r2
+    R1
+    r4 b8\fE d c f,16 a c8 es
+    \slurDashed d16.([ f32) es16.( f32)] \slurSolid d16.([ es32) c16.( d32)] \slurDashed b16.([ f'32) es16.( f32)] d16.([ es32) c16.( d32)] \slurSolid
+    b8 f r4 r2 %15
+    R1
+    r4 b8 es d16([ c)] b c b8 as
+    g16[ es' d16.( es32)] b16.([ c32) \slurDashed as16.( b32)] g16[ es' d16.( es32)] \slurSolid b16.([ c32) \once \slurDashed as16.( b32)]
+    g16([ f)] es8 r4 r c'16([ es)] f([ es)]
+    es([ cis)] d8 r4 r2 %20
+    es16([ d c es)] \once \slurDashed d([ c h d)] c8 g r4
+    es'16([ d c es)] d([ c h d)] c([ g)] c8 c([ h)]
+    c4 r r2
+    r4 b8 es d16([ es)] f c b([ as)] g([ f)]
+    g([ f)] es8 r4 r c'16([ es)] f([ es)] %25
+    es([ cis)] d8 r4 r2
+    c16.([ des32) b16.( c32)] as16.([ b32) g16.( as32)] f4 d'?8.([\trillE c32 d)]
+    es16.([ f32) d16.( es32)] c16.([ d32) b16.( c32)] as4 f'8.([\trill es32 f)]
+    g8 b, c c b2
+    b4 c2 d4~ %30
+    d es2 d8[ es]
+    f b, c2 c4
+    b8([ as)] g([ as)] b2
+    b4 r r2\fermata \bar "||" %34 finis
+  }
+}
+
+DomineTenoreLyrics = \lyricmode {
+  Do -- _ %3
+  _ _ _ mi --
+  ne, %5
+
+  la -- bi -- a
+  me -- a a -- pe -- _
+  _ _ _ _
+  _ _ _ _ ri -- %10
+  es.
+
+  Et os me -- um an -- nun -- ti --
+  a -- _ _ _
+  _ bit, %15
+
+  et os me -- um an -- nun -- ti --
+  a -- _ _ _
+  _ bit lau -- dem
+  tu -- am, %20
+  lau -- _ _ dem,
+  lau -- _ _ dem tu --
+  am,
+  et os me -- um an -- nun -- ti --
+  a -- bit lau -- dem %25
+  tu -- am,
+  lau -- _ _ _
+  _ _ _ _
+  _ dem, lau -- dem tu --
+  am, lau -- _ %30
+  _ _
+  _ dem, lau -- dem,
+  lau -- dem tu --
+  am. %34 finis
 }

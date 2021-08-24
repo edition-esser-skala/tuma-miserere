@@ -887,3 +887,81 @@ NeProiciasBassFigures = \figuremode {
   q <6 5>2
   r2. %94 finis
 }
+
+DomineOrgano = {
+  \relative c {
+    \clef bass
+    \key es \major \time 4/4 \tempoDomine
+    es8\pE f g4 as8 as, as'4
+    g8 g, g'4 f8 es d4
+    es8 f g4 as8 as, as'4
+    g8 g, g'4 f8. es16 d4
+    es8 g d b es b' b, d %5
+    c4 r8 c d4 r8 d
+    es4 r8 as, b c d4
+    es8 b d b c4 r8 c
+    d4 r8 d es4 r8 es
+    f4 r8 a b g es f %10
+    \tempoEtOs b,4 b8\fE b' a4 r8 f
+    b4 r8 f d b r f'
+    b4 b,8 b f' f, r f'
+    b b, r a b4. f'8
+    b b, g' es b' b d, b %15
+    es4 g8 f es4 r8 d
+    es4 r8 es b' b, r d
+    es4 r8 b es4 r8 b
+    es4 g, as a
+    b h c8 as' f g %20
+    es4 f8 g c,4 f8 g
+    es4 f8 g es4 f8 g
+    c, d es c g' g, h g
+    c4 g8 as b4 d
+    es g, as a %25
+    b4. as8 g2
+    as b
+    c d
+    es4 c8 as b2
+    es,8 es' c b as f' d c %30
+    b g' es d c as' f es
+    d es c b a2
+    b1
+    es,4 r r2\fermata \bar "||" %34 finis
+  }
+}
+
+DomineBassFigures = \figuremode {
+  r4 <6>2.
+  <6> q8 <5>
+  r4 <6>2.
+  <[6]>2 <7>8 <6>16 q q8 <5>
+  r4 <6>2 r8 q %5
+  <7> <6!>4 <\t>8 <7> <6>4 <5->8
+  r2. <6>4
+  r <6> <7>8 <6!>4 <\t>8
+  <6>4. <6 5->8 <[6]>4. <6 5>8
+  <_!>4. <[6 5]>8 r4 <6 5>8 <[_!]> %10
+  r2 <6>4. <7 [_!]>8
+  r4. \bo <[_!]>8 <6>4. \bc <[_!]>8
+  r2 <5 4>8 <\t _!>4.
+  r4. \bo <[6 5]>2 \bc <[7 _!]>8
+  r4 <6>2 <6>8 <7-> %15
+  r4 <6>8 <[6]>2 <6>8
+  r2.. <[6 5]>8
+  r1
+  r4 <[6]> <5> <6>
+  r \bo <[6]>2 <6>8 \bc <[_!]> %20
+  \bo <[6]>4 <6>8 <_!>4. <6>8 \bc <[_!]>
+  <6>4 <[6]>8 <_!> <6>4 <[6 5]>8 <_!>
+  r4 <6> <[_!]>2
+  r4 <6>2 <6>8 <5>
+  r4 <6>2 q4 %25
+  r2 <6>
+  <5>4 <6> <5> <6>
+  <5> <6> q2
+  r4. \bo <[6 5]>8 <5 4>4 \bc <[\t 3]>
+  r1 %30
+  r2. \bo <[6 5]>8 \bc <[8 6]>
+  <6 5>4. <[2]>8 <6 5>2
+  <5 3>4 <6 4> <5 \t> <\t 3>
+  r1 %34 finis
+}

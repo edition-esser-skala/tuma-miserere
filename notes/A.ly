@@ -100,8 +100,6 @@ MiserereAltoLyrics = \lyricmode {
   tem me --
   am. %40 finis
 
-  % Do -- mi -- ne, la -- bi -- a me -- a a -- pe -- ri -- es,
-  % et os me -- um an -- nun -- ti -- a -- bit lau -- dem tu -- am.
   % Quo -- ni -- am si vo -- lu -- is -- ses sa -- cri -- fi -- ci -- um, de -- dis -- sem u -- ti -- que;
   % ho -- lo -- cau -- stis non de -- le -- cta -- be -- ris.
   % Sa -- cri -- fi -- ci -- um De -- o spi -- ri -- tus con -- tri -- bu -- la -- tus;
@@ -813,4 +811,79 @@ NeProiciasAltoLyrics = \lyricmode {
   sti -- ti -- %90
   am tu --
   am. %92 finis
+}
+
+DomineAlto = {
+  \relative c' {
+    \clef treble
+    \key es \major \time 4/4 \autoBeamOff \tempoDomine
+    R1*2
+    b'4.\pE g8 es es16([ d)] es8 r
+    r es16([ d)] es4~ es8[ d16 es] f8. f16
+    b,8 r r4 r2 %5
+    R1
+    r2 d4 f8 f
+    es([ d16 es)] f8 d es4 r8 \tuplet 3/2 8 { es16[ f g] }
+    f4 r8 \tuplet 3/2 8 { f16[ g as!] } g4. es16([ d)]
+    c4 r8 c16([ f)] f([ d] \once \stemUp b'4) a8 %10
+    \tempoEtOs b4 r r2
+    R1
+    r4 f8\fE b b a16 a a8 g
+    \once \tieDashed f4~ f16.([ g32) es16.( f32)] d4 f16.([ g32) es16.( f32)]
+    d8 d r4 r2 %15
+    R1
+    r4 g8 g f d16 f f8 f
+    g4~ \slurDashed g16.([ as32) f16.( g32)] es4 g16.([ as32) f16.( g32)] \slurSolid
+    es16([d)] es8 r4 r c'8 a16([ g)]
+    f8 f r4 r2 %20
+    g16([ f es g)] f([ es d f)] es[ f] g8 r4
+    g16([ f es g)] f([ es d f)] g8 f16([ es)] d4
+    c r r2
+    r4 g'8 g f d16 f f8 b
+    b16([ as)] g8 r4 r c8 a16([ g)] %25
+    f8 f r4 r2
+    r4 f16.([ g32) es16.( f32)] d4 g~
+    g16.([ as32) \once \slurDashed f16.( g32)] es4 d8 b'4 as8
+    g4. f8 f2
+    g as %30
+    b4 g16.([ as32) f16.( g32)] es4 as16.([ b32) g16.( as32)]
+    f8 g g g f2~
+    f4 g f2
+    es4 r r2\fermata \bar "||" %34 finis
+  }
+}
+
+DomineAltoLyrics = \lyricmode {
+  Do -- mi -- ne, Do -- _ %3
+  _ _ _ mi --
+  ne, %5
+
+  la -- bi -- a
+  me -- a a -- pe -- _
+  _ _ _ ri --
+  es, a -- pe -- ri -- %10
+  es.
+
+  Et os me -- um an -- nun -- ti --
+  a -- _ _
+  _ bit, %15
+
+  et os me -- um an -- nun -- ti --
+  a -- _ _
+  _ bit lau -- dem
+  tu -- am, %20
+  lau -- _ _ dem,
+  lau -- _ _ dem tu --
+  am,
+  et os me -- um an -- nun -- ti --
+  a -- bit lau -- dem %25
+  tu -- am,
+  lau -- _ _
+  _ dem, lau -- dem,
+  lau -- dem tu --
+  am, lau -- %30
+  dem, lau -- _ _
+  _ dem, lau -- dem, lau --
+  dem tu --
+  am. %34 finis
 }
