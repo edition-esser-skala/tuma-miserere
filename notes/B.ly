@@ -90,8 +90,7 @@ MiserereBassoLyrics = \lyricmode {
   am. %40 finis
 
 
-  % Sa -- cri -- fi -- ci -- um De -- o spi -- ri -- tus con -- tri -- bu -- la -- tus;
-  % cor con -- tri -- tum et hu -- mi -- li -- a -- tum, De -- us, non de -- spi -- ci -- es.
+
   % Be -- ni -- gne fac, Do -- mi -- ne, in bo -- na vo -- lun -- ta -- te tu -- a Si -- on,
   % ut ae -- di -- fi -- cen -- tur mu -- ri Ie -- ru -- sa -- lem.
   % Tunc ac -- cep -- ta -- bis sa -- cri -- fi -- ci -- um iu -- sti -- ti -- ae,
@@ -918,4 +917,69 @@ QuoniamBassoLyrics = \lyricmode {
   cta --
   be --
   ris. %20 finis
+}
+
+SacrificiumBasso = {
+  \relative c {
+    \clef bass
+    \key f \dorian \time 4/4 \autoBeamOff \tempoSacrificium
+    R1*3
+    r2 f4\fE f
+    as2~ as4 g8 f %5
+    es2( d)
+    c4 r b!8. b16 b4
+    r8 a a a b2
+    c des4. es8
+    f2 f,\fermata %10
+    r r4 fis
+    fis fis g2
+    c4 r r2
+    r c4 es8([ c)]
+    as'2.( g8[ f)] %15
+    e4 f2 g4
+    as2 d,!
+    es c!
+    c c4 r
+    r2 b4\p b %20
+    a a a2
+    b c
+    des c4 r
+    c'8([\f as)] f([ des)] b2~
+    b4 b as r %25
+    des r b4. b8
+    c4. c8 f,4 r
+    des'\p r b r
+    c\f c c4. c8
+    f,2 r\fermata \bar "||" %30 finis
+  }
+}
+
+SacrificiumBassoLyrics = \lyricmode {
+  Sa -- cri -- %4
+  fi -- ci -- um %5
+  De --
+  o spi -- ri -- tus
+  con -- tri -- bu -- la --
+  _ _ _
+  _ tus, %10
+  con --
+  tri -- bu -- la --
+  tus.
+  Cor con --
+  tri -- %15
+  tum, cor con --
+  tri -- tum,
+  cor con --
+  tri -- tum
+  et hu -- %20
+  mi -- li -- a --
+  _ _
+  _ tum,
+  De -- us, De --
+  us, non, %25
+  non, non de --
+  spi -- ci -- es,
+  non, non,
+  non de -- spi -- ci --
+  es. %30 finis
 }

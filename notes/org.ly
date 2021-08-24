@@ -1015,3 +1015,73 @@ QuoniamBassFigures = \figuremode {
   <5 4> <\t _!>2
   r2. %20 finis
 }
+
+SacrificiumOrgano = {
+  \relative c {
+    \clef bass
+    \key f \dorian \time 4/4 \tempoSacrificium
+    f,4\fE as8 f des'4 c8 b
+    as des b c f,4 as8 f
+    des'4. b8 c4 des8 as
+    b g c c, f4 r
+    f as8 f g2 %5
+    c4 as f g
+    c r b!2
+    r8 a a a b2
+    c des4. es8
+    f2 f,\fermata %10
+    r2 r4 fis
+    fis fis g2
+    c4 es8 c as'4 g8 f
+    es as, f g c4 es8 c
+    \once \tieDashed as'2~ as4 g8 f %15
+    e4 f f g
+    as2 d,!
+    es c!
+    c c4 r
+    r2 \mvTr b\p-\senzaOrg %20
+    a1
+    b2 c
+    des c4 r
+    \mvTr as\f-\colOrg r b2~
+    b as4 r %25
+    des r b2
+    c f,4 r
+    R1
+    c'\fE
+    f,2 r\fermata \bar "||" %30 finis
+  }
+}
+
+SacrificiumBassFigures = \figuremode {
+  r2 <6>4 <6 4>8 <6 5 [_-]>
+  <6> <6>16 <5> <6 5 [_-]>8 <_!> r2
+  <7>4 <6>8 <6 [_-]> <7 _!>4 <5>8 <[6]>
+  <6 [_-]>4 <_!>2.
+  r2 <9- _!>4 \bassFigureExtendersOn <8 _!>8 <7 _!> \bassFigureExtendersOff %5
+  r2 <[6]>4 <_!>
+  r2 <4! 2>
+  r8 <7- 5->4. <9 4>4 <8 _->
+  <10! 9-> <\t 8> <7> <6>
+  <4> <_!> <6 4! 2>2 %10
+  r2. <7 5 [_!]>4
+  r2 <6 4>4 <5 _!>
+  r2 \bo <[6 \l]>4 <6 4>8 <6 5>
+  <6> <6>16 <5> \bc <[6 5]>8 <_!> r2
+  <7>4 <6\\> <6! 4 2!> <\t \t \t> %15
+  <6 5->4 <_-> <6- 5> <6 5->
+  <9 4-> <8 3> <7->2
+  <6- 4>4 <5 3> <7> <6!>8 <5>
+  <6! 4+ 2>2 <\t \t \t>
+  r1 %20
+  r
+  r
+  r
+  <[6]>2 \bo <[\l 5] _->4 \bassFigureExtendersOn <8 6 _->8 \bc <[7 5] _-> \bassFigureExtendersOff
+  <6 4!>2 <6> %25
+  <6> <_->
+  <4>4 <_!>2.
+  r1
+  <7 _!>4 <6 4> <5 \t> <\t _!>
+  r1 %30 finis
+}

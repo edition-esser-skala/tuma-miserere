@@ -483,50 +483,96 @@
   %     \midi { \tempo 4 = 60 }
   %   }
   % }
+  % \bookpart {
+  %   \header {
+  %     number = "10"
+  %     title = "Q U O N I A M   S I   V O L U I S S E S"
+  %   }
+  %   \tocSection "10" "Quoniam si voluisses"
+  %   \score {
+  %     <<
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \QuoniamSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \QuoniamSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \QuoniamAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \QuoniamAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \QuoniamTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \QuoniamTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \QuoniamBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \QuoniamBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \QuoniamOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \QuoniamBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 80 }
+  %   }
+  % }
   \bookpart {
     \header {
-      number = "10"
-      title = "Q U O N I A M   S I   V O L U I S S E S"
+      number = "11"
+      title = "S A C R I F I C I U M   D E O"
     }
-    \tocSection "10" "Quoniam si voluisses"
+    \tocSection "11" "Sacrificium Deo"
     \score {
       <<
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \QuoniamSoprano }
+            \new Voice = "Soprano" { \dynamicUp \SacrificiumSoprano }
           }
-          \new Lyrics \lyricsto Soprano \QuoniamSopranoLyrics
+          \new Lyrics \lyricsto Soprano \SacrificiumSopranoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \QuoniamAlto }
+            \new Voice = "Alto" { \dynamicUp \SacrificiumAlto }
           }
-          \new Lyrics \lyricsto Alto \QuoniamAltoLyrics
+          \new Lyrics \lyricsto Alto \SacrificiumAltoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \QuoniamTenore }
+            \new Voice = "Tenore" { \dynamicUp \SacrificiumTenore }
           }
-          \new Lyrics \lyricsto Tenore \QuoniamTenoreLyrics
+          \new Lyrics \lyricsto Tenore \SacrificiumTenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \QuoniamBasso }
+            \new Voice = "Basso" { \dynamicUp \SacrificiumBasso }
           }
-          \new Lyrics \lyricsto Basso \QuoniamBassoLyrics
+          \new Lyrics \lyricsto Basso \SacrificiumBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \QuoniamOrgano
+            \SacrificiumOrgano
           }
         >>
-        \new FiguredBass { \QuoniamBassFigures }
+        \new FiguredBass { \SacrificiumBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 80 }
+      \midi { \tempo 4 = 60 }
     }
   }
 }

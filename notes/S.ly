@@ -100,8 +100,7 @@ MiserereSopranoLyrics = \lyricmode {
   ta -- tem me --
   am. %40 finis
 
-  % Sa -- cri -- fi -- ci -- um De -- o spi -- ri -- tus con -- tri -- bu -- la -- tus;
-  % cor con -- tri -- tum et hu -- mi -- li -- a -- tum, De -- us, non de -- spi -- ci -- es.
+
   % Be -- ni -- gne fac, Do -- mi -- ne, in bo -- na vo -- lun -- ta -- te tu -- a Si -- on,
   % ut ae -- di -- fi -- cen -- tur mu -- ri Ie -- ru -- sa -- lem.
   % Tunc ac -- cep -- ta -- bis sa -- cri -- fi -- ci -- um iu -- sti -- ti -- ae,
@@ -912,4 +911,67 @@ QuoniamSopranoLyrics = \lyricmode {
   cta --
   _ be --
   ris. %20 finis
+}
+
+SacrificiumSoprano = {
+  \relative c' {
+    \clef treble
+    \key f \dorian \time 4/4 \autoBeamOff \tempoSacrificium
+    R1*4
+    c'4\fE c h h8 h %5
+    c2.( h4)
+    c r c8. c16 c4
+    r8 c c c c4 b8[ as!]
+    g4 c2 b4~
+    b a h h\fermata %10
+    r c c c
+    c2.( h4)
+    c r r2
+    R1
+    c4 c h2( %15
+    b4) as! des des
+    des c8 ces ces2~
+    ces4 b b a8([ g)]
+    fis2 fis4 r
+    d'8\p es d fis, g4 g8 d' %20
+    cis4 d2 c4~
+    c b2 as!8[ g]
+    f2 e4 r
+    r2 f'8([\f des)] b([ as)]
+    g4 g c r %25
+    b r des4. b8
+    g4. g8 f4 r
+    b\p r des r
+    b\f as g4. g8
+    f2 r\fermata \bar "||" %30 finis
+  }
+}
+
+SacrificiumSopranoLyrics = \lyricmode {
+  Sa -- cri -- fi -- ci -- um %5
+  De --
+  o spi -- ri -- tus
+  con -- tri -- bu -- la -- _
+  _ _ _
+  _ _ tus, %10
+  con -- tri -- bu --
+  la --
+  tus.
+
+  Cor con -- tri -- %15
+  tum, cor con --
+  tri -- tum, con -- tri --
+  tum, cor con --
+  tri -- tum
+  et hu -- mi -- li -- a -- tum, hu -- %20
+  mi -- li -- a --
+  _ _
+  _ tum,
+  De -- us,
+  De -- us, non, %25
+  non, non de --
+  spi -- ci -- es,
+  non, non,
+  non de -- spi -- ci --
+  es. %30 finis
 }

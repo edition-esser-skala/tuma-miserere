@@ -100,8 +100,7 @@ MiserereAltoLyrics = \lyricmode {
   tem me --
   am. %40 finis
 
-  % Sa -- cri -- fi -- ci -- um De -- o spi -- ri -- tus con -- tri -- bu -- la -- tus;
-  % cor con -- tri -- tum et hu -- mi -- li -- a -- tum, De -- us, non de -- spi -- ci -- es.
+
   % Be -- ni -- gne fac, Do -- mi -- ne, in bo -- na vo -- lun -- ta -- te tu -- a Si -- on,
   % ut ae -- di -- fi -- cen -- tur mu -- ri Ie -- ru -- sa -- lem.
   % Tunc ac -- cep -- ta -- bis sa -- cri -- fi -- ci -- um iu -- sti -- ti -- ae,
@@ -934,4 +933,71 @@ QuoniamAltoLyrics = \lyricmode {
   non de --
   le -- cta -- be --
   ris. %20 finis
+}
+
+SacrificiumAlto = {
+  \relative c' {
+    \clef treble
+    \key f \dorian \time 4/4 \autoBeamOff \tempoSacrificium
+    R1*2
+    f4.\fE g8 e4 f8 f
+    f4( e) f as~
+    as as d, d8 d %5
+    es4 es f( d)
+    es r g8. g16 g4
+    r8 ges ges ges f2
+    e f~
+    f g4 g\fermata %10
+    r es es es
+    es2.( d4)
+    c r r2
+    r g'4 g
+    g fis f8([ d)] es([ f)] %15
+    g4 f as g8([ f)]
+    es4 es f2
+    es4 es es es
+    d2 d4 r
+    r2 g4\p g %20
+    g f! es!2
+    d4 g8[ f] e4 f8[ e]
+    f2 e4^\critnote r
+    r2 f4\fE g8([ f)]
+    e4 e f r %25
+    f r f4. f8
+    f4( e8.) e16 f4 r
+    f\pE r f r
+    e\fE f f( e8.) e16
+    f2 r\fermata \bar "||" %30 finis
+  }
+}
+
+SacrificiumAltoLyrics = \lyricmode {
+  Sa -- cri -- fi -- ci -- um %3
+  De -- o, sa --
+  cri -- fi -- ci -- um %5
+  De -- o, De --
+  o spi -- ri -- tus
+  con -- tri -- bu -- la --
+  _ _
+  _ tus, %10
+  con -- tri -- bu --
+  la --
+  tus.
+  Cor con --
+  tri -- tum, cor con -- %15
+  tri -- tum, cor con --
+  tri -- tum, con --
+  tri -- tum, cor con --
+  tri -- tum
+  et hu -- %20
+  mi -- li -- a --
+  _ _ _ _
+  _ tum,
+  De -- us,
+  De -- us, non, %25
+  non, non de --
+  spi -- ci -- es,
+  non, non,
+  non de -- spi -- ci --
+  es. %30 finis
 }

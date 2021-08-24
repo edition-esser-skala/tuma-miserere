@@ -700,6 +700,7 @@ tempoNeProicias = \tempoMarkup "Vivace"
 tempoDomine = \tempoMarkup "Larghetto"
   tempoEtOs = \tempoMarkup "Allegro"
 tempoQuoniam = \tempoMarkup "Andante"
+tempoSacrificium = \tempoMarkup "Grave"
 
 
 \include "notes/S.ly"

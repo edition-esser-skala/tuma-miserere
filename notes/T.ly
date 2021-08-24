@@ -101,8 +101,7 @@ MiserereTenoreLyrics = \lyricmode {
   tem me --
   am. %40 finis
 
-  % Sa -- cri -- fi -- ci -- um De -- o spi -- ri -- tus con -- tri -- bu -- la -- tus;
-  % cor con -- tri -- tum et hu -- mi -- li -- a -- tum, De -- us, non de -- spi -- ci -- es.
+
   % Be -- ni -- gne fac, Do -- mi -- ne, in bo -- na vo -- lun -- ta -- te tu -- a Si -- on,
   % ut ae -- di -- fi -- cen -- tur mu -- ri Ie -- ru -- sa -- lem.
   % Tunc ac -- cep -- ta -- bis sa -- cri -- fi -- ci -- um iu -- sti -- ti -- ae,
@@ -924,4 +923,71 @@ QuoniamTenoreLyrics = \lyricmode {
   de -- le --
   cta -- be --
   ris. %20 finis
+}
+
+SacrificiumTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key f \dorian \time 4/4 \autoBeamOff \tempoSacrificium
+    R1
+    r2 c~\fE
+    c4 b b as8 as
+    g2 f4 c'~
+    c f h, d8 h %5
+    g4 as as( g)
+    g^\critnote r e'8. e16 e4
+    r8 es es es es4 des~
+    des c8[ b] as4 des
+    c2 d4 d\fermata %10
+    r2 r4 a
+    a a g2
+    g4 r r2
+    R1*2 %15
+    c4 c c b~
+    b as2 as4
+    as g g c8([ b)]
+    a2 a4 r
+    r2 d4\p d %20
+    e d^\critnote a4. g8
+    f4 b8[ as] g4 c~
+    c h c r
+    r2 des4\f des
+    g, c c r %25
+    f, r b des
+    c4. c8 c4 r
+    f,\p r b r
+    g\fE as8([ b)] c4. c8
+    c2 r\fermata \bar "||" %30 finis
+  }
+}
+
+SacrificiumTenoreLyrics = \lyricmode {
+  Sa -- %2
+  cri -- fi -- ci -- um
+  De -- o, sa --
+  cri -- fi -- ci -- um %5
+  De -- o, De --
+  o spi -- ri -- tus
+  con -- tri -- bu -- la -- _
+  _ _ _
+  _ _ tus, %10
+  con --
+  tri -- bu -- la --
+  tus.
+
+  Cor con -- tri -- tum, __ %16
+  cor con --
+  tri -- tum, cor con --
+  tri -- tum
+  et hu -- %20
+  mi -- li -- a -- _
+  _ _ _ _
+  _ tum,
+  De -- us,
+  De -- us, non, %25
+  non, non de --
+  spi -- ci -- es,
+  non, non,
+  non de -- spi -- ci --
+  es. %30 finis
 }
