@@ -100,8 +100,6 @@ MiserereSopranoLyrics = \lyricmode {
   ta -- tem me --
   am. %40 finis
 
-  % Quo -- ni -- am si vo -- lu -- is -- ses sa -- cri -- fi -- ci -- um, de -- dis -- sem u -- ti -- que;
-  % ho -- lo -- cau -- stis non de -- le -- cta -- be -- ris.
   % Sa -- cri -- fi -- ci -- um De -- o spi -- ri -- tus con -- tri -- bu -- la -- tus;
   % cor con -- tri -- tum et hu -- mi -- li -- a -- tum, De -- us, non de -- spi -- ci -- es.
   % Be -- ni -- gne fac, Do -- mi -- ne, in bo -- na vo -- lun -- ta -- te tu -- a Si -- on,
@@ -864,4 +862,54 @@ DomineSopranoLyrics = \lyricmode {
   dem, lau -- _
   _ _ dem tu --
   am. %34 finis
+}
+
+QuoniamSoprano = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 3/4 \autoBeamOff \tempoQuoniam
+    c'4.\fE d8 es4
+    d c h
+    c g r
+    as2 as4
+    as4. g8 g4 %5
+    r r d'
+    es2( d4)
+    g, c4. c8
+    h4 r r
+    R2. %10
+    r4 c8([ des)] c([ b)]
+    as4 g r
+    r r c
+    as( f) d'
+    h4. h8 c4 %15
+    R2.
+    g4 c c
+    c2.~
+    c4 h4. h8
+    c2 r4\fermata \bar "||" %20 finis
+  }
+}
+
+QuoniamSopranoLyrics = \lyricmode {
+  Quo -- ni -- am
+  si vo -- lu --
+  is -- ses
+  sa -- cri --
+  fi -- ci -- um, %5
+  de --
+  dis --
+  sem u -- ti --
+  que,
+  %10
+  ho -- lo --
+  cau -- stis
+  non
+  de -- le --
+  cta -- be -- ris, %15
+
+  non de -- le --
+  cta --
+  _ be --
+  ris. %20 finis
 }

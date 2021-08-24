@@ -100,8 +100,6 @@ MiserereAltoLyrics = \lyricmode {
   tem me --
   am. %40 finis
 
-  % Quo -- ni -- am si vo -- lu -- is -- ses sa -- cri -- fi -- ci -- um, de -- dis -- sem u -- ti -- que;
-  % ho -- lo -- cau -- stis non de -- le -- cta -- be -- ris.
   % Sa -- cri -- fi -- ci -- um De -- o spi -- ri -- tus con -- tri -- bu -- la -- tus;
   % cor con -- tri -- tum et hu -- mi -- li -- a -- tum, De -- us, non de -- spi -- ci -- es.
   % Be -- ni -- gne fac, Do -- mi -- ne, in bo -- na vo -- lun -- ta -- te tu -- a Si -- on,
@@ -886,4 +884,54 @@ DomineAltoLyrics = \lyricmode {
   _ dem, lau -- dem, lau --
   dem tu --
   am. %34 finis
+}
+
+QuoniamAlto = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 3/4 \autoBeamOff \tempoQuoniam
+    es4.\fE f8 g4
+    f es d
+    es es r
+    r es es
+    d4. d8 d4 %5
+    r r g
+    g2 g4~
+    g g f
+    g r r
+    r g8([ as)] g([ f)] %10
+    e([ f] g2)
+    c,4 e g
+    g f g
+    f2 f4
+    g4. g8 g4 %15
+    g es d
+    c4. c8 g'4
+    a!2 a4
+    g g4. g8
+    g2 r4\fermata \bar "||" %20 finis
+  }
+}
+
+QuoniamAltoLyrics = \lyricmode {
+  Quo -- ni -- am
+  si vo -- lu --
+  is -- ses
+  sa -- cri --
+  fi -- ci -- um, %5
+  de --
+  dis -- sem __
+  u -- ti --
+  que,
+  ho -- lo -- %10
+  cau --
+  stis, ho -- lo --
+  cau -- stis non
+  de -- le --
+  cta -- be -- ris, %15
+  non de -- le --
+  cta -- be -- ris,
+  non de --
+  le -- cta -- be --
+  ris. %20 finis
 }

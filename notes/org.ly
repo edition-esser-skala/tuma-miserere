@@ -965,3 +965,53 @@ DomineBassFigures = \figuremode {
   <5 3>4 <6 4> <5 \t> <\t 3>
   r1 %34 finis
 }
+
+QuoniamOrgano = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 3/4 \tempoQuoniam
+    c2.\fE
+    f4 g2
+    es r4
+    r c2
+    h2. %5
+    r4 r h
+    c2 b4~
+    b as2
+    g4 g'8([ as)] g([ f)]
+    es2 des4 %10
+    c e2
+    f4 e2
+    f e4
+    f2 f4
+    f2 es!4 %15
+    R2.
+    c'4 as g
+    fis2.
+    g2 g,4
+    c2 r4\fermata \bar "||" %20 finis
+  }
+}
+
+QuoniamBassFigures = \figuremode {
+  r2.
+  <6 _->4 <6 4> <5 _!>
+  <6>2.
+  r4 <6->2
+  <7-> <6>4 %5
+  r2 <6>4
+  r2 <6>4
+  r <7> <6>
+  <[_!]>2.
+  <6>2 \bo <6- [4]>8 \bc <\t [3]> %10
+  <7 [_!]>4 <6 5>2
+  <_->4 <6> <5>
+  <9 _-> <8 \t> <6>
+  <5 _->2 <6 \t>4
+  <6 4! 2>2 <[6]>4 %15
+  r2.
+  r4 <5> <6 4>
+  \bo <7 [5 _!]>2 \bc <6 [\t \t]>4
+  <5 4> <\t _!>2
+  r2. %20 finis
+}

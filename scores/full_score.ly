@@ -437,50 +437,96 @@
   %     \midi { \tempo 4 = 90 }
   %   }
   % }
+  % \bookpart {
+  %   \header {
+  %     number = "9"
+  %     title = "D O M I N E,   L A B I A   M E A"
+  %   }
+  %   \tocSection "9" "Domine, labia mea"
+  %   \score {
+  %     <<
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \DomineSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \DomineSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \DomineAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \DomineAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \DomineTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \DomineTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \DomineBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \DomineBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \DomineOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \DomineBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 60 }
+  %   }
+  % }
   \bookpart {
     \header {
-      number = "9"
-      title = "D O M I N E,   L A B I A   M E A"
+      number = "10"
+      title = "Q U O N I A M   S I   V O L U I S S E S"
     }
-    \tocSection "9" "Domine, labia mea"
+    \tocSection "10" "Quoniam si voluisses"
     \score {
       <<
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \DomineSoprano }
+            \new Voice = "Soprano" { \dynamicUp \QuoniamSoprano }
           }
-          \new Lyrics \lyricsto Soprano \DomineSopranoLyrics
+          \new Lyrics \lyricsto Soprano \QuoniamSopranoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \DomineAlto }
+            \new Voice = "Alto" { \dynamicUp \QuoniamAlto }
           }
-          \new Lyrics \lyricsto Alto \DomineAltoLyrics
+          \new Lyrics \lyricsto Alto \QuoniamAltoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \DomineTenore }
+            \new Voice = "Tenore" { \dynamicUp \QuoniamTenore }
           }
-          \new Lyrics \lyricsto Tenore \DomineTenoreLyrics
+          \new Lyrics \lyricsto Tenore \QuoniamTenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \DomineBasso }
+            \new Voice = "Basso" { \dynamicUp \QuoniamBasso }
           }
-          \new Lyrics \lyricsto Basso \DomineBassoLyrics
+          \new Lyrics \lyricsto Basso \QuoniamBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \DomineOrgano
+            \QuoniamOrgano
           }
         >>
-        \new FiguredBass { \DomineBassFigures }
+        \new FiguredBass { \QuoniamBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 60 }
+      \midi { \tempo 4 = 80 }
     }
   }
 }

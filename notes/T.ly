@@ -101,8 +101,6 @@ MiserereTenoreLyrics = \lyricmode {
   tem me --
   am. %40 finis
 
-  % Quo -- ni -- am si vo -- lu -- is -- ses sa -- cri -- fi -- ci -- um, de -- dis -- sem u -- ti -- que;
-  % ho -- lo -- cau -- stis non de -- le -- cta -- be -- ris.
   % Sa -- cri -- fi -- ci -- um De -- o spi -- ri -- tus con -- tri -- bu -- la -- tus;
   % cor con -- tri -- tum et hu -- mi -- li -- a -- tum, De -- us, non de -- spi -- ci -- es.
   % Be -- ni -- gne fac, Do -- mi -- ne, in bo -- na vo -- lun -- ta -- te tu -- a Si -- on,
@@ -876,4 +874,54 @@ DomineTenoreLyrics = \lyricmode {
   _ dem, lau -- dem,
   lau -- dem tu --
   am. %34 finis
+}
+
+QuoniamTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \dorian \time 3/4 \autoBeamOff \tempoQuoniam
+    g4.\fE g8 g4
+    as g g
+    g g r
+    r c c
+    d4. d8 d4 %5
+    r r d
+    c2 d4~
+    d es d8([ c)]
+    d2 d4
+    c( g) b!~ %10
+    b b g
+    as c8([ des)] c([ b)]
+    as([ g)] as4 c
+    c2 f4
+    d4. d8 es!4 %15
+    R2.
+    es
+    es2 d4
+    d2 d4
+    c2 r4\fermata \bar "||" %20 finis
+  }
+}
+
+QuoniamTenoreLyrics = \lyricmode {
+  Quo -- ni -- am
+  si vo -- lu --
+  is -- ses
+  sa -- cri --
+  fi -- ci -- um, %5
+  de --
+  dis -- sem __
+  u -- ti --
+  que, de --
+  dis -- sem __ %10
+  u -- ti --
+  que, ho -- lo --
+  cau -- stis non
+  de -- le --
+  cta -- be -- ris, %15
+
+  non
+  de -- le --
+  cta -- be --
+  ris. %20 finis
 }

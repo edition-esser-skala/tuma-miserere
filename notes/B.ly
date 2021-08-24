@@ -89,8 +89,7 @@ MiserereBassoLyrics = \lyricmode {
   tem me --
   am. %40 finis
 
-  % Quo -- ni -- am si vo -- lu -- is -- ses sa -- cri -- fi -- ci -- um, de -- dis -- sem u -- ti -- que;
-  % ho -- lo -- cau -- stis non de -- le -- cta -- be -- ris.
+
   % Sa -- cri -- fi -- ci -- um De -- o spi -- ri -- tus con -- tri -- bu -- la -- tus;
   % cor con -- tri -- tum et hu -- mi -- li -- a -- tum, De -- us, non de -- spi -- ci -- es.
   % Be -- ni -- gne fac, Do -- mi -- ne, in bo -- na vo -- lun -- ta -- te tu -- a Si -- on,
@@ -869,4 +868,54 @@ DomineBassoLyrics = \lyricmode {
   _ dem, lau -- dem tu -- am,
   lau -- dem tu --
   am. %34 finis
+}
+
+QuoniamBasso = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 3/4 \autoBeamOff \tempoQuoniam
+    c4.\fE c8 c4
+    f g8([ f)] g4
+    es es r
+    r c c
+    h4. h8 h4 %5
+    r r h
+    c2 b4~
+    b as4. as8
+    g4 g'8([ as)] g([ f)]
+    es2 des4 %10
+    c e2
+    f4( e2)
+    f e4
+    f2 f4
+    f4.^\critnote f8 es!4 %15
+    R2.
+    c'4 as g
+    fis2.(
+    g2) g4
+    c,2 r4\fermata \bar "||" %2ß
+  }
+}
+
+QuoniamBassoLyrics = \lyricmode {
+  Quo -- ni -- am
+  si vo -- lu --
+  is -- ses
+  sa -- cri --
+  fi -- ci -- um, %5
+  de --
+  dis -- sem __
+  u -- ti --
+  que, ho -- lo --
+  cau -- stis, %10
+  ho -- lo --
+  cau --
+  stis non
+  de -- le --
+  cta -- be -- ris, %15
+
+  non de -- le --
+  cta --
+  be --
+  ris. %20 finis
 }
