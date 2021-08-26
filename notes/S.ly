@@ -99,12 +99,6 @@ MiserereSopranoLyrics = \lyricmode {
   am, in -- i -- qui --
   ta -- tem me --
   am. %40 finis
-
-
-
-  % Glo -- ri -- a Pa -- tri et Fi -- li -- o et Spi -- ri -- tu -- i San -- cto,
-  % si -- cut e -- rat in prin -- ci -- pi -- o et nunc et sem -- per
-  % et in sae -- cu -- la sae -- cu -- lo -- rum, a -- men.
 }
 
 AmpliusSoprano = {
@@ -1076,4 +1070,124 @@ BenigneSopranoLyrics = \lyricmode {
   su -- per al -- ta -- %50
   _ re tu -- um
   vi -- tu -- los. %52 finis
+}
+
+GloriaSoprano = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoGloria
+    r2 es'4~\fE es16[ d es b]
+    \appoggiatura b as8[ g16 f] b8 as \appoggiatura b16 as8 g r4
+    r2 es'4~ es16[ d es b]
+    \appoggiatura b as8[ g16 f] b8 as \appoggiatura b16 as16. g32 g8 r4
+    r2 es'4 d8 d %5
+    c4. c8 c8. b16 b8 b
+    b16([ es)] d c \appoggiatura d8 c4\trill b r
+    r d8 f f16([ h,)] h8 c d
+    es8. es16 d8 g es4 d \noBreak
+    c2 h4 r\fermata %10
+    \tempoEtInSaecula R1*3
+    c4 c es d8 c
+    d c h4\trill c8 g c4~ %15
+    c8[ h16 a] h4 c8 c4 b8
+    c4( d8[ c)] b4 r
+    r2 r8 d[ b g]
+    c[ b a d] g,4. es'8
+    d2 es8[ d] c4~ %20
+    c h c \once \tieDashed c~
+    c b a2
+    g4 r r r8 es'
+    c[ a d c] b4. a8
+    g2~ g4 r %25
+    r2 g4 g
+    as g8 g a g fis4
+    g8 d'[( b g] c[ b a d])
+    g, g[( g' f] es[ d]) es4
+    d2 c4 es~ %30
+    es d es b
+    a!2 b8[ c] d4~
+    d8[ g,] c2 b4
+    r r8 es( c[ a d c]
+    b) g c2 b4~ %35
+    b as g2
+    R1
+    g4 g as g8 g
+    a g fis4 g b~
+    b a b r8 g'( %40
+    es[ c f es] d) b r es(
+    c[ a d c] h) g c4~
+    c h c es~
+    es d es c
+    b2 c4 f8[ es] %45
+    d!2 es4 d8[ c]
+    h[ c] \once \tieDashed d4~ d8[ g,] c4~
+    c h c r
+    R1
+    r2 c4 c %50
+    es d8 c d c h4
+    c r8 d~ d[ c16 h] c4
+    h8 d4 d8 es4.( d16[ c)]
+    h8 d[ h g] c[ d] es[ d16 c]
+    h8[ d] es4 d2 %55
+    c4 f~ f8 es d4
+    c r r2\fermata \bar "|." %57 FINIS
+  }
+}
+
+GloriaSopranoLyrics = \lyricmode {
+  Glo --
+  _ ri -- a Pa -- tri,
+  glo --
+  _ ri -- a Fi -- li -- o,
+  glo -- ri -- a %5
+  et Spi -- ri -- tu -- i, Spi --
+  ri -- tu -- i San -- cto,
+  si -- cut e -- rat in prin --
+  ci -- pi -- o et nunc
+  et sem -- per. %10
+
+  Et in sae -- cu -- la %14
+  sae -- cu -- lo -- rum, a -- _ %15
+  _ men, a -- men,
+  a -- men,
+  a --
+  _ _ men,
+  a -- _ _ %20
+  _ men, a --
+  men, a --
+  men, a --
+  _ _ _
+  men, __ %25
+  et in
+  sae -- cu -- la sae -- cu -- lo --
+  rum, a --
+  men, a -- men,
+  a -- men, a -- %30
+  men, a -- men,
+  a -- _ _
+  _ men,
+  a --
+  men, a -- _ %35
+  _ men,
+
+  et in sae -- cu -- la
+  sae -- cu -- lo -- rum, a --
+  _ men, a -- %40
+  men, a --
+  men, a --
+  _ men, a --
+  _ men, a --
+  _ _ _ %45
+  _ _ _
+  _ _ _
+  _ men,
+
+  et in %50
+  sae -- cu -- la sae -- cu -- lo --
+  rum, a -- _
+  men, a -- men, a --
+  men, a -- _ _
+  _ men, a -- %55
+  men, a -- men, a --
+  men. %57 FINIS
 }

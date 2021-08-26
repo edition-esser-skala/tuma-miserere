@@ -702,6 +702,8 @@ tempoDomine = \tempoMarkup "Larghetto"
 tempoQuoniam = \tempoMarkup "Andante"
 tempoSacrificium = \tempoMarkup "Grave"
 tempoBenigne = \tempoMarkup "Andante"
+tempoGloria = \tempoMarkup "Adagio"
+  tempoEtInSaecula = \tempoMarkup "Andante"
 
 
 \include "notes/S.ly"

@@ -1205,3 +1205,132 @@ BenigneBassFigures = \figuremode {
   <6 5>2 <5 4>4 \bassFigureExtendersOn <5 _!>8 <5 2>
   <5 [_!]>2 \bassFigureExtendersOff r %52 finis
 }
+
+GloriaOrgano = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \tempoGloria
+    es8\fE f g es as as, es'4~
+    es d8 b es4 r
+    es8 f g es as as, es'4~
+    es d8 b es4 r
+    d8 c b d es4 b~ %5
+    b a! b d
+    es f8 f, b4 b'8 a
+    b4 b8 as g8. f16 es8 d
+    c4 g' c b! \noBreak
+    as2 g4 r\fermata %10
+    \clef "treble_8" \tempoEtInSaecula c4-! c-! es-! \parOn d8-\parenthesize-! c-! \noBreak
+    d-! c-! \parOff h4-\parenthesize-! << {
+      g'4 g
+      as g a8 g fis4
+    } \\ {
+      c4 r8 b
+      c4 b8 es c4 d
+    } >>
+    es f c as
+    f g es4. es'8 %15
+    \clef bass g,4 g as g8 g
+    a g fis4 g \clef "treble_8" b8 g
+    c b a d g,4. b8
+    a4 d h c~
+    c h c8 \clef bass g[ es c] %20
+    f es d g c, c' a! g
+    fis4 g c,8 a d4
+    g, \clef "treble_8" g' as g
+    a8 g fis4 g8 d' g f
+    \clef bass c,4 c es d8 c %25
+    d c h4 c8 \clef "treble_8" c'[ h g]
+    c4 b8 \noBeam \clef bass es, c a! d c
+    b g \clef "treble_8" \once \tieDashed g'4~ g f!~
+    f es8 d c4 c'8 \noBeam \clef bass as
+    f d g f es c r c' %30
+    as f b as g es r es
+    c a! d c b g
+    \clef treble << { d'''4~ d8 g, c4 } \\ { r8 d, es2 } >> \clef "treble_8" g,4 g
+    b a8 g a g fis4
+    g \clef treble << { c'4~ c b~ b as } \\ { r8 es f! d g f e c f4 } >> %35
+    \clef bass c, c
+    es d8 c d c h4
+    c \clef "treble_8" h'8[^\critnote g] c4 b?8 \noBeam \clef bass es,
+    c a! d c b g r g'
+    es c f es d b b'4~ %40
+    b a2 g4~
+    g f2 es4
+    r8 d g f es c r c'
+    as f b as g es r f
+    des b es des c as as'4~ %45
+    as g8 f es4 f
+    g \clef treble << { \once \tieDashed d''4~^\critnote d8 g, c4 } \\ { g8 f es4. d16 c } >>
+    \clef bass g4 g as g8 f
+    g f es4 f g8 f
+    es d c e f2 %50
+    c4 r8 as' f d g f
+    es d c h c2
+    \tieDashed g1~-\tasto
+    g~
+    g \tieSolid %55
+    c8 c' as f g c, g4
+    c r r2\fermata \bar "|." %57 FINIS
+  }
+}
+
+GloriaBassFigures = \figuremode {
+  r1
+  <4- 2>4 <6>8 <7-> <9 4-> <8 3>4.
+  r1
+  <4- 2>4 \bo <[6]>8 \bc <[7-]> <9 4-> <8 3>4.
+  <6>1 %5
+  <4 2>4 <6 5> <9>8 <8> <6>4
+  r <5 4>8 <\t 3> r4. <6>8
+  r4. <[\t]>8 <7 _!>4 <6>8 <6!>
+  r4 <_!>2 <6>4
+  <7> <6> <_!>2 %10
+  r1
+  r
+  r
+  <6>4 <_->2 <6>4
+  <6 [_-]> <_!> <6>2 %15
+  <4>4 <_!>2 <[4]>8 <_->
+  <6\\>4 <6>8 <5> <_->4 <6>
+  <5> <6\\> r4. <6>8
+  <7>4 <_+> <6>2
+  <4! 2>4 <6> r8 \bo <[_!]> \bc <[6]>4 %20
+  <[6 5 _-]> <6!>8 <\t> r4 <6\\>
+  <6 5> <[_-]> <6 5> <_+>
+  r2. <6>4
+  <6\\> <6>8 <5> r2
+  r2 <[6]>4. <6->8 %25
+  <6!>4 \bo <[6]>8 \bc <[5]> r4 <6>8 <[_!]>
+  <6->4 q <6!>8 <7> <_+>4
+  <[6]>2 <4 2>4 <6>
+  <5 2> <6>2.
+  <6 5 [_-]>4 <_!> <6>2 %30
+  <6 5> <6>
+  <6! 5>4 <_+> <6>2
+  r <5 4>4 <\t 3>
+  <6>4. <6>8 <6\\>4 <6>8 <5>
+  r1 %35
+  r2 <5 4>4 <\t _->
+  <6>4. <6->8 <[6!]>4 <6>8 <5>
+  r4 \bo <[6]>8 <_!> <6->4 \bc <[6]>
+  <[6! 5]> <_+> <6>2
+  \bo <[6 5]> \bc <[6 \l]>4 <6> %40
+  <4 2> <6> <4 2> <6>
+  <4 2> <6> <4! 2> <6>
+  r8 <7> <_!>4 <6>2
+  <6 [5]> <6>4. <_->8
+  <[6] 5->2 <6->4 \bo <6 [4!]>8 \bc <5 [3]> %45
+  <6 4 2!>4 \bo <[_!]>8 \bc <[4!] _-> <6>4 \bo <[8] 6 _->8 \bc <[7] 5 \t>
+  <_!>1
+  <4>4 <_!>2.
+  <6>2 \bo <6 [_-]>8 \bc <5 [\t]> <_!>4
+  \bo <[6 \l]>4. \bc <[6 5-]>8 <_->2 %50
+  <_-> <6 [_-]>4 <_!>
+  <[6]>4. <6>8 <9>4 <8>
+  <[_!]>1
+  r
+  r %55
+  r4 <6>8 <[_-]> <7 _>4 <4>8 <_!>
+  r1 %57 FINIS
+}

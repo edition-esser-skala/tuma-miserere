@@ -575,50 +575,96 @@
   %     \midi { \tempo 4 = 60 }
   %   }
   % }
+  % \bookpart {
+  %   \header {
+  %     number = "12"
+  %     title = "B E N I G N E   F A C"
+  %   }
+  %   \tocSection "12" "Benigne fac"
+  %   \score {
+  %     <<
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \BenigneSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \BenigneSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \BenigneAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \BenigneAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \BenigneTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \BenigneTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \BenigneBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \BenigneBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \BenigneOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \BenigneBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 70 }
+  %   }
+  % }
   \bookpart {
     \header {
-      number = "12"
-      title = "B E N I G N E   F A C"
+      number = "13"
+      title = "G L O R I A   P A T R I"
     }
-    \tocSection "12" "Benigne fac"
+    \tocSection "13" "Gloria Patri"
     \score {
       <<
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \BenigneSoprano }
+            \new Voice = "Soprano" { \dynamicUp \GloriaSoprano }
           }
-          \new Lyrics \lyricsto Soprano \BenigneSopranoLyrics
+          \new Lyrics \lyricsto Soprano \GloriaSopranoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \BenigneAlto }
+            \new Voice = "Alto" { \dynamicUp \GloriaAlto }
           }
-          \new Lyrics \lyricsto Alto \BenigneAltoLyrics
+          \new Lyrics \lyricsto Alto \GloriaAltoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \BenigneTenore }
+            \new Voice = "Tenore" { \dynamicUp \GloriaTenore }
           }
-          \new Lyrics \lyricsto Tenore \BenigneTenoreLyrics
+          \new Lyrics \lyricsto Tenore \GloriaTenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \BenigneBasso }
+            \new Voice = "Basso" { \dynamicUp \GloriaBasso }
           }
-          \new Lyrics \lyricsto Basso \BenigneBassoLyrics
+          \new Lyrics \lyricsto Basso \GloriaBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \BenigneOrgano
+            \GloriaOrgano
           }
         >>
-        \new FiguredBass { \BenigneBassFigures }
+        \new FiguredBass { \GloriaBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 70 }
+      \midi { \tempo 4 = 60 }
     }
   }
 }

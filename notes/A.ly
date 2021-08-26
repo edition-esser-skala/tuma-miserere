@@ -99,12 +99,6 @@ MiserereAltoLyrics = \lyricmode {
   in -- i -- qui -- ta --
   tem me --
   am. %40 finis
-
-
-
-  % Glo -- ri -- a Pa -- tri et Fi -- li -- o et Spi -- ri -- tu -- i San -- cto,
-  % si -- cut e -- rat in prin -- ci -- pi -- o et nunc et sem -- per
-  % et in sae -- cu -- la sae -- cu -- lo -- rum, a -- men.
 }
 
 AmpliusAlto = {
@@ -358,7 +352,7 @@ EcceEnimAlto = {
     f d es
     d e8[ fis] g4
     g g( fis) %45
-    g2 r4\fermata \bar "|." %46 finis
+    g2 r4\fermata \bar "||" %46 finis
   }
 }
 
@@ -1106,4 +1100,128 @@ BenigneAltoLyrics = \lyricmode {
   nent su -- per al -- ta -- re tu -- um, %50
   im -- po -- nent
   vi -- tu -- los. %52 finis
+}
+
+GloriaAlto = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoGloria
+    r2 as'4\fE g8 g
+    f4 f8 f \appoggiatura g16 f8 es r4
+    r2 as4 g8 g
+    f4 f8 f \appoggiatura g16 f16. es32 es8 r4
+    r2 b'4~ b16[ a b f] %5
+    es8 d16 c f8 es d8. es16 f8 f
+    g g16 g f4 f r
+    r f8 f g g g g
+    g8. g16 g8 g g4 g \noBreak
+    g( f) g r\fermata %10
+    \tempoEtInSaecula R1 \noBreak
+    r2 g4 g
+    as g8 g a g fis4
+    g as g f~
+    f8 es d4 es8. f16 g4~ %15
+    g4. f8 es([ c)] d g
+    fis([ g)] a4 d, g~
+    g fis g r
+    r2 r8 g[ es c]
+    f[ es d g] c,[ d] es4 %20
+    f4.( es16[ d] es8) g fis([ g]
+    a4) g g( fis)
+    g r r2
+    R1
+    r2 r4 r8 as( %25
+    f[ d g f] es4) d
+    es d8([ es)] es4( d)^\critnote
+    d r r2
+    c4 c es d8 c
+    d4. d8 es4 g %30
+    f2 g4 g~
+    g fis g4. d8
+    es2 d4 \once \tieDashed g~
+    g8 d g4( fis8[ g] a4)
+    d, r8 es f[ d g f] %35
+    e[ c] f2 es?8[ f]
+    g4 r8 as( f[ d g f]
+    es4) d es d8([ es)]
+    es4( d) d r
+    g( f) f r %40
+    g f2 es4~
+    es d2 g4
+    f g g2(
+    f) g4 as~
+    as g as f~ %45
+    f g8[ as] g4 as
+    g4. f8 es4. d16[ c]
+    d2 c4 r
+    R1
+    g'4 g as g8 f %50
+    es!4. es8 f4 g
+    g4. g8 g2
+    g4 r8 g( es[ c es f)]
+    g4 r8 g es[ d c es]
+    g1 %55
+    g4 as8 as g2
+    g4 r r2\fermata \bar "|." %57 FINIS
+  }
+}
+
+GloriaAltoLyrics = \lyricmode {
+  Glo -- ri -- a,
+  glo -- ri -- a Pa -- tri,
+  glo -- ri -- a,
+  glo -- ri -- a Fi -- li -- o,
+  glo -- %5
+  _ ri -- a et Spi -- ri -- tu -- i, Spi --
+  ri -- tu -- i San -- cto,
+  si -- cut e -- rat in prin --
+  ci -- pi -- o et nunc
+  et sem -- per. %10
+
+  Et in
+  sae -- cu -- la sae -- cu -- lo --
+  rum, et in sae --
+  cu -- la sae -- cu -- lo -- %15
+  rum, a -- men, a --
+  men, a -- men, a --
+  _ men,
+  a --
+  _ _ men, %20
+  a -- men, a --
+  men, a --
+  men,
+
+  a -- %25
+  men,
+  a -- men, a --
+  men,
+  et in sae -- cu -- la
+  sae -- cu -- lo -- rum, %30
+  a -- men, a --
+  _ _ men,
+  a -- men, a --
+  men, a --
+  men, a -- _ %35
+  _ _ _
+  men, a --
+  men, a -- men,
+  a -- men,
+  a -- men, %40
+  a -- men, a --
+  _ men,
+  a -- men, a --
+  men, a --
+  _ men, a -- %45
+  _ _ men,
+  a -- _ _ _
+  _ men,
+
+  et in sae -- cu -- la %50
+  sae -- cu -- lo -- rum,
+  a -- men, a --
+  men, a --
+  men, a -- _
+  _ %55
+  men, a -- men, a --
+  men. %57 FINIS
 }
