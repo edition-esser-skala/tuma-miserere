@@ -178,7 +178,7 @@
       number = "12"
       title = "B E N I G N E   F A C"
     }
-    \paper { page-count = #1 }
+    \paper { page-count = #2 }
     \score {
       <<
         \new Staff { \BenigneOrgano }

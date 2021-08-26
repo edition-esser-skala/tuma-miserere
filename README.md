@@ -1,4 +1,4 @@
-# František Ignác Tůma: Miserere (A-Wn SA.67.H.4)
+# František Ignác Antonín Tůma: Miserere (A-Wn SA.67.H.4)
 
 Engraving files for LilyPond 2.22.0
 
