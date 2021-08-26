@@ -816,7 +816,7 @@ DomineBasso = {
     c4. c8 d2
     es4 c8 as b2
     es16 es[ d16.( es32)] c16.([ des32) \slurDashed b16.( c32)] as16[ f' es16.( f32)] d16.([ es32) c16.( d32)] \slurSolid %30
-    b16[ g' f16.([ g32)] es16.([ f32) d16.( es32)] c16[ as' g16.( as32)] f16.([ g32) es16.( f32)]
+    b16[ g' f16.( g32)] es16.([ f32) d16.( es32)] c16[ as' g16.( as32)] f16.([ g32) es16.( f32)]
     d8 es c b a4 a
     b4. b8 b2
     es,4 r r2\fermata \bar "||" %34 finis

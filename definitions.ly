@@ -474,7 +474,7 @@ bc =
   \context {
     \Score
     \compressEmptyMeasures
-    \override BarNumber.break-visibility = #'#(#f #t #t)
+    % \override BarNumber.break-visibility = #'#(#f #t #t)
   }
   \context {
     \StaffGroup
