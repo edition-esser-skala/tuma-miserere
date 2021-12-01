@@ -1,97 +1,37 @@
 \version "2.22.0"
 
 \include "../definitions.ly"
-
-\paper {
-  indent = 1\cm
-  top-margin = 1\cm
-  system-separator-markup = ##f
-  system-system-spacing =
-    #'((basic-distance . 17)
-       (minimum-distance . 17)
-       (padding . -100)
-       (stretchability . 0))
-
-  top-system-spacing =
-    #'((basic-distance . 10)
-       (minimum-distance . 10)
-       (padding . -100)
-       (stretchability . 0))
-
-  top-markup-spacing =
-    #'((basic-distance . 0)
-       (minimum-distance . 0)
-       (padding . -100)
-       (stretchability . 0))
-
-  markup-system-spacing =
-    #'((basic-distance . 10)
-       (minimum-distance . 10)
-       (padding . -100)
-       (stretchability . 0))
-
-  systems-per-page = #3
-
-  #(define (page-post-process layout pages) (ly:create-toc-file layout pages))
-}
+\include "score_settings/coro.ly"
 
 \layout {
   \context {
-    \Lyrics
-    \override LyricText.font-size = #-.5
-  }
-  \context {
-    \ChoirStaff
-    \override StaffGrouper.staff-staff-spacing =
-      #'((basic-distance . 12)
-         (minimum-distance . 12)
-         (padding . -100)
-         (stretchability . 0))
-    \override StaffGrouper.staffgroup-staff-spacing =
-      #'((basic-distance . 13)
-         (minimum-distance . 13)
-         (padding . -100)
-         (stretchability . 0))
-  }
-  \context {
     \Staff
-    instrumentName = "org"
+    \unset instrumentName
   }
 }
 
-#(set-global-staff-size 15.87)
-
 \book {
   \bookpart {
-    \header {
-      number = "1"
-      title = "M I S E R E R E"
-    }
+    \section "1" "Miserere"
+    \addTocEntry
     \paper { indent = 3\cm }
-    \tocSection "1" "Miserere"
     \score {
       <<
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = \SopranoIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
+            \incipit "Soprano" "soprano" #-20.5 #-0.3
             \new Voice = "Soprano" { \dynamicUp \MiserereSoprano }
           }
           \new Lyrics \lyricsto Soprano \MiserereSopranoLyrics
 
           \new Staff {
-            \set Staff.instrumentName = \AltoIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
+            \incipit "Alto" "alto" #-18.3 #-0.3
             \new Voice = "Alto" { \dynamicUp \MiserereAlto }
           }
           \new Lyrics \lyricsto Alto \MiserereAltoLyrics
 
           \new Staff {
-            \set Staff.instrumentName = \TenoreIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
+            \incipit "Tenore" "tenor" #-19.7 #-0.3
             \new Voice = "Tenore" { \dynamicUp \MiserereTenore }
           }
           \new Lyrics \lyricsto Tenore \MiserereTenoreLyrics
@@ -116,11 +56,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "2"
-      title = "A M P L I U S   L A V A   M E"
-    }
-    \tocSection "2" "Amplius lava me"
+    \section "2" "Amplius lava me"
+    \addTocEntry
     \score {
       <<
         \new ChoirStaff <<
@@ -162,11 +99,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "3"
-      title = "T I B I   S O L I   P E C C A V I"
-    }
-    \tocSection "3" "Tibi soli peccavi"
+    \section "3" "Tibi soli peccavi"
+    \addTocEntry
     \score {
       <<
         \new ChoirStaff <<
@@ -208,11 +142,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "4"
-      title = "E C C E   E N I M"
-    }
-    \tocSection "4" "Ecce enim"
+    \section "4" "Ecce enim"
+    \addTocEntry
     \score {
       <<
         \new ChoirStaff <<
@@ -254,11 +185,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "5"
-      title = "A S P E R G E S   M E"
-    }
-    \tocSection "5" "Asperges me"
+    \section "5" "Asperges me"
+    \addTocEntry
     \score {
       <<
         \new ChoirStaff <<
@@ -300,11 +228,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "6"
-      title = "A U D I T U I   M E O"
-    }
-    \tocSection "6" "Auditui meo"
+    \section "6" "Auditui meo"
+    \addTocEntry
     \score {
       <<
         \new ChoirStaff <<
@@ -346,11 +271,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "7"
-      title = "A V E R T E   F A C I E M   T U A M"
-    }
-    \tocSection "7" "Averte faciem tuam"
+    \section "7" "Averte faciem tuam"
+    \addTocEntry
     \score {
       <<
         \new ChoirStaff <<
@@ -392,11 +314,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "8"
-      title = "N E   P R O I C I A S   M E"
-    }
-    \tocSection "8" "Ne proicias me"
+    \section "8" "Ne proicias me"
+    \addTocEntry
     \score {
       <<
         \new ChoirStaff <<
@@ -438,11 +357,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "9"
-      title = "D O M I N E,   L A B I A   M E A"
-    }
-    \tocSection "9" "Domine, labia mea"
+    \section "9" "Domine, labia mea"
+    \addTocEntry
     \score {
       <<
         \new ChoirStaff <<
@@ -484,11 +400,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "10"
-      title = "Q U O N I A M   S I   V O L U I S S E S"
-    }
-    \tocSection "10" "Quoniam si voluisses"
+    \section "10" "Quoniam si voluisses"
+    \addTocEntry
     \score {
       <<
         \new ChoirStaff <<
@@ -530,11 +443,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "11"
-      title = "S A C R I F I C I U M   D E O"
-    }
-    \tocSection "11" "Sacrificium Deo"
+    \section "11" "Sacrificium Deo"
+    \addTocEntry
     \score {
       <<
         \new ChoirStaff <<
@@ -576,11 +486,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "12"
-      title = "B E N I G N E   F A C"
-    }
-    \tocSection "12" "Benigne fac"
+    \section "12" "Benigne fac"
+    \addTocEntry
     \score {
       <<
         \new ChoirStaff <<
@@ -622,11 +529,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "13"
-      title = "G L O R I A   P A T R I"
-    }
-    \tocSection "13" "Gloria Patri"
+    \section "13" "Gloria Patri"
+    \addTocEntry
     \score {
       <<
         \new ChoirStaff <<

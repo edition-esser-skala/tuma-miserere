@@ -1,304 +1,32 @@
-\documentclass[parskip=full]{scrreprt}
+\documentclass{ees}
 
-\RedeclareSectionCommand[pagestyle=plain,afterskip=10pt plus 1pt]{chapter}
-\setkomafont{chapter}{\mdseries\headingfont\fontsize{40}{40}\selectfont\color{black!80}}
-\setkomafont{pageheadfoot}{\normalsize}
-
-\def\pnumbox#1{#1\hspace*{8cm}}
-\def\gobble#1{}
-\DeclareTOCStyleEntry[
-  indent=0pt,
-  beforeskip=0pt,
-  entryformat=\itshape,
-  entrynumberformat=\textcolor{oldred},
-  numwidth=2em,
-  linefill=\hfill,
-  pagenumberbox=\pnumbox,
-  pagenumberformat=\itshape
-]{tocline}{part}
-
-\DeclareTOCStyleEntry[
-  indent=0pt,
-  beforeskip=0pt,
-  entrynumberformat=\textcolor{oldred},
-  numwidth=2em,
-  linefill=\hfill,
-  pagenumberbox=\pnumbox
-]{tocline}{section}
-
-\DeclareTOCStyleEntry[
-  indent=0pt,
-  beforeskip=-\parskip,
-  entrynumberformat=\gobble,
-  entryformat=\ltseries,
-  numwidth=2em,
-  linefill=\hfill,
-  pagenumberbox=\pnumbox,
-  pagenumberformat=\ltseries
-]{tocline}{subsection}
-
-
-\usepackage{polyglossia}
-\setdefaultlanguage{english}
-
-
-\usepackage{fontspec}
-\setmainfont{Source Sans Pro}[
-  ItalicFont = Source Sans Pro Italic,
-  BoldFont = Source Sans Pro Bold,
-  BoldItalicFont = Source Sans Pro Bold Italic,
-  FontFace = {lt}{n}{Source Sans Pro Light},
-  FontFace = {lt}{it}{Source Sans Pro Light Italic},
-  FontFace = {sb}{n}{Source Sans Pro Semibold},
-  FontFace = {sb}{it}{Source Sans Pro Semibold Italic},
-  Numbers = Proportional,
-  Ligatures = Common
-]
-\DeclareRobustCommand{\ltseries}{\fontseries{lt}\selectfont}
-\DeclareRobustCommand{\sbseries}{\fontseries{sb}\selectfont}
-\DeclareTextFontCommand{\textlt}{\ltseries}
-\DeclareTextFontCommand{\textsb}{\sbseries}
-\newfontfamily\headingfont{Fredericka the Great}
-
-
-\usepackage[pass]{geometry}
-\newgeometry{twoside,inner=20mm,outer=40mm,top=20mm,bottom=40mm}
-
-
-\usepackage{url}
-\urlstyle{same}
-
-
-\usepackage{microtype}
-\microtypesetup{verbose=silent}
-
-
-\usepackage{booktabs,array,longtable}
-\newcolumntype{L}[1]{%
-  >{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}%
-}
-
-
-\usepackage{graphicx}
-
-
-\usepackage{xcolor}
-\definecolor{oldred}{rgb}{.8313,0,0}
-
-
-\usepackage{pdfpages}
-
-
-\usepackage{scrlayer-scrpage}
-\pagestyle{scrheadings}
-\clearscrheadfoot
-\cfoot[\thepage]{\thepage}
-\pagenumbering{roman}
-
-\usepackage{enumitem}
-\setlist[description]{%
-  style=nextline,%
-  leftmargin=2em,%
-  first=\ltseries,%
-  font=\normalfont%
-}
-\def\lyrefitem#1{\item[\lyref{#1}]}
-
-
-\makeatletter
-
-\def\@firstofthree#1#2#3{#1}
-\def\@secondofthree#1#2#3{#2}
-\def\@thirdofthree#1#2#3{#3}
-\def\@firstoffour#1#2#3#4{#1}
-\def\@secondoffour#1#2#3#4{#2}
-\def\@thirdoffour#1#2#3#4{#3}
-\def\@fourthoffour#1#2#3#4{#4}
-\def\Dotfill{\leavevmode\cleaders\hb@xt@ .75em{\hss .\hss }\hfill \kern \z@}
-
-\def\lyrefnumber#1{\expandafter\@setref\csname r@#1\endcsname\@firstofthree{#1}}
-\def\lyreftitle#1{\expandafter\@setref\csname r@#1\endcsname\@secondofthree{#1}}
-\def\lyrefpage#1{\expandafter\@setref\csname r@#1\endcsname\@thirdofthree{#1}}
-
-\def\lyrefgenrenumber#1{\expandafter\@setref\csname r@#1\endcsname\@firstoffour{#1}}
-\def\lyrefgenregenre#1{\expandafter\@setref\csname r@#1\endcsname\@secondoffour{#1}}
-\def\lyrefgenretitle#1{\expandafter\@setref\csname r@#1\endcsname\@thirdoffour{#1}}
-\def\lyrefgenrepage#1{\expandafter\@setref\csname r@#1\endcsname\@fourthoffour{#1}}
-
-\def\lyref#1{%
-  \begingroup%
-  \makebox[0pt][l]{\color{oldred}\lyrefnumber{#1}}\hspace*{2em}%
-  \lyreftitle{#1}\Dotfill\lyrefpage{#1}%
-  \endgroup%
-}
-\def\lyrefpart#1{%
-  \begingroup%
-  \makebox[0pt][l]{\sbseries\color{oldred}\lyrefnumber{#1}}\hspace*{2em}%
-  \makebox[0pt][l]{\sbseries\lyreftitle{#1}}\hspace*{6.5em}%
-  \hfill\sbseries\lyrefpage{#1}%
-  \endgroup%
-}
-\def\lyrefsection#1{%
-  \begingroup%
-  \makebox[0pt][l]{\color{oldred}\lyrefgenrenumber{#1}}\hspace*{2em}%
-  \makebox[0pt][l]{\ltseries\lyrefgenregenre{#1}}\hspace*{6.5em}%
-  \lyrefgenretitle{#1}\Dotfill\lyrefgenrepage{#1}%
-  \endgroup%
-}
-\InputIfFileExists{../tmp/lilypond.ref}{}{\InputIfFileExists{../lilypond.ref}{}{}}
-
-
-\newcommand\fancytitlehead{
-  \headingfont%
-  \fontsize{80}{80}\selectfont%
-  \textcolor{black!80}{%
-    \makebox[0pt][l]{\@ifundefined{@shortname}{\@lastname}{\@shortname}.}%
-  }\\[15pt]%
-  \fontsize{60}{60}\selectfont%
-  \makebox[0pt][l]{\@ifundefined{@shorttitle}{\@title}{\@shorttitle}.}%
-}
-
-
-\def\firstname#1{\def\@firstname{#1}}
-\def\lastname#1{\def\@lastname{#1}}
-\def\shortname#1{\def\@shortname{#1}}
-\def\shorttitle#1{\def\@shorttitle{#1}}
-\def\namesuffix#1{\def\@namesuffix{#1}}
-\def\scoring#1{\def\@scoring{#1}}
-\def\parts#1{\def\@parts{#1}}
-
-\firstname{\relax}
-\lastname{\relax}
-\namesuffix{\relax}
-\scoring{\relax}
-\parts{\relax}
-
-
-\def\maketitle{%
-\begin{titlepage}%
-  \Large%
-  {\@titlehead}%
-  \vfill%
-  {\strut\@firstname}\\%
-  {\sbseries\color{oldred}\strut\@lastname}\\%
-  {\strut\@namesuffix}%
-  \vfill%
-  {\sbseries\@title}\\%
-  {\@subtitle}\\[\baselineskip]%
-  {\itshape\@scoring}%
-  \vfill%
-  {\itshape\@parts}\hspace*{\fill}\raisebox{0pt}[0pt][0pt]{\includegraphics{ees_logo}}%
-\end{titlepage}%
-}
-
-
-\newif\iftemplate\templatetrue
-\newif\ifprintreport\printreportfalse
-\directlua{
-scores = {
-  org = "Organo",
-  b = "Bassi",
-  full_score = "Full Score"
-}
-
-last_arg = arg[\string#arg]
-texio.write("Last argument: " .. last_arg)
-if not (scores[last_arg] == nil) then
-  tex.print("\string\\def\string\\lypdfname{" .. last_arg .. "}")
-  tex.print("\string\\parts{" .. scores[last_arg] .. "}")
-  if (last_arg == "full_score") then
-    tex.print("\string\\printreporttrue")
-  end
-end
-}
-
-\@ifundefined{lypdfname}{%
-  \templatefalse
-  \printreporttrue
-  \parts{Draft}
-}{\templatetrue}
-
-\makeatother
-
-
+\shortname{\rlap{\hspace{.85em}°}Tuma}
 
 \begin{document}
-\frenchspacing
 
-\titlehead{\fancytitlehead}
-\firstname{František Ignác Antonín}
-\lastname{Tůma}
-\shortname{\rlap{\hspace{.85em}°}Tuma}
-\title{Miserere}
-\subtitle{(A-Wn SA.67.H.4)}
-\scoring{S, A, T, B, b, org}
-\maketitle
+\eesTitlePage
 
+\eesCriticalReport{
+  –  & –  & –   & Red annotations in \B1, which presumably were added \newline by later hand, have been ignored for this edition. \\
+  2  & 75 & T   & bar in \B1: \flat e′2. \\
+  6  & 21 & T   & 3rd \quarterNote\ in \B1: a4 \\
+  9  & 16 & S   & 5th \eighthNote\ in \B1: g′16.–\flat e″32 (cf. T, bar 18) \\
+     & 21 & B   & 1st \quarterNote\ in \B1: c8–c8 \\
+  10 & 15 & B   & 1st note in \B1: \flat e4. \\
+  11 & 7  & T   & 1st \quarterNote\ in \B1: \flat a4 \\
+     & 21 & T   & 2nd \quarterNote\ in \B1: e′4 \\
+     & 23 & A   & 3rd \quarterNote\ in \B1: f′4 \\
+  12 & 3  & S   & 1st \eighthNote\ in \B1: \flat e″8 \\
+     & 40 & org & 4th \quarterNote\ in \B1: \crotchetRest \\
+     & 41 & A   & 4th \eighthNote\ in \B1: d′8 \\
+  13 & 2  & B   & 4th \eighthNote\ in \B1: d8 \\
+     & 27 & A   & 4th \quarterNote\ in \B1. f′4 \\
+     & 38 & org & bar in \B1: c4–\crotchetRest–\crotchetRest–\quaverRest–\flat e8 \\
+     & 47 & org & bar in \B1: g4–\crotchetRest–\halfNoteRest \\
+}
 
-\thispagestyle{empty}
+\eesToc{}
 
-\vspace*{\fill}
-
-\raisebox{-4mm}{\includegraphics{byncsaeu}}\hspace*{1em}Wolfgang Esser-Skala, 2021
-
-© 2021 by Wolfgang Esser-Skala. This edition is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit \url{http://creativecommons.org/licenses/by-nc-sa/4.0/}.
-
-Music engraving by LilyPond 2.22.0 (\url{http://www.lilypond.org}).\\
-Front matter typeset with Source Sans Pro and Fredericka the Great.
-
-\textit{First version, August 2021}
-
-\vspace*{2cm}
-
-\ifprintreport
-\chapter*{Critical Report}
-
-This edition bases upon a copy in the Austrian National Library. The digital version of the manuscript is available at \url{http://data.onb.ac.at/rec/AC14297596} (siglum SA.67.H.4; no RISM entry).
-
-In general, this edition closely follows the manuscript. Any changes that were introduced by the editor are indicated by italic type (lyrics, dynamics and directions), parentheses (expressive marks and bass figures) or dashes (slurs and ties). Accidentals are used according to modern conventions. Asterisks denote changes that are clarified in the detailed remarks below.\footnote{Abbreviations: A, alto; B, bass; b, basses; Ms, manuscript; org, organ; r, rest; S, soprano; T, tenor.}
-
-\bigskip
-
-\begin{longtable}{lll L{10cm}}
-  \toprule
-  \itshape Mov. & \itshape Bar & \itshape Staff & \itshape Note \\
-  \midrule \endhead
-  –  & –  & –   & Red annotations in the Ms, which presumably were added \newline by later hand, have been ignored for this edition. \\
-  2  & 75 & T   & bar in Ms: es′2. \\
-  6  & 21 & T   & 3rd quarter in Ms: a4 \\
-  9  & 16 & S   & 5th eighth in Ms: g′16.–es″32 (cf. T, bar 18) \\
-     & 21 & B   & 1st quarter in Ms: c8–c8 \\
-  10 & 15 & B   & 1st note in Ms: es4. \\
-  11 & 7  & T   & 1st quarter in Ms: as4 \\
-     & 21 & T   & 2nd quarter in Ms: e′4 \\
-     & 23 & A   & 3rd quarter in Ms: f′4 \\
-  12 & 3  & S   & 1st eighth in Ms: es″ \\
-     & 40 & org & 4th quarter in Ms: r4 \\
-     & 41 & A   & 4th eighth in Ms: d′8 \\
-  13 & 2  & B   & 4th eighth in Ms: d8 \\
-     & 27 & A   & 4th quarter in Ms. f′4 \\
-     & 38 & org & bar in Ms: c4–r4–r4–r8–es8 \\
-     & 47 & org & bar in Ms: g4–r4–r2 \\
-  \bottomrule
-\end{longtable}
-
-
-This edition has been compiled and checked with utmost diligence. Nevertheless, errors and mistakes cannot be totally excluded. Please report any errors and mistakes to \url{wolfgang@esser-skala.at} or create an issue or pull request on the edition’s GitHub page \url{https://github.com/skafdasschaf/tuma-miserere}. Your help will be greatly appreciated.
-
-\bigskip
-\textit{Koppl, August 2021\\
-Wolfgang Esser-Skala}
-
-\cleardoublepage
-\chapter*{Contents}
-
-\InputIfFileExists{../tmp/lilypond.toc}{}{\InputIfFileExists{../lilypond.toc}{}{}}
-
-\cleardoublepage
-\fi
-
-\iftemplate
-\includepdf[pages=-]{../tmp/\lypdfname.pdf}
-\fi
+\eesScore
 
 \end{document}

@@ -1,16 +1,11 @@
 composer: Tůma, František Ignác Antonín
 title: Miserere
-id: (A-Wn SA.67.H.4)
 genre: psalm
 scoring: S, A, T, B, b, org
 sources:
-  1:
+  B1:
     siglum: A-Wn
     shelfmark: SA.67.H.4
-    type: manuscript copy
-    date: unknown
-    rism:
     url: http://data.onb.ac.at/rec/AC14297596
-github: tuma-miserere
+    principal: true
 imslp: Miserere_in_c_minor_(Tůma,_František_Ignác_Antonín)
-notes:

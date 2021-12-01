@@ -1,16 +1,5 @@
 \version "2.22.0"
 
-AltoIncipit = \markup {
-  "Alto" \hspace #-18.1 \score {
-    \new Staff \with {
-      \remove Time_signature_engraver
-    } {
-      \clef alto s4 \bar empty
-    }
-    \layout { }
-  } \hspace #-0.5
-}
-
 MiserereAlto = {
   \relative c' {
     \clef treble

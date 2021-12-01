@@ -1,53 +1,14 @@
 \version "2.22.0"
 
 \include "../definitions.ly"
+#(define option-instrument-name "org")
+\include "score_settings/one-staff.ly"
 
-\paper {
-  indent = 1\cm
-  top-margin = 1.5\cm
-  system-separator-markup = ##f
-  system-system-spacing =
-    #'((basic-distance . 18)
-       (minimum-distance . 18)
-       (padding . -100)
-       (stretchability . 0))
-
-  top-system-spacing =
-    #'((basic-distance . 12)
-       (minimum-distance . 12)
-       (padding . -100)
-       (stretchability . 0))
-
-  top-markup-spacing =
-    #'((basic-distance . 0)
-       (minimum-distance . 0)
-       (padding . -100)
-       (stretchability . 0))
-
-  markup-system-spacing =
-    #'((basic-distance . 12)
-       (minimum-distance . 12)
-       (padding . -100)
-       (stretchability . 0))
-
-  systems-per-page = #9
-}
-
-#(set-global-staff-size 17.82)
-
-\layout {
-  \context {
-    \Staff
-    instrumentName = "org"
-  }
-}
 
 \book {
   \bookpart {
-    \header {
-      number = "1"
-      title = "M I S E R E R E"
-    }
+    \section "1" "Miserere"
+    \addTocEntry
     \paper { indent = 2\cm }
     \score {
       <<
@@ -60,10 +21,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "2"
-      title = "A M P L I U S   L A V A   M E"
-    }
+    \section "2" "Amplius lava me"
+    \addTocEntry
     \score {
       <<
         \new Staff { \AmpliusOrgano }
@@ -72,10 +31,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "3"
-      title = "T I B I   S O L I   P E C C A V I"
-    }
+    \section "3" "Tibi soli peccavi"
+    \addTocEntry
     \paper { systems-per-page = #5 }
     \score {
       <<
@@ -85,10 +42,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "4"
-      title = "E C C E   E N I M"
-    }
+    \section "4" "Ecce enim"
+    \addTocEntry
     \paper { systems-per-page = #6 }
     \score {
       <<
@@ -98,10 +53,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "5"
-      title = "A S P E R G E S   M E"
-    }
+    \section "5" "Asperges me"
+    \addTocEntry
     \score {
       <<
         \new Staff { \AspergesOrgano }
@@ -110,10 +63,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "6"
-      title = "A U D I T U I   M E O"
-    }
+    \section "6" "Auditui meo"
+    \addTocEntry
     \score {
       <<
         \new Staff { \AudituiOrgano }
@@ -122,10 +73,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "7"
-      title = "A V E R T E   F A C I E M   T U A M"
-    }
+    \section "7" "Averte faciem tuam"
+    \addTocEntry
     \score {
       <<
         \new Staff { \AverteOrgano }
@@ -134,10 +83,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "8"
-      title = "N E   P R O I C I A S   M E"
-    }
+    \section "8" "Ne proicias me"
+    \addTocEntry
     \paper { page-count = #2 }
     \score {
       <<
@@ -147,10 +94,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "9"
-      title = "D O M I N E,   L A B I A   M E A"
-    }
+    \section "9" "Domine, labia mea"
+    \addTocEntry
     \score {
       <<
         \new Staff { \DomineOrgano }
@@ -159,10 +104,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "10"
-      title = "Q U O N I A M   S I   V O L U I S S E S"
-    }
+    \section "10" "Quoniam si voluisses"
+    \addTocEntry
     \paper { systems-per-page = #3 }
     \score {
       <<
@@ -172,10 +115,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "11"
-      title = "S A C R I F I C I U M   D E O"
-    }
+    \section "11" "Sacrificium Deo"
+    \addTocEntry
     \paper { systems-per-page = #6 }
     \score {
       <<
@@ -185,10 +126,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "12"
-      title = "B E N I G N E   F A C"
-    }
+    \section "12" "Benigne fac"
+    \addTocEntry
     \score {
       <<
         \new Staff { \BenigneOrgano }
@@ -197,10 +136,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "13"
-      title = "G L O R I A   P A T R I"
-    }
+    \section "13" "Gloria Patri"
+    \addTocEntry
     \score {
       <<
         \new Staff { \GloriaOrgano }
