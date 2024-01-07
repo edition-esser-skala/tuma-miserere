@@ -1,13 +1,9 @@
-\version "2.22.0"
+\version "2.24.2"
 
 #(define option-movement-title-format "number-title")
-#(define option-init-toc #t)
 #(define option-print-all-bar-numbers #f)
 \include "ees.ly"
-
-
-piuP   = \dynScriptPrefix "più"  "p" ##f
-piuPE  = \dynScriptPrefix "più"  "p" ##t
+% \include "ees_articulate.ly"
 
 
 tempoMiserere = \tempoMarkup "Adagio"

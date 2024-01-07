@@ -1,4 +1,4 @@
-\version "2.22.0"
+\version "2.24.2"
 
 \include "../definitions.ly"
 \include "score_settings/coro.ly"
@@ -15,7 +15,7 @@
     \section "1" "Miserere"
     \addTocEntry
     \paper { indent = 3\cm }
-    \score {
+    \score { %\articulate
       <<
         \new ChoirStaff <<
           \new Staff {
@@ -58,7 +58,7 @@
   \bookpart {
     \section "2" "Amplius lava me"
     \addTocEntry
-    \score {
+    \score { %\articulate
       <<
         \new ChoirStaff <<
           \new Staff {
@@ -101,7 +101,7 @@
   \bookpart {
     \section "3" "Tibi soli peccavi"
     \addTocEntry
-    \score {
+    \score { %\articulate
       <<
         \new ChoirStaff <<
           \new Staff {
@@ -138,13 +138,13 @@
         \new FiguredBass { \TibiSoliBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 60 }
+      \midi { \tempo 4 = 60 } % 90 – 60
     }
   }
   \bookpart {
     \section "4" "Ecce enim"
     \addTocEntry
-    \score {
+    \score { %\articulate
       <<
         \new ChoirStaff <<
           \new Staff {
@@ -187,7 +187,7 @@
   \bookpart {
     \section "5" "Asperges me"
     \addTocEntry
-    \score {
+    \score { %\articulate
       <<
         \new ChoirStaff <<
           \new Staff {
@@ -230,7 +230,7 @@
   \bookpart {
     \section "6" "Auditui meo"
     \addTocEntry
-    \score {
+    \score { %\articulate
       <<
         \new ChoirStaff <<
           \new Staff {
@@ -273,7 +273,7 @@
   \bookpart {
     \section "7" "Averte faciem tuam"
     \addTocEntry
-    \score {
+    \score { %\articulate
       <<
         \new ChoirStaff <<
           \new Staff {
@@ -316,7 +316,7 @@
   \bookpart {
     \section "8" "Ne proicias me"
     \addTocEntry
-    \score {
+    \score { %\articulate
       <<
         \new ChoirStaff <<
           \new Staff {
@@ -359,7 +359,7 @@
   \bookpart {
     \section "9" "Domine, labia mea"
     \addTocEntry
-    \score {
+    \score { %\articulate
       <<
         \new ChoirStaff <<
           \new Staff {
@@ -396,13 +396,13 @@
         \new FiguredBass { \DomineBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 60 }
+      \midi { \tempo 4 = 60 } % 80
     }
   }
   \bookpart {
     \section "10" "Quoniam si voluisses"
     \addTocEntry
-    \score {
+    \score { %\articulate
       <<
         \new ChoirStaff <<
           \new Staff {
@@ -439,13 +439,13 @@
         \new FiguredBass { \QuoniamBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 80 }
+      \midi { \tempo 4 = 90 }
     }
   }
   \bookpart {
     \section "11" "Sacrificium Deo"
     \addTocEntry
-    \score {
+    \score { %\articulate
       <<
         \new ChoirStaff <<
           \new Staff {
@@ -488,7 +488,7 @@
   \bookpart {
     \section "12" "Benigne fac"
     \addTocEntry
-    \score {
+    \score { %\articulate
       <<
         \new ChoirStaff <<
           \new Staff {
@@ -531,7 +531,7 @@
   \bookpart {
     \section "13" "Gloria Patri"
     \addTocEntry
-    \score {
+    \score { %\articulate
       <<
         \new ChoirStaff <<
           \new Staff {
@@ -568,7 +568,7 @@
         \new FiguredBass { \GloriaBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 60 }
+      \midi { \tempo 4 = 60 } % 80
     }
   }
 }
